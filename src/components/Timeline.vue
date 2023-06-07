@@ -1,41 +1,50 @@
-<script setup>
-import { onMounted, ref } from 'vue';
-import axios from 'axios';
+<script>
 import YAML from 'yaml';
 import TimelineEvent from './TimelineEvent.vue';
-const props = defineProps({
-  yamlUrl: String
-});
-const historicalEvents = ref(null);
-const iteratedEvents = ref(null);
-// const historicalEvents = reactive({timeline: {events: [ {date: '', title: '', description: '', body: '', links: [{title:'', url:''}]}]}}); // Empty object to start
+import TimelineService from '@/services/TimelineService';
 
-onMounted(() => {
-  iteratedEvents.value = axios.get(props.yamlUrl)
-    .then(response => {
-      historicalEvents.value = YAML.parse(response.data); // The overall "timeline" root object
-      return historicalEvents.value.timeline.events;
+export default {
+  name: 'Timeline',
+  components: {
+    TimelineEvent
+  },
+  props: {
+    yamlUrl: String
+  },
+  data() {
+    return {
+      timelineEvents: [],
+      timelineTitle: ''
+    }
+  },
+  async created() {
+    console.log(this.yamlUrl);
+    const timeline = await TimelineService.get(this.yamlUrl)
+      .then(response => {
+        return YAML.parse(response.data); // The overall "timeline" root object
     })
-    .catch(error => {
-      console.error("Error getting data:", error);
+      .catch(error => {
+        console.error("Error getting data:", error);
     });
-});
+    console.log(timeline);
+    this.timelineEvents = timeline.timeline.events;
+    this.timelineTitle = timeline.timeline.title;
 
-// onBeforeUpdate(() => {
-//   if (historicalEvents.length > 0) {
-//     iteratedEvents = historicalEvents.timeline.events.sort((a, b) => {
-//       return new Date(a.date) - new Date(b.date);
-//     });
-//   }
-// });
+    // Sort this.timelineEvents by date:
+    this.timelineEvents.sort((a, b) => {
+      return new Date(a.date) - new Date(b.date);
+    });
+
+  }
+}
 
 </script>
 
 <template>
   <div class="timeline">
-    <h2>Timeline</h2>
+    <h1>{{ timelineTitle }}</h1>
     <section>
-      <TimelineEvent ref="iteratedEvents" v-for="event in iteratedEvents" :key="event.title" :date="event.date" :title="event.title" :description="event.description" :body="event.body" :links="event.links" />
+      <TimelineEvent ref="timelineEvents" v-for="event in timelineEvents" :key="event.title" :date="event.date" :title="event.title" :description="event.description" :body="event.body" :links="event.links" />
     </section>
   </div>
 </template>

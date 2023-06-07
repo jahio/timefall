@@ -1,0 +1,77 @@
+#
+# To specify dates, use the format YYYY-MM-DD. If you need a time on that date, use
+# 24-hour format WITHOUT a time zone and wrap it in double quotes. For example, 9PM
+# on March 5, 1770 would be "1770-03-05 21:00:00" (the Boston Massacre). The date/time
+# stuff is a limitation of JavaScript's ability to convert the string into a native
+# date object, not YAML or this project/tool.
+#
+# The order in which you specify the events here, so long as the time formatting is
+# correct as are the dates themselves, doesn't matter. The timeline will sort them
+# for you automatically. That's the reason for calling out the specific formatting
+# of the date/time string.
+#
+
+timeline:
+  title: The American Revolution
+  events:
+  - date: 1783-09-03
+    title: Treaty of Paris
+    description: The Treaty of Paris is signed, officially ending the war
+    body: |
+      The Treaty of Paris is signed, officially ending the war. The treaty
+      establishes the United States as a sovereign nation, and establishes
+      the boundaries of the new nation.
+    links:
+      - title: "Wikipedia: The Treaty of Paris"
+        url: https://en.wikipedia.org/wiki/Treaty_of_Paris_(1783)
+      - title: "Library of Congress: The Treaty of Paris"
+        url: https://www.loc.gov/rr/program/bib/ourdocs/paris.html
+  - date: "1770-03-05 21:00:00"
+    title: The Boston Massacre (Incident on King Street)
+    description: British Soldiers Fire on an unarmed crowd in Boston
+    body: An accidental weapons discharge in a moment of furious political intensity
+      leads to the unintended deaths of five civilians at the hands of British
+      soldiers. The event is later used as propaganda by the Sons of Liberty to
+      incite anti-British sentiment in the colonies.
+    links:
+      - title: "Wikipedia: Boston Massacre"
+        url: https://en.wikipedia.org/wiki/Boston_Massacre
+      - title: "Library of Congress: Boston Massacre"
+        url: https://www.loc.gov/rr/program/bib/ourdocs/massacre.html
+  - date: 1775-04-18
+    title: The Regulars are Coming Out (The British Are Coming)
+    description: British Soldiers Begin Overnight Search for Munitions
+    body: British soldiers from the 5th Regiment of Foot begin an overnight search
+      for munitions and Whig sympathizers in the cities of Lexington and Concord,
+      Massachusetts, west of Boston. Looking for John Hancock and Samuel Adams,
+      who had already fled, acting on intelligence received in advance of the
+      British search, Paul Revere and William Dawes take to the countryside on
+      horseback to quietly warn local militia of the incoming British advance.
+    links:
+      - title: "Wikipedia: Battles of Lexington and Concord"
+        url: https://en.wikipedia.org/wiki/Battles_of_Lexington_and_Concord
+      - title: "Library of Congress: Lexington and Concord"
+        url: https://www.loc.gov/rr/program/bib/ourdocs/lexi.html
+  - date: 1775-04-19
+    title: Battle of Lexington and Concord
+    description: The first military engagements of the American Revolution
+    body: After an overnight search for munitions and Whig sympathizers in Concord,
+      Massachusetts, British soldiers from the 5th Regiment of Foot engage with
+      colonial militia at Lexington and Concord. The British retreat to Boston,
+      suffering staggering casualties along the way.
+    links:
+      - title: "Wikipedia: Battles of Lexington and Concord"
+        url: https://en.wikipedia.org/wiki/Battles_of_Lexington_and_Concord
+      - title: "Library of Congress: Lexington and Concord"
+        url: https://www.loc.gov/rr/program/bib/ourdocs/lexi.html
+  - date: 1776-07-04
+    title: Declaration of Independence
+    description: The United States issues its Declaration of Independence
+    body: "TODO: Body text here"
+    links:
+      - title: Wikipedia
+        url: https://en.wikipedia.org/wiki/United_States_Declaration_of_Independence
+      - title: National Archives
+        url: https://www.archives.gov/founding-docs/declaration-transcript
+      - title: Library of Congress
+        url: https://www.loc.gov/rr/program/bib/ourdocs/DeclarInd.html
