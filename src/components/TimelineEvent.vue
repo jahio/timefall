@@ -27,8 +27,8 @@
   <!-- Outer Container for the overall item row -->
   <div class="grid grid-cols-6 gap-2 relative">
     <!-- Date Div -->
-    <div class="col-span-2 relative inset-x-0 right-0">
-      <time class="inset-x-0 right-0 absolute" datetime="{{ date }}">{{ date }}</time>
+    <div class="col-span-2 absolute inset-x-0 right-0">
+      <time datetime="{{ date }}">{{ date }}</time>
     </div>
 
     <!-- Title Div -->
@@ -39,7 +39,7 @@
       <footer>
         <ul>
           <li v-for="link in links">
-            <a :href="link.url">{{ link.title }}</a>
+            <a :href="link.url" target="_blank">{{ link.title }}</a>
           </li>
         </ul>
       </footer>
@@ -52,5 +52,37 @@ article {
   border-left: 1px solid #ccc;
   padding-left: 1rem;
   margin-left: 1rem;
+  padding-bottom: 2rem;
+}
+
+article h3 {
+  font-weight: semi-bold;
+  font-size: 150%;
+  color: #000;
+}
+
+article h4 {
+  font-weight: semi-bold;
+  font-size: 100%;
+  color: #000;
+}
+
+article {
+  color: #666;
+}
+
+article a {
+  --tw-text-opacity: 1;
+  color: rgba(37, 99, 235, var(--tw-text-opacity));
+}
+
+article a:hover {
+  --tw-text-opacity: 1;
+  color: rgba(96, 165, 250, var(--tw-text-opacity));
+}
+
+article footer ul {
+  list-style: upper-roman;
+  padding-left: 2rem;
 }
 </style>
