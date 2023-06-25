@@ -25,19 +25,14 @@
                         |
   -->
   <!-- Outer Container for the overall item row -->
-  <div class="flex justify-around space-x-12 md:space-x-8">
+  <div class="grid grid-cols-6 gap-2 relative">
     <!-- Date Div -->
-    <div class="flex-grow">
-      <time class="flex-grow" datetime="{{ date }}">{{ date }}</time>
-    </div>
-
-    <!-- The Dot -->
-    <div class="dot">
-      O
+    <div class="col-span-2 relative inset-x-0 right-0">
+      <time class="inset-x-0 right-0 absolute" datetime="{{ date }}">{{ date }}</time>
     </div>
 
     <!-- Title Div -->
-    <article>
+    <article class="col-start-2 col-span-4">
       <h3>{{ title }}</h3>
       <h4>{{ description }}</h4>
       <p>{{ body }}</p>
@@ -53,4 +48,9 @@
 </template>
 
 <style scoped>
+article {
+  border-left: 1px solid #ccc;
+  padding-left: 1rem;
+  margin-left: 1rem;
+}
 </style>
