@@ -4,7 +4,8 @@
     title: String,
     description: String,
     body: String,
-    links: Array
+    links: Array,
+    actions: Array
   })
 </script>
 
@@ -36,6 +37,13 @@
       <h3>{{ title }}</h3>
       <h4>{{ description }}</h4>
       <p>{{ body }}</p>
+      <div v-for="action in actions">
+        <div style="border-left: 8px solid #990000; padding-left: 4rem; margin-left: -1.5rem; padding-bottom: 1rem;">
+          <time class="col-span-2 absolute inset-x-0 right-0" datetime="{{ action.date }}">{{ action.date }}</time>
+          <h4 style="padding-top: 1rem;">{{ action.description }}</h4>
+          <p>{{ action.body }}</p>
+        </div>
+      </div>
       <footer>
         <ul>
           <li v-for="link in links">

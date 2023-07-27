@@ -44,7 +44,7 @@ export default {
   <div class="timeline">
     <h1>{{ timelineTitle }}</h1>
     <section class="md:container md:mx-auto">
-      <TimelineEvent ref="timelineEvents" v-for="event in timelineEvents" :key="event.title" :date="event.date" :title="event.title" :description="event.description" :body="event.body" :links="event.links" />
+      <TimelineEvent ref="timelineEvents" v-for="event in timelineEvents" :key="event.title" :date="event.date" :title="event.title" :description="event.description" :body="event.body" :links="event.links" :actions="event.actions" />
     </section>
   </div>
 </template>
