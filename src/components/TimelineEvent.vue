@@ -51,7 +51,7 @@
     <!-- Title Div -->
     <article class="col-start-2 col-span-4">
       <hgroup>
-        <h3>{{ title }}</h3>
+        <h3 class="text-2xl">{{ title }}</h3>
         <p>{{ description }}</p>
       </hgroup>
       <p>{{ body }}</p>
@@ -81,55 +81,4 @@
 </template>
 
 <style scoped>
-.event-action {
-  /* border-left: 8px solid #990000; */
-  padding-left: 4rem;
-  margin-left: -1.5rem;
-  padding-bottom: 1rem;
-}
-
-.event-action h4 {
-  padding-top: 1rem;
-  color: #000;
-  font-weight: semi-bold;
-  font-size: 115;
-}
-
-article {
-  border-left: 1px solid #ccc;
-  padding-left: 1rem;
-  margin-left: 1rem;
-  padding-bottom: 2rem;
-}
-
-article hgroup h3 {
-  font-weight: semi-bold;
-  font-size: 150%;
-  color: #000;
-}
-
-article hgroup p {
-  font-weight: semi-bold;
-  font-size: 115%;
-  color: #000;
-}
-
-article {
-  color: #666;
-}
-
-article a {
-  --tw-text-opacity: 1;
-  color: rgba(37, 99, 235, var(--tw-text-opacity));
-}
-
-article a:hover {
-  --tw-text-opacity: 1;
-  color: rgba(96, 165, 250, var(--tw-text-opacity));
-}
-
-article aside ul {
-  list-style: upper-roman;
-  padding-left: 2rem;
-}
 </style>

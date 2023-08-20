@@ -1,13 +1,22 @@
 <script setup>
-import { ref } from 'vue';
 import Timeline from '../components/Timeline.vue'
-// This URL below is a starter URL with sample data. Feed it your own! Any valid YAML with the right
-// structural shape will work. See the sample for an idea of what's expected.
-const yamlUrl = ref('https://gist.githubusercontent.com/jahio/5fb101ceef40eb5e97406ba9f325173f/raw/american-revolution-timeline.yaml');
 </script>
 
 <template>
   <main>
-    <Timeline :yamlUrl="yamlUrl" />
+    <div class="container">
+      <div class="flex flex-row items-center pt-8 pb-6">
+        <h1 class="text-4xl drop-shadow-md">TIMEFALL</h1>
+        <p class="text-lg subpixel-antialiased font-light text-slate-500 pl-12 pt-1">
+          Paste a URL to properly-formatted YAML. Get a timeline in your browser.
+          <a class="pl-2 text-sm" href="https://github.com/jahio/timefall">Project Homepage</a>
+        </p>
+      </div>
+    </div>
+
+    <Timeline />
   </main>
 </template>
+
+<style scoped>
+</style>
