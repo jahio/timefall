@@ -1,0 +1,123 @@
+#
+# This is an experiment for a personal project I'm working on. The below is a YAML representation of some of the historical
+# events that occurred relating to the American Revolution. It is absolutely incomplete and not intended to be a history lesson
+# or a political statement. I'll probably add to and tweak this as I go, expanding on my experiement in multiple ways,
+# but be aware that this is just used as test data for a personal project that I hope to be able to let others use one day,
+# if it turns out well.
+#
+# (Said project is an attempt at creating an HTML/CSS/JS interactive timeline in the browser. The idea: don't worry about
+# messing with front-end code, just feed it some nice and easy YAML - like this - of historical events and data and you
+# get a nice and pretty interactive, navigable timeline of events that you can use as a research aid, reference material, etc.
+# Could be a good tool for students, authors, historians, teachers, college professors, whomever!)
+#
+# Be advised: These events may be INTENTIONALLY out of chronological order and the date format may be INTENTIONALLY
+# inconsistent. That's by design: I want the end user to be able to make minor human mistakes and the software to still
+# work as expected, so I test for that in my own experience by screwing up on purpose.
+#
+# To format and lint this document, try https://github.com/google/yamlfmt
+#   One of the very few times you'll see me recommend anything with the taint of Google on it, but
+#   as of this writing, it's a decent tool. Pay attention to the options in $PWD/.yamlfmt.
+#
+#   $ brew install yamlfmt
+#   $ cd path/to/this/repo/public
+#   $ yamlfmt ./example.yaml
+#
+
+#
+# To specify dates, use the format YYYY-MM-DD. If you need a time on that date, use
+# 24-hour format WITHOUT a time zone and wrap it in double quotes. For example, 9PM
+# on March 5, 1770 would be "1770-03-05 21:00:00" (the Boston Massacre).
+#
+# The order in which you specify the events here, so long as the time formatting is
+# correct as are the dates themselves, doesn't matter. The timeline will sort them
+# for you automatically. That's the reason for calling out the specific formatting
+# of the date/time string.
+#
+
+timeline:
+  title: The American Revolution
+  intro: |
+    Spanning roughly a quarter of the planet, lasting more than thirteen years and involving at least three major
+    European powers, the American Revolution was a wildly complex historical flashpoint that forever changed
+    the long-term trajectory of human history. The following timeline, while most certainly **far from exhaustive**,
+    is a sampling of some of those events that I've personally assembled relevant to my first novel: an historical fiction
+    piece set in that era. Writing such a work necessarily entails forming a detailed understanding of the context, events,
+    issues, cultures, and peoples who shaped the period, the conflict, and ultimately, our world.
+  events:
+    - title: "Battle of Lexington and Concord"
+      date: "1775-04-19"
+      description: "First military engagements of the Revolutionary War between British soldiers and American colonists."
+      body: |
+        The battles of Lexington and Concord marked the start of the Revolutionary War. British troops were dispatched
+        from Boston to confiscate weapons in Concord and arrest revolutionaries. They clashed with local militias,
+        leading to casualties on both sides.
+      actions:
+        - date: "1775-04-19"
+          description: "British troops face American resistance at Lexington, then move to Concord."
+          body: |
+            At Lexington, the British confronted a group of Minutemen, leading to a brief skirmish. In Concord, the
+            British faced more significant resistance and eventually began their retreat back to Boston, facing
+            guerilla-style attacks along the way.
+          references:
+            - title: "Lexington and Concord"
+              citation:
+                - link: "https://www.history.com/topics/american-revolution/battles-of-lexington-and-concord"
+                  title: "Battles of Lexington and Concord - HISTORY"
+    - title: "Siege of Boston"
+      date: "1775-04-19 to 1776-03-17"
+      description: "A prolonged standoff between British forces in Boston and American militias."
+      body: |
+        After the skirmishes at Lexington and Concord, colonial militia members converged on Boston, laying siege
+        and trapping British forces within the city. The standoff lasted for almost a year, with both sides
+        engaging in various operations and skirmishes.
+      actions:
+        - date: "1775-06-17"
+          description: "The Battle of Bunker Hill occurs as part of the siege."
+          body: |
+            Colonial forces constructed fortifications on Breed's Hill. The British, attempting to dislodge them,
+            faced fierce resistance but eventually secured the hill after the colonists ran out of ammunition.
+          references:
+            - title: "Siege of Boston"
+              citation:
+                - link: "https://www.history.com/topics/american-revolution/siege-of-boston"
+                  title: "Siege of Boston - HISTORY"
+        - date: 1776-03-17
+          description: "British forces evacuate Boston."
+          body: |
+            After facing difficulties with supply and the threat of cannons on Dorchester Heights, the British
+            decided to evacuate Boston, effectively ending the siege.
+          references:
+            - title: "Evacuation Day"
+              citation:
+                - link: "https://en.wikipedia.org/wiki/Evacuation_Day_(Massachusetts)"
+                  title: "Evacuation Day - Wikipedia"
+                  # ... More entries would continue ...
+    - title: "Siege of Yorktown"
+      date: "1781-09-28 to 1781-10-19"
+      description: "The last major land battle of the Revolutionary War where British General Cornwallis surrendered to American
+        and French forces."
+      body: |
+        The Siege of Yorktown saw a combined American and French force, led by General George Washington and
+        French General Rochambeau, respectively, lay siege to the British forces under General Cornwallis. The
+        siege culminated in Cornwallis' surrender, effectively ensuring American independence.
+      actions:
+        - date: "1781-10-14"
+          description: "Allied forces launch an assault on two British redoubts."
+          body: |
+            These assaults proved successful, bringing the allies closer to breaching the British defensive line. It
+            further pressured the British and expedited their eventual surrender.
+          references:
+            - title: "Siege of Yorktown"
+              citation:
+                - link: "https://www.history.com/topics/american-revolution/siege-of-yorktown"
+                  title: "Siege of Yorktown - HISTORY"
+        - date: "1781-10-19"
+          description: "British General Cornwallis offers his surrender."
+          body: |
+            Facing overwhelming odds and with no relief in sight, Cornwallis was forced to offer his surrender.
+            This marked a turning point in the war, with peace negotiations beginning shortly afterward.
+          references:
+            - title: "Cornwallis' Surrender at Yorktown"
+              citation:
+                - link: "https://en.wikipedia.org/wiki/Siege_of_Yorktown"
+                  title: "Siege of Yorktown - Wikipedia"

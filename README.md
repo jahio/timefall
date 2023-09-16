@@ -19,27 +19,23 @@ the data itself, at least for the time being:
 
 https://gist.githubusercontent.com/jahio/5fb101ceef40eb5e97406ba9f325173f/raw/american-revolution-timeline.yaml
 
-## Status: Pre-Alpha/Incomplete But Useable
+## Status: Incomplete and Ugly, But it Works
 
-Right now it's very bare bones and it doesn't have all the bells and whistles I'd like it to have yet,
-not by a long shot. It's not the prettiest thing to look at (it's quite Spartan), but if you give it
-the right data and run `npm run build` with a valid environment on your local machine, having of course
-swapped my URL in the code for your own with valid YAML and it allows your machine to fetch it (no issues
-of CORS or anything like that), it should work.
+Let's just get this right out in the open: this thing ain't pretty yet, not by a long shot. But it does work.
+In dev mode, anyway. I haven't even tried compiling and minifying assets for production yet, much less a deploy
+pretty much...anywhere. But short of that, "it works on my machine" as goes the old addage.
 
-In the future I want to give the user a text box where they can copy/paste any URL they want, hit a button,
-and there you have it fetch it for you without having to go and re-run the build or tweak any code.
-
-More importantly though I'd like to make this more "interactive" by having the timeline itself be clickable,
-such that "actions" within an event, should they be present, aren't shown by default, but if you click the event,
-then it "collapses" the view and shows the sub-events - those "actions" by the way I'm calling them in the data -
-beneath the main event in the timeline. This way you can click to "snap up" the events you're not interested in
-referencing at the moment and click to expand the ones you are actively looking at.
-
-But that's all on the TODO list for future-me. That guy is so screwed, he's got like soooooo much stuff he's
-gotta do. Oh man, so much stuff...
+Provided a remote host that allows for public resource retrieval of a properly-formatted YAML file (see above
+for an example; no documentation available yet, I'm still iterating on the DSL and feature set as I go, honestly),
+you can pop the URL in a plain-text box and the JS will go fetch it in real time, parse the data into the DOM and
+render your timeline. It'll just be kinda plain and fugly to look at. I'm not much of a designer, you see. (In fact,
+at some point I'd love to provide a facility for specifying design specifics - colors, maybe even layout - inside
+the YAML itself, but I haven't even got remotely that far in thinking. The data is the main thing. Walk before run.
+Someday, maybe. Contributions welcome. Particularly if you've an eye for UX, unlike myself.)
 
 ## Project Setup
+
+### Clone it, then:
 
 ```sh
 npm install
@@ -56,3 +52,12 @@ npm run dev
 ```sh
 npm run build
 ```
+
+### Additional Tooling
+
+In dev mode it may be useful to have an example yaml file to play around with, so I've added one to this repo along
+with a `.yamlfmt` file. What's that, you may ask? Well, it's a configuration file for an open source CLI tool from
+Google by the same name: [yamlfmt](https://github.com/google/yamlfmt). See [my comments in the example](public/example.yaml)
+for more details, but basically it'll help you lint your YAML for formatting bugs and fix weirdness (non-printing chars)
+from copy/pasta, unify formatting mistakes, etc. Decent tool all around. The dotfile is a very basic configuration that
+tool will read automatically when you're working in that directory on files in that same directory.

@@ -1,0 +1,4 @@
+line_ending: lf
+formatter:
+  line_ending: lf
+  max_line_length: 120
