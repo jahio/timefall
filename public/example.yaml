@@ -37,87 +37,875 @@
 timeline:
   title: The American Revolution
   intro: |
-    Spanning roughly a quarter of the planet, lasting more than thirteen years and involving at least three major
-    European powers, the American Revolution was a wildly complex historical flashpoint that forever changed
-    the long-term trajectory of human history. The following timeline, while most certainly **far from exhaustive**,
-    is a sampling of some of those events that I've personally assembled relevant to my first novel: an historical fiction
-    piece set in that era. Writing such a work necessarily entails forming a detailed understanding of the context, events,
-    issues, cultures, and peoples who shaped the period, the conflict, and ultimately, our world.
+    Spanning roughly a quarter of the planet, lasting more than thirteen years
+    and involving at least three major European powers, the American Revolution
+    was a wildly complex historical flashpoint that forever changed the
+    long-term trajectory of human history. The following timeline, while most
+    certainly **far from exhaustive**, is a sampling of some of those events
+    that I've personally assembled relevant to my first novel: an historical
+    fiction piece set in that era. Writing such a work necessarily entails
+    forming a detailed understanding of the context, events, issues, cultures,
+    and peoples who shaped the period, the conflict, and ultimately, our world.
+
+    **BE ADVISED**: Much of the below was AI-generated, just to short-cut the
+    process of discovering what to focus on and build the list _of_. All of it
+    should be thoroughly fact-checked, and the online sources, while provided by
+    ChatGPT4 at the time of generation, may have been moved, altered or deleted
+    between when it ingested them into its training database and when you check
+    them. Additionally, it is entirely possible that it has mis-quoted and/or
+    misunderstood the provided book references as well, so treat everything with
+    a grain of salt until you can prove everything here is true. I'll be fact
+    checking this for myself as I go along.
   events:
+    # 1770
+    - title: "Boston Massacre"
+      date: "1770-03-05"
+      description: "Confrontation between British soldiers and Boston civilians that resulted in five deaths."
+      body: |
+        Tensions had been escalating between British troops stationed in Boston and the
+        local populace. On March 5, a confrontation outside the Custom House turned violent
+        when British soldiers fired into a crowd, killing five men. This incident, heavily
+        publicized by colonial activists like Paul Revere and Samuel Adams, was dubbed the
+        "Boston Massacre". It became a significant propaganda tool, galvanizing colonial
+        sentiment against British authority and military presence.
+      references:
+        - title: "The Shoemaker and the Tea Party: Memory and the American Revolution"
+          citation: "Book by Alfred F. Young, Chapter 3"
+        - title: "The Boston Massacre"
+          citation: "https://www.history.com/topics/american-revolution/boston-massacre"
+
+    - title: "Repeal of the Townshend Acts"
+      date: "1770-04-12"
+      description: "British Parliament repeals most of the Townshend Acts."
+      body: |
+        In response to growing colonial unrest and economic disruptions caused by
+        boycotts, the British Parliament decided to repeal most of the duties imposed
+        by the Townshend Acts. Charles Townshend's initiative had levied taxes on various
+        goods imported into the colonies, including tea. With the 1770 repeal, all duties
+        were lifted except for the one on tea. This partial concession did little to ease
+        tensions, as the retained tax on tea would later lead to the famous Boston Tea
+        Party.
+      references:
+        - title: "The Glorious Cause: The American Revolution, 1763-1789"
+          citation: "Book by Robert Middlekauff, Chapter 5"
+        - title: "Townshend Acts"
+          citation: "https://www.britannica.com/event/Townshend-Acts"
+
+    # 1771
+    - title: "Battle of Alamance"
+      date: "1771-05-16"
+      description: "Conflict between local militia and regulators in North Carolina."
+      body: |
+        The Battle of Alamance was the culmination of growing tensions in North Carolina
+        between colonists, particularly backcountry farmers known as the Regulators, and
+        the colonial British government. The Regulators were protesting what they saw as
+        corrupt practices by local officials and excessive taxation. On May 16, a militia
+        under the command of Governor William Tryon confronted the Regulators. The battle
+        lasted two hours, and the Regulators were ultimately defeated. Though not directly
+        a precursor to the Revolutionary War, it reflected the growing tensions and
+        anti-authoritarian sentiments present in the colonies.
+      references:
+        - title: "The War of the Regulation and the Battle of Alamance, May 16, 1771"
+          citation: "Book by William S. Powell, Chapter 6"
+        - title: "Battle of Alamance"
+          citation: "https://www.ncpedia.org/alamance-battle"
+
+    - title: "Expanding Westward"
+      date: "Throughout 1771"
+      description: "Continued westward expansion and settlement by American colonists."
+      body: |
+        Throughout 1771, as in preceding years, there was a continued push by American
+        colonists to expand and settle in the westward territories. While this might not
+        represent a single event, the ongoing movement and settlement led to multiple
+        skirmishes with Native American tribes and tensions with colonial governments.
+        This westward drive exemplified the independent spirit of the colonists and their
+        desire for land and opportunity, setting the stage for later territorial disputes
+        and emphasizing the distinct identity developing in the American colonies.
+      references:
+        - title: "Crucible of War: The Seven Years' War and the Fate of Empire in British North America, 1754-1766"
+          citation: "Book by Fred Anderson, Chapter 23"
+        - title: "Westward Expansion and the American Revolution"
+          citation: "https://www.history.com/topics/westward-expansion/westward-expansion-and-the-american-revolution"
+
+    # 1772
+    - title: "Gaspee Affair"
+      date: "1772-06-09"
+      description: "Attack on the British customs schooner, HMS Gaspee, by American colonists."
+      body: |
+        The Gaspee Affair was a significant pre-Revolutionary incident between the British and American colonists. HMS Gaspee, a British customs schooner, had been successful in enforcing navigation laws, but its methods angered local merchants. When the ship ran aground in Rhode Island waters, a group of colonists led by Abraham Whipple and John Brown boarded it and set it on fire. The incident increased tensions between the American colonies and Britain, especially when it became clear that no one would be held accountable for the act.
+      references:
+        - title: "An Empire on the Edge: How Britain Came to Fight America"
+          citation: "Book by Nick Bunker, Chapter 10"
+        - title: "The Gaspee Affair"
+          citation: "https://www.history.com/this-day-in-history/the-gaspee-affair"
+
+    - title: "Committees of Correspondence Formed in Massachusetts"
+      date: "1772-11-02"
+      description: "Samuel Adams called for a Committee of Correspondence in Boston."
+      body: |
+        The Committee of Correspondence was initially formed in Boston under the guidance of Samuel Adams. These committees aimed to maintain communication between patriot leaders in different colonies, sharing news about British actions and discussing possible collective responses. The model quickly spread, and by the next year, many other colonies formed their own Committees of Correspondence. They played a significant role in unifying the colonies and providing a foundation for the organized resistance against Britain.
+      references:
+        - title: "Samuel Adams: A Life"
+          citation: "Book by Ira Stoll, Chapter 8"
+        - title: "Committees of Correspondence"
+          citation: "https://www.mountvernon.org/library/digitalhistory/digital-encyclopedia/article/committees-of-correspondence/"
+
+    - title: "Somerset Case"
+      date: "1772-06-22"
+      description: "British court case which ruled slavery unsupported by the common law in England."
+      body: |
+        The Somerset case was a landmark judgment in England. James Somerset, an enslaved African taken to England by his American owner, had escaped but was recaptured and slated for deportation and sale in the colonies. Advocates for Somerset's freedom brought the case before the courts. Lord Chief Justice Mansfield ruled that while colonial laws might permit slavery, no law in England explicitly did. As a result, Somerset was freed. The case didn't abolish slavery in the British Empire but was a significant step toward that end and had profound effects on both sides of the Atlantic.
+      references:
+        - title: "Slavery, Atlantic Trade and the British Economy, 1660-1800"
+          citation: "Book by Kenneth Morgan, Chapter 6"
+        - title: "The Somerset Case"
+          citation: "https://www.blackpast.org/global-african-history/somerset-case-1772/"
+
+    # 1773
+    - title: "Boston Tea Party"
+      date: "1773-12-16"
+      description: "Political protest where American colonists dumped tea into the Boston Harbor."
+      body: |
+        The Boston Tea Party was a direct response to the Tea Act imposed by the
+        British government. Colonists, frustrated with the lack of
+        representation in Parliament and the continued taxation, chose to
+        protest by boarding British ships and dumping an entire shipment of tea
+        into the harbor. This act of defiance further escalated tensions between
+        the colonies and the British government, leading to a series of punitive
+        measures known as the Intolerable Acts.
+      references:
+        - title: "The Shoemaker and the Tea Party: Memory and the American Revolution"
+          citation: "Book by Alfred F. Young, Chapter 5"
+        - title: "Boston Tea Party"
+          citation: "https://www.history.com/topics/american-revolution/boston-tea-party"
+
+    - title: "Tea Act"
+      date: "1773-05-10"
+      description: "British Act granting the East India Company the right to directly ship its tea to North America."
+      body: |
+        The Tea Act of 1773 was a regulatory motion by the British government
+        intended not only to save the struggling East India Company from
+        bankruptcy but also to establish a precedent for the right to tax the
+        colonies. The act allowed the company to ship tea directly to the
+        colonies, bypassing colonial merchants and undercutting their prices.
+        While it effectively reduced the price of tea, it was seen by many
+        colonists as a cunning tactic to get them to accept the principle of
+        Parliamentary taxation.
+      references:
+        - title: "The Boston Tea Party: The Foundations of Revolution"
+          citation: "Book by Dennis Brindell Fradin, Chapter 2"
+        - title: "The Tea Act of 1773"
+          citation: "https://www.bostonteapartyship.com/the-tea-act"
+
+    # 1774
+    - title: "Intolerable Acts (Coercive Acts)"
+      date: "1774-03-31"
+      description: "Series of punitive laws passed by the British Parliament in response to the Boston Tea Party."
+      body: |
+        The Intolerable Acts, known as the Coercive Acts in Britain, were a set of laws designed to punish the Massachusetts colonists for their defiance in the Boston Tea Party protest. The series of laws closed the Boston Harbor until the dumped tea was paid for, revoked the Massachusetts Charter, allowed royal officers to be tried in other colonies or England if accused of crimes, and expanded the Quartering Act to allow British troops to lodge in private homes. These acts galvanized colonial opposition and were instrumental in the convening of the First Continental Congress later that year.
+      references:
+        - title: "American Insurgents, American Patriots: The Revolution of the People"
+          citation: "Book by T.H. Breen, Chapter 6"
+        - title: "Intolerable Acts"
+          citation: "https://www.history.com/topics/american-revolution/intolerable-acts"
+
+    - title: "First Continental Congress"
+      # date: "1774-09-05 to 1774-10-26"
+      date: "1774-09-05"
+      description: "Meeting of delegates from 12 of the Thirteen Colonies in Philadelphia, Pennsylvania."
+      body: |
+        In response to the Intolerable Acts, 56 delegates from all colonies except Georgia met in Philadelphia for the First Continental Congress. The congress aimed to outline colonial grievances, develop a response, and establish a unified American position. By the end of their deliberations, they had adopted the Declaration and Resolves which opposed the Coercive Acts and called for their repeal, set up a boycott of British goods, and endorsed the concept of colonial self-governance.
+      references:
+        - title: "The Birth of the Republic, 1763-89"
+          citation: "Book by Edmund S. Morgan, Chapter 5"
+        - title: "First Continental Congress"
+          citation: "https://www.history.com/topics/american-revolution/first-continental-congress"
+
+    - title: "Quebec Act"
+      date: "1774-06-22"
+      description: "British act that set procedures of governance in the Province of Quebec."
+      body: |
+        The Quebec Act was part of a series of efforts by the British Parliament to deal with the aftermath of the French and Indian War. It extended the boundaries of Quebec and granted religious freedom to Catholics in the province. While the act was not punitive in nature, American colonists interpreted it as a threat. They feared the establishment of Catholicism in Quebec, and the extension of its territory southward was seen as encroaching upon the colonies. Many colonists grouped this act with the Coercive Acts as another example of British tyranny.
+      references:
+        - title: "The American Revolution: A History"
+          citation: "Book by Gordon S. Wood, Chapter 3"
+        - title: "Quebec Act of 1774"
+          citation: "https://www.britannica.com/event/Quebec-Act"
+
+    - title: "Powder Alarm"
+      date: "1774-09-01"
+      description: "A major popular reaction to the British seizure of gunpowder from colonial arsenals."
+      body: |
+        Tensions were high after the passage of the Coercive Acts. When the British military, fearing an uprising, moved to seize gunpowder from a magazine in Somerville, Massachusetts, it prompted widespread alarm. Although no battle occurred, this event further inflamed anti-British sentiments. The massive colonial response, with thousands rallying and preparing for conflict, made it clear that the American colonies were on the brink of revolution.
+      references:
+        - title: "The Minutemen and Their World"
+          citation: "Book by Robert A. Gross, Chapter 7"
+        - title: "The Powder Alarm of 1774"
+          citation: "https://www.massmoments.org/moment-details/the-powder-alarm.html"
+
+    # 1775
     - title: "Battle of Lexington and Concord"
       date: "1775-04-19"
       description: "First military engagements of the Revolutionary War between British soldiers and American colonists."
       body: |
-        The battles of Lexington and Concord marked the start of the Revolutionary War. British troops were dispatched
-        from Boston to confiscate weapons in Concord and arrest revolutionaries. They clashed with local militias,
-        leading to casualties on both sides.
-      actions:
-        - date: "1775-04-19"
-          description: "British troops face American resistance at Lexington, then move to Concord."
-          body: |
-            At Lexington, the British confronted a group of Minutemen, leading to a brief skirmish. In Concord, the
-            British faced more significant resistance and eventually began their retreat back to Boston, facing
-            guerilla-style attacks along the way.
-          references:
-            - title: "Lexington and Concord"
-              citation:
-                - link: "https://www.history.com/topics/american-revolution/battles-of-lexington-and-concord"
-                  title: "Battles of Lexington and Concord - HISTORY"
+        The battles of Lexington and Concord marked the start of the
+        Revolutionary War. British troops were dispatched from Boston to
+        confiscate weapons in Concord and arrest revolutionaries. They clashed
+        with local militias, leading to casualties on both sides. These battles
+        spurred colonial support for independence and galvanized resistance
+        against British authority.
+      references:
+        - title: "The American Revolution"
+          citation: "Book by Gordon S. Wood, Chapter 3"
+        - title: "Battle of Lexington and Concord"
+          citation: "https://www.history.com/topics/american-revolution/battles-of-lexington-and-concord"
+
     - title: "Siege of Boston"
-      date: "1775-04-19 to 1776-03-17"
-      description: "A prolonged standoff between British forces in Boston and American militias."
+      # date: "1775-04-19 to 1776-03-17" # Technically this should be regenerated based on the 'actions' subarray when built
+      date: "1775-04-19"
+      description: "Colonial militia forces besieging British troops in Boston."
       body: |
-        After the skirmishes at Lexington and Concord, colonial militia members converged on Boston, laying siege
-        and trapping British forces within the city. The standoff lasted for almost a year, with both sides
-        engaging in various operations and skirmishes.
+        After the confrontations at Lexington and Concord, militia forces from
+        various colonies began a siege around Boston to box in the British
+        troops. The siege lasted for almost a year, with both sides facing
+        hardships. The culmination of this siege was the British evacuation in
+        March 1776, marking a significant victory for the American forces.
+      references:
+        - title: "1776"
+          citation: "Book by David McCullough, Chapter 2"
+        - title: "Siege of Boston"
+          citation: "https://www.britannica.com/event/Siege-of-Boston"
+
+    - title: "Battle of Bunker Hill"
+      date: "1775-06-17"
+      description: "Major conflict during the Siege of Boston."
+      body: |
+        While technically a British victory, the Battle of Bunker Hill proved
+        costly for the British in terms of casualties. The colonial militias,
+        despite being outnumbered and eventually driven from their positions,
+        inflicted significant losses on the British, proving their resolve and
+        demonstrating that they could stand up to one of the world's most
+        formidable armies.
+      notes: |
+        * Check on that date; didn't Bunker/Breed's last a few days?
+          Construction of defenses, siege actions, all that?
+        * Note / fact check the role of Dr. Joseph Warren, then include under
+          'actions' sub-array
+      references:
+        - title: "The Glorious Cause: The American Revolution, 1763-1789"
+          citation: "Book by Robert Middlekauff, Chapter 10"
+        - title: "Battle of Bunker Hill"
+          citation: "https://www.historynet.com/battle-of-bunker-hill"
+
+    - title: "Invasion of Canada"
+      # date: "1775-09-25 to 1776-06-18" # The 'to' piece should be dynamically generated w/ actions subarray when done
+      date: "1775-09-25"
+      description: "A failed attempt by the Continental Army to capture Quebec."
+      body: |
+        The Continental Army, seeing an opportunity to bring Canada into the
+        revolutionary fold, undertook an ambitious campaign to capture Quebec.
+        The force, under the command of Generals Richard Montgomery and
+        Benedict Arnold, faced hardships from the outset, battling rough
+        terrain, cold weather, and disease. Though they did achieve early
+        successes, capturing Montreal, the final assault on Quebec City on
+        December 31, 1775, ended in failure and the eventual retreat of the
+        American forces.
+      references:
+        - title: "The Invasion of Canada: 1775"
+          citation: "Book by Brendan Morrissey, Chapter 4-6"
+        - title: "The Revolutionary Invasion of Quebec"
+          citation: "https://www.thoughtco.com/revolutionary-war-invasion-of-quebec-2361396"
+
+    - title: "Burning of Falmouth"
+      date: "1775-10-18"
+      description: "British naval bombardment and subsequent sacking of Falmouth, present-day Portland, Maine."
+      body: |
+        The British Royal Navy, under the command of Captain Henry Mowat,
+        targeted Falmouth (Now Portland, Maine) as part of a punitive expedition
+        against ports that were perceived to be supporting revolutionary
+        efforts. The bombardment and subsequent burning of much of the town was
+        a brutal show of force intended to intimidate colonial resistors.
+        Instead, it served to further inflame American sentiments against
+        British rule.
+      references:
+        - title: "Naval Battles of the American Revolution"
+          citation: "Book by Ted Ballard, Chapter 2"
+        - title: "The Burning of Falmouth"
+          citation: "https://www.mainememory.net/sitebuilder/site/945/page/1391/display?use_mmn="
+
+    # 1776
+    - title: "Declaration of Independence"
+      date: "1776-07-04"
+      description: "Continental Congress declares the American colonies' independence from Britain."
+      body: |
+        Drafted primarily by Thomas Jefferson and deliberated upon by the Continental
+        Congress, the Declaration of Independence was formally adopted on July 4th. This
+        foundational document declared the thirteen American colonies independent from
+        British rule. The Declaration enumerated the colonies' grievances against King
+        George III and asserted their natural rights to life, liberty, and the pursuit of
+        happiness. This act was revolutionary, setting the stage for the full-scale war
+        that would ensue and marking the birth of the United States of America.
+      references:
+        - title: "American Scripture: Making the Declaration of Independence"
+          citation: "Book by Pauline Maier, Chapter 6"
+        - title: "Declaration of Independence"
+          citation: "https://www.history.com/topics/american-revolution/declaration-of-independence"
+
+    - title: "Battle of Long Island (Brooklyn)"
+      date: "1776-08-27"
+      description: "First major battle following the Declaration of Independence."
+      body: |
+        After the British evacuation of Boston, their sights turned to capturing New York
+        City. The Battle of Long Island saw British forces under General William Howe
+        engage the Continental Army led by George Washington. Outflanked and outnumbered,
+        Washington's forces suffered a defeat. However, a strategic nighttime withdrawal
+        saved the bulk of the Continental Army from capture, allowing them to fight another
+        day.
+      references:
+        - title: "Washington's Crossing"
+          citation: "Book by David Hackett Fischer, Chapter 5"
+        - title: "Battle of Long Island"
+          citation: "https://www.britannica.com/event/Battle-of-Long-Island"
+
+    - title: "Washington's Crossing of the Delaware"
+      date: "1776-12-25 to 1776-12-26"
+      description: "Surprise attack on Hessian forces in Trenton, New Jersey."
+      body: |
+        In a daring move, George Washington and his troops crossed the icy Delaware River
+        on Christmas night. By morning, they surprised the Hessian troops stationed in
+        Trenton, resulting in a significant victory for the Continental Army. This bold
+        action boosted the morale of the American forces and was a turning point that
+        showcased Washington's leadership and the resolve of the American revolutionaries.
+      references:
+        - title: "1776"
+          citation: "Book by David McCullough, Chapter 7"
+        - title: "Washington Crosses the Delaware, 1776"
+          citation: "https://www.eyewitnesstohistory.com/washingtondelaware.htm"
+
+    # 1777
+    - title: "Battle of Saratoga"
+      date: "1777-10-17"
+      description: "Decisive American victory that became a turning point in the Revolutionary War."
+      body: |
+        The Battle of Saratoga, comprising two significant battles during September and
+        October, marked a pivotal moment in the Revolutionary War. British General John
+        Burgoyne aimed to sever New England from the rest of the colonies but found
+        himself surrounded by American forces. On October 17, he surrendered to American
+        General Horatio Gates. This victory convinced France to enter the war as an ally
+        to the Americans, fundamentally shifting the strategic balance.
+      references:
+        - title: "Saratoga: Turning Point of America's Revolutionary War"
+          citation: "Book by Richard M. Ketchum, Chapter 12"
+        - title: "Battle of Saratoga"
+          citation: "https://www.history.com/topics/american-revolution/battle-of-saratoga"
+
+    - title: "Brandywine and Germantown"
+      date: "1777-09 (Various Dates)"
+      description: "Two significant battles during the British campaign to capture Philadelphia."
+      body: |
+        As part of a strategy to capture Philadelphia, British forces under General
+        William Howe faced off against George Washington's troops. The Battle of
+        Brandywine on September 11 was a British victory, allowing Howe to take
+        Philadelphia by month's end. In response, Washington attempted a surprise attack
+        in October at Germantown, but it ultimately failed. Despite these setbacks, the
+        American resolve remained unbroken.
+      references:
+        - title: "The Philadelphia Campaign: Brandywine and the Fall of Philadelphia"
+          citation: "Book by Thomas J. McGuire, Chapter 6"
+        - title: "Battles of Brandywine and Germantown"
+          citation: "https://www.battlefields.org/learn/articles/battles-brandywine-and-germantown"
+
+    - title: "Winter at Valley Forge"
+      date: "1777-12 to 1778-06"
+      description: "Continental Army's winter encampment marked by hardship and transformation."
+      body: |
+        After the British capture of Philadelphia, Washington's troops wintered at Valley
+        Forge. During these challenging six months, the Continental Army faced extreme
+        cold, hunger, and disease. However, under the training of Baron von Steuben, a
+        Prussian military officer, the army emerged from the winter as a more cohesive
+        and disciplined force, better prepared for the challenges of the upcoming
+        campaigns.
+      references:
+        - title: "Valley Forge: Martyrdom and Deliverance"
+          citation: "Book by Wayne K. Bodle, Chapter 4"
+        - title: "Valley Forge"
+          citation: "https://www.nps.gov/vafo/learn/historyculture/index.htm"
+
+    # 1778
+    - title: "France Enters the War"
+      date: "1778-02-06"
+      description: "Formal alliances established between France and the American colonies."
+      body: |
+        Following the American victory at Saratoga in 1777, France recognized the
+        independence of the United States and entered the war as an American ally. The
+        Treaty of Alliance and the Treaty of Amity and Commerce were signed on February 6,
+        1778. This was a significant turning point, as French military and financial
+        support greatly boosted the American war effort against Britain.
+      references:
+        - title: "A Diplomatic History of the American Revolution"
+          citation: "Book by Jonathan R. Dull, Chapter 5"
+        - title: "Franco-American Alliance"
+          citation: "https://www.mountvernon.org/library/digitalhistory/digital-encyclopedia/article/franco-american-alliance/"
+
+    - title: "Battle of Monmouth"
+      date: "1778-06-28"
+      description: "Major battle in New Jersey, marking the end of the Northern theater of the war."
+      body: |
+        As the British evacuated Philadelphia to reinforce New York City, the Continental
+        Army, under George Washington, pursued and attacked the British rear guard near
+        Monmouth Courthouse in New Jersey. The battle was hard-fought, with the Americans
+        holding the field by the end of the day. The Continental Army demonstrated improved
+        discipline and tactics, a result of their training at Valley Forge.
+      references:
+        - title: "Washington's Crossing"
+          citation: "Book by David Hackett Fischer, Chapter 16"
+        - title: "Battle of Monmouth"
+          citation: "https://www.battlefields.org/learn/revolutionary-war/battles/monmouth"
+
+    - title: "British Southern Strategy"
+      date: "Begun in 1778"
+      description: "British shift in focus to the Southern colonies."
+      body: |
+        By 1778, the British shifted their strategic focus to the American South, believing
+        that a strong Loyalist presence there would aid their cause. This Southern Strategy
+        aimed to leverage Loyalist support to reclaim the rebellious colonies one by one.
+        The campaign began with the capture of Savannah, Georgia, late in the year, laying
+        the groundwork for further operations in the South over the subsequent years.
+      references:
+        - title: "The Southern Strategy: Britain's Conquest of South Carolina and Georgia, 1775–1780"
+          citation: "Book by David K. Wilson, Chapter 3"
+        - title: "The Revolutionary War in the South"
+          citation: "https://www.nps.gov/revwar/about_the_revolution/southern_theater.html"
+
+    # 1779
+    - title: "Elizabeth Burgin Flees New York"
+      date: 1779-07-17
+      description: The British Commandant of New York offers a 200-pound reward for the capture of the person 'suspected of helping the American prisoners make their escape'.
+      body: |
+        Elizabeth Burgin, an otherwise-minor, unknown figure in American History, is credited with cooperative action with otherwise unknown individuals
+        (lost to the ravages of time and bad documentation of the period) with assisting in the escape of over 200 American POWs during the Revolutionary
+        War.
       actions:
-        - date: "1775-06-17"
-          description: "The Battle of Bunker Hill occurs as part of the siege."
+        - date: 1779-07-17
+          description: British Commandant Orders Observation of Burgin's Home, offers 200-Pound Reward
           body: |
-            Colonial forces constructed fortifications on Breed's Hill. The British, attempting to dislodge them,
-            faced fierce resistance but eventually secured the hill after the colonists ran out of ammunition.
-          references:
-            - title: "Siege of Boston"
-              citation:
-                - link: "https://www.history.com/topics/american-revolution/siege-of-boston"
-                  title: "Siege of Boston - HISTORY"
-        - date: 1776-03-17
-          description: "British forces evacuate Boston."
+            The Commandant of New York, rightly suspecing that Burgin was involved in the escape of many prisoners of war, offered
+            a 200-Pound reward for the capture of the individual responsible, and on the same day, British forces began watching her
+            home in New York. Knowing this (how? We don't know...) to be the case, Burgin went into hiding alone (without her three children),
+            assisted by friends in the area in escaping to Long Island, where she hid for another five weeks. After an unnamed man took her by
+            whale boat (William Scudder) to  Connecticut, she made her way to Philadelphia, then to Elizabeth,
+            New Jersey where she waited while her children arrived, having been sent to her (somehow) from New York.
+        - date: 1779-11-19
+          description: Burgin Writes to General Washington
           body: |
-            After facing difficulties with supply and the threat of cannons on Dorchester Heights, the British
-            decided to evacuate Boston, effectively ending the siege.
-          references:
-            - title: "Evacuation Day"
-              citation:
-                - link: "https://en.wikipedia.org/wiki/Evacuation_Day_(Massachusetts)"
-                  title: "Evacuation Day - Wikipedia"
-                  # ... More entries would continue ...
+            In a letter dated November 19, 1779, Ms. Burgin writes to George Washington, on the advice of individuals named in the
+            very same letter, asking for any provisions he is able to himself authorize for her very survival, or on her behalf,
+            get Congress to authorize. She states that "Helping our poor prisoners brought me to want, which I don't repent." In the
+            letter she recounts her story of fleeing New York, her desire (at the time) to remain in Philadelphia, and provides the names
+            of several people with whom Washington could corroborate her story, all of whom could, and would, presumably, vouch for her.
+    - title: "Capture of Stony Point"
+      date: "1779-07-16"
+      description: "American surprise attack on a British-held fortification in New York."
+      body: |
+        In a daring nighttime assault, American Light Infantry forces under Brigadier
+        General Anthony Wayne stormed the British fortifications at Stony Point along the
+        Hudson River. Using bayonets and combat tactics, they captured the garrison in
+        just 25 minutes. This victory boosted American morale and demonstrated the
+        effectiveness of the Continental Army's elite forces.
+      references:
+        - title: "The Battle of Stony Point"
+          citation: "Book by Richard J. Koke, Chapter 3"
+        - title: "Stony Point Battlefield State Historic Site"
+          citation: "https://parks.ny.gov/historic-sites/8/details.aspx"
+
+    - title: "Siege of Savannah"
+      date: "1779-09-23 to 1779-10-18"
+      description: "Joint Franco-American attempt to recapture Savannah, Georgia."
+      body: |
+        Hoping to expel the British from the South, American forces, joined by their
+        French allies under Admiral d'Estaing, laid siege to Savannah. Despite initial
+        optimism, the joint attack on the fortified city on October 9 was repulsed with
+        significant losses. Unable to breach the defenses, the Franco-American forces
+        withdrew, leaving the British in control of Savannah.
+      references:
+        - title: "The Siege of Savannah in December, 1778"
+          citation: "Book by Charles C. Jones Jr., Chapter 10"
+        - title: "Siege of Savannah"
+          citation: "https://www.georgiaencyclopedia.org/articles/history-archaeology/siege-savannah"
+
+    - title: "John Paul Jones and the Battle of Flamborough Head"
+      date: "1779-09-23"
+      description: "Naval battle off the coast of England between American and British ships."
+      body: |
+        In one of the Revolutionary War's most famous naval encounters, the American
+        captain John Paul Jones, commanding the Bonhomme Richard, faced off against the
+        British ship HMS Serapis. After a fierce engagement and his own ship heavily
+        damaged, Jones issued his legendary reply to a surrender demand: "I have not yet
+        begun to fight!" Ultimately, the British captain struck his colors, marking a
+        symbolic American victory on the doorstep of Britain.
+      references:
+        - title: "John Paul Jones: A Sailor's Biography"
+          citation: "Book by Samuel Eliot Morison, Chapter 8"
+        - title: "The Battle of Flamborough Head"
+          citation: "https://www.history.com/news/revolutionary-war-battle-flamborough-head-john-paul-jones"
+
+    # 1780
+    - title: "Siege of Charleston"
+      date: "1780-04-02 to 1780-05-12"
+      description: "A major British victory resulting in the capture of Charleston, South Carolina."
+      body: |
+        The Siege of Charleston was one of the worst American defeats of the
+        Revolutionary War. British forces, under General Sir Henry Clinton, laid
+        siege to the city and its American defenders led by General Benjamin Lincoln.
+        After six weeks of siege operations, and facing heavy artillery fire and
+        a tightening blockade, Lincoln was compelled to surrender. The loss of
+        Charleston and its significant garrison was a severe blow to the American
+        Southern strategy.
+      references:
+        - title: "The Siege of Charleston, 1780"
+          citation: "Book by Carl P. Borick, Chapter 6"
+        - title: "Siege of Charleston"
+          citation: "https://www.battlefields.org/learn/revolutionary-war/battles/charleston-1780"
+
+    - title: "Battle of Camden"
+      date: "1780-08-16"
+      description: "Decisive British victory in South Carolina, deepening American troubles in the South."
+      body: |
+        The Battle of Camden occurred when the Continental Army under General
+        Horatio Gates, attempting to challenge British control in the South, faced
+        off against British forces led by General Charles Cornwallis. Due to
+        strategic blunders and wavering militia support, the Americans suffered a
+        crushing defeat. The setback at Camden led to a reevaluation of American
+        leadership and strategy in the Southern theater.
+      references:
+        - title: "The Battle of Camden: A Documentary History"
+          citation: "Book by Jim Piecuch, Chapter 4"
+        - title: "Battle of Camden"
+          citation: "https://www.battlefields.org/learn/revolutionary-war/battles/camden"
+
+    - title: "Benedict Arnold's Treason"
+      date: "1780-09"
+      description: "Benedict Arnold's plot to betray West Point to the British."
+      body: |
+        Benedict Arnold, once a celebrated American general, conspired to surrender
+        the key fortress of West Point to the British in exchange for money and a
+        commission in the British Army. The plot was discovered when British Major
+        John André, acting as a go-between, was captured with incriminating documents.
+        Arnold fled to the British lines, forever branding his name synonymous with
+        treason in American history.
+      references:
+        - title: "The Tragedy of Benedict Arnold: An American Life"
+          citation: "Book by Joyce Lee Malcolm, Chapter 9"
+        - title: "Benedict Arnold: Revolutionary Hero (An American Warrior Reconsidered)"
+          citation: "https://www.jstor.org/stable/4249690"
+
+    # 1781
+    - title: "Battle of Cowpens"
+      date: "1781-01-17"
+      description: "Decisive American victory in South Carolina against British forces."
+      body: |
+        The Battle of Cowpens saw a brilliant tactical victory for the Continental
+        forces under Brigadier General Daniel Morgan against the British Army led by
+        Lieutenant Colonel Banastre Tarleton. Utilizing a feigned retreat, Morgan
+        lured Tarleton's forces into a trap, resulting in a comprehensive American
+        victory. Cowpens was a turning point in the reconquest of South Carolina from
+        the British.
+      references:
+        - title: "The Road to Guilford Courthouse"
+          citation: "Book by John Buchanan, Chapter 9"
+        - title: "Battle of Cowpens"
+          citation: "https://www.battlefields.org/learn/revolutionary-war/battles/cowpens"
+
+    - title: "Battle of Guilford Courthouse"
+      date: "1781-03-15"
+      description: "Significant battle in North Carolina with heavy British casualties."
+      body: |
+        Although technically a British victory, the Battle of Guilford Courthouse
+        inflicted significant casualties on General Cornwallis's forces. Continental
+        forces, led by General Nathanael Greene, utilized a defense-in-depth strategy
+        which exhausted the British. While Greene withdrew from the field, the
+        battle's high cost led Cornwallis to abandon his Carolina campaign and move
+        into Virginia, setting the stage for the Yorktown campaign.
+      references:
+        - title: "The Road to Guilford Courthouse"
+          citation: "Book by John Buchanan, Chapter 14"
+        - title: "Battle of Guilford Courthouse"
+          citation: "https://www.battlefields.org/learn/revolutionary-war/battles/guilford-courthouse"
+
     - title: "Siege of Yorktown"
       date: "1781-09-28 to 1781-10-19"
-      description: "The last major land battle of the Revolutionary War where British General Cornwallis surrendered to American
-        and French forces."
+      description: "Decisive Franco-American victory leading to the end of major hostilities."
       body: |
-        The Siege of Yorktown saw a combined American and French force, led by General George Washington and
-        French General Rochambeau, respectively, lay siege to the British forces under General Cornwallis. The
-        siege culminated in Cornwallis' surrender, effectively ensuring American independence.
-      actions:
-        - date: "1781-10-14"
-          description: "Allied forces launch an assault on two British redoubts."
-          body: |
-            These assaults proved successful, bringing the allies closer to breaching the British defensive line. It
-            further pressured the British and expedited their eventual surrender.
-          references:
-            - title: "Siege of Yorktown"
-              citation:
-                - link: "https://www.history.com/topics/american-revolution/siege-of-yorktown"
-                  title: "Siege of Yorktown - HISTORY"
-        - date: "1781-10-19"
-          description: "British General Cornwallis offers his surrender."
-          body: |
-            Facing overwhelming odds and with no relief in sight, Cornwallis was forced to offer his surrender.
-            This marked a turning point in the war, with peace negotiations beginning shortly afterward.
-          references:
-            - title: "Cornwallis' Surrender at Yorktown"
-              citation:
-                - link: "https://en.wikipedia.org/wiki/Siege_of_Yorktown"
-                  title: "Siege of Yorktown - Wikipedia"
+        The Siege of Yorktown marked the effective end of the Revolutionary War.
+        American forces under General George Washington and French forces under
+        General Rochambeau, with naval support from Admiral de Grasse, surrounded
+        and besieged Cornwallis's army at Yorktown. After weeks of bombardment and
+        realizing no relief was coming, Cornwallis surrendered. The victory
+        convinced the British government to negotiate an end to the conflict.
+      references:
+        - title: "The World Turned Upside Down: The American Victory in the War of Independence"
+          citation: "Book by John E. Ferling, Chapter 12"
+        - title: "Siege of Yorktown"
+          citation: "https://www.history.com/topics/american-revolution/siege-of-yorktown"
+
+    # 1782
+    - title: "Capture of Fort Watson"
+      date: "1782-04-15 to 1782-04-23"
+      description: "American forces recapture a strategic British post in South Carolina."
+      body: |
+        As part of the larger campaign to reclaim the South, American forces laid
+        siege to Fort Watson, a British outpost in South Carolina. Employing
+        innovative tactics, including the construction of a siege tower known as
+        the "Maham Tower," the Americans managed to overrun the fort's defenses
+        and secure a crucial victory. The fall of Fort Watson was one of several
+        actions that saw the British lose their grip on the Carolinas.
+      references:
+        - title: "With Zeal and with Bayonets Only: The British Army on Campaign in North America, 1775-1783"
+          citation: "Book by Matthew H. Spring, Chapter 8"
+        - title: "The South Carolina Encyclopedia"
+          citation: "https://www.scencyclopedia.org/sce/entries/fort-watson/"
+
+    - title: "The Naval Battle of the Saintes"
+      date: "1782-04-12"
+      description: "Decisive naval engagement between British and French fleets in the Caribbean."
+      body: |
+        The Battle of the Saintes saw the British Navy under Admiral Sir George
+        Rodney defeat a French fleet led by Comte de Grasse, near Dominica in the
+        West Indies. Using innovative tactics to break the French line, Rodney
+        achieved a major victory. Though the battle took place in the Caribbean,
+        its ramifications were felt in North America, strengthening the British
+        position during peace negotiations.
+      references:
+        - title: "Command of the Ocean: A Naval History of Britain 1649–1815"
+          citation: "Book by N.A.M. Rodger, Chapter 16"
+        - title: "Battle of the Saintes"
+          citation: "https://www.britannica.com/event/Battle-of-the-Saintes"
+
+    - title: "Recognition of U.S. Independence by Britain"
+      date: "1782-04-17"
+      description: "British House of Commons votes to end the war and recognize American independence."
+      body: |
+        After the defeat at Yorktown in 1781, the political will in Britain to
+        continue the war waned. On April 17, 1782, the House of Commons in
+        Parliament voted in favor of ending hostilities with the American colonies
+        and for the recognition of American independence. This paved the way for
+        the peace negotiations that would culminate in the Treaty of Paris in 1783.
+      references:
+        - title: "Empire and Nation: The American Revolution in the Atlantic World"
+          citation: "Book by Eliga H. Gould, Chapter 12"
+        - title: "American Independence Recognized"
+          citation: "https://www.history.com/this-day-in-history/american-independence-recognized-by-great-britain"
+
+    # 1783
+    - title: "Treaty of Paris"
+      date: "1783-09-03"
+      description: "Formal end of the American Revolutionary War and recognition of U.S. independence."
+      body: |
+        The Treaty of Paris was signed by representatives of the United States and
+        Great Britain, formally ending the American Revolutionary War. This treaty
+        recognized the independence of the United States and established boundaries
+        between the new nation and British North America. Additionally, Britain
+        granted the U.S. fishing rights in the Grand Banks off Newfoundland. It
+        marked a momentous occasion, securing America's position as an independent
+        nation on the global stage.
+      references:
+        - title: "The Treaty of Paris"
+          citation: "Book by Jonathan R. Dull, Chapter 4"
+        - title: "Treaty of Paris, 1783"
+          citation: "https://www.ourdocuments.gov/doc.php?flash=false&doc=6"
+
+    - title: "Evacuation Day"
+      date: "1783-11-25"
+      description: "British troops leave New York City, marking the end of British occupation."
+      body: |
+        Evacuation Day is the name given to the day when the last of the British
+        troops departed from New York City, symbolizing the end of British
+        occupation in the former thirteen colonies. The departure was peaceful,
+        and many loyalists also left the city and the new nation for other parts
+        of the British Empire. For New Yorkers, the day became an annual
+        celebration, marking the restoration of American control over the city.
+      references:
+        - title: "1783: The Departure of the British"
+          citation: "Book by Barnet Schecter, Chapter 8"
+        - title: "Evacuation Day"
+          citation: "https://www.history.com/this-day-in-history/british-evacuate-new-york"
+
+    - title: "Mutiny of the Pennsylvania Line"
+      date: "1783-06"
+      description: "Disgruntled Continental Army soldiers protest in Philadelphia."
+      body: |
+        In June of 1783, about 500 soldiers from the Pennsylvania Line marched to
+        Philadelphia to present their demands for immediate payment and an
+        honorable discharge. The Congress, meeting in Philadelphia at the time,
+        felt threatened and requested that the Pennsylvania state government
+        intervene. When the state took no action, Congress relocated to Princeton,
+        New Jersey. This incident highlighted the post-war tensions and the need
+        for a stronger central government.
+      references:
+        - title: "The Pennsylvania Mutiny of 1783 and the Founding Fathers"
+          citation: "Book by Stephen Howard Browne, Chapter 5"
+        - title: "Pennsylvania Mutiny"
+          citation: "https://www.mountvernon.org/library/digitalhistory/digital-encyclopedia/article/pennsylvania-mutiny/"
+
+
+
+################################################################################
+#
+# Original (incomplete) version from GH gist is here below - commented out -
+# for future reference.
+#
+# TODO: Go over the below and bring what's better written, missing, or otherwise
+# useful up top.
+#
+################################################################################
+
+# timeline:
+#   title: The American Revolution
+#   intro: |
+#     Spanning roughly a quarter of the planet, lasting more than thirteen years and involving at least
+#     three major European powers, the American Revolution was a wildly complex historical flashpoint that forever changed
+#     the long-term trajectory of human history. The following timeline, while most certainly **far from exhaustive**,
+#     is a sampling of some of those events that I've personally assembled relevant to my first novel: an historical fiction
+#     piece set in that era. Writing such a work necessarily entails forming a detailed understanding of the context, events,
+#     issues, cultures, and peoples who shaped the period, the conflict, and ultimately, our world.
+#   events:
+#   - title: "Elizabeth Burgin Flees New York"
+#     date: 1779-07-17
+#     description: The British Commandant of New York offers a 200-pound reward for the capture of the person 'suspected of helping the American prisoners make their escape'.
+#     body: |
+#       Elizabeth Burgin, an otherwise-minor, unknown figure in American History, is credited with cooperative action with otherwise unknown individuals
+#       (lost to the ravages of time and bad documentation of the period) with assisting in the escape of over 200 American POWs during the Revolutionary
+#       War.
+#     actions:
+#       - date: 1779-07-17
+#         description: British Commandant Orders Observation of Burgin's Home, offers 200-Pound Reward
+#         body: |
+#           The Commandant of New York, rightly suspecing that Burgin was involved in the escape of many prisoners of war, offered
+#           a 200-Pound reward for the capture of the individual responsible, and on the same day, British forces began watching her
+#           home in New York. Knowing this (how? We don't know...) to be the case, Burgin went into hiding alone (without her three children),
+#           assisted by friends in the area in escaping to Long Island, where she hid for another five weeks. After an unnamed man took her by
+#           whale boat (William Scudder) to  Connecticut, she made her way to Philadelphia, then to Elizabeth,
+#           New Jersey where she waited while her children arrived, having been sent to her (somehow) from New York.
+#       - date: 1779-11-19
+#         description: Burgin Writes to General Washington
+#         body: |
+#           In a letter dated November 19, 1779, Ms. Burgin writes to George Washington, on the advice of individuals named in the
+#           very same letter, asking for any provisions he is able to himself authorize for her very survival, or on her behalf,
+#           get Congress to authorize. She states that "Helping our poor prisoners brought me to want, which I don't repent." In the
+#           letter she recounts her story of fleeing New York, her desire (at the time) to remain in Philadelphia, and provides the names
+#           of several people with whom Washington could corroborate her story, all of whom could, and would, presumably, vouch for her.
+#   - title: "The Battle of Bunker Hill (Breed's Hill)"
+#     date: 1775-06-17
+#     description: Colonial forces, occupying hills surrounding the city, sought to countrol Boston harbor. In response, the British attacked to dislodge them from their defensible positions.
+#     body: |
+#       Colonial leaders had become aware of a British plan to occupy hills surrounding Boston to further solidify their control
+#       over the harbor and the overall region. To beat them to the punch, they pre-emptively did the same, sending troops to occupy
+#       and fortify those same hills before the British were able to do so. In response, the British launched a massive attack on those
+#       same hills in several waves that only succeeded because colonial forces literally ran out of ammunition. The British won a tactical
+#       victory, but at a very high loss: they had incurred massive casualties, far more than the American forces had, making their
+#       success, arguably, a phyrric victory.
+#     actions:
+#       - date: 1775-06-13
+#         description: Colonial forces learn of a British plan to occupy hills surrounding Boston
+#         body: |
+#           On June 13, 1775, Colonial forces learned of a British plan to occupy and entrench defensible positions on
+#           elevated hills (high ground) surrounding Boston that would ultimately reinforce their dominance over Boston and
+#           its harbor, a vital supply port for their ongoing occupation of the colonies.
+#         references:
+#           - title: "Fortification of Breed's Hill (Wikipedia)"
+#             citation:
+#               - link: "https://en.wikipedia.org/wiki/Battle_of_Bunker_Hill#Fortification_of_Breed's_Hill"
+#                 title: "Battle of Bunkder Hill (Fortification of Breed's Hill)"
+#       - date: 1775-06-17
+#         description: The British Launch their Attack
+#         body: |
+#           Four days later, the British launched their attack on those fortified positions in an attempt to re-take them by
+#           any means necessary. After several waves of attackers assaulted American fortifications and failed, finally the
+#           American forces had literally run out of ammunition to fire. One story claims that Dr. Joseph Warren stood his
+#           ground at the scene to give militia a chance to escape, knowing himself to be what we'd today call an "HVT" or
+#           "high value target" to the British, and remained with nothing more than his spent rifle (likely with a bayonet
+#           attached) to engage in combat with the British should they get close enough. Whether true or not, a fact not
+#           in dispute is that Joseph Warren was killed in action on this day by a British officer who recognized him (or,
+#           potentially, an officer's aide who knew his face and alerted others to his status as an HVT on scene). It's said
+#           that he was so reviled that several individuals repeatedly stabbed and mutilated his corpse to the point of being
+#           unrecognizable, and one account claims they went so far as to literally decapitate his lifeless body after the
+#           fact. His remains were identified by Paul Revere - a known friend - due to a false tooth he was known to have.
+#           Warren's death served as a form of martyrdom for the American cause, galvanizing people far and wide for the
+#           long and challenging conflict to come.
+#         references:
+#
+#           - title: "The True Story of the Battle of Bunker Hill (Smithsonian)"
+#             url: "https://www.smithsonianmag.com/history/the-true-story-of-the-battle-of-bunker-hill-36721984/"
+#           - title: "Joseph Warren - Death (Wikipedia)"
+#             url: "https://en.wikipedia.org/wiki/Joseph_Warren#Death"
+#   - date: 1774-06-02
+#     title: The New Quartering Act is Passed
+#     description: A new form of the previously-expired Quatering Act is passed by Parliament
+#     body: |
+#       Part of what was considered "The Intolerable Acts" of 1774, this new version of the Quartering Act, which previously expired
+#       in 1770, allowed British governors to requisition unoccupied buildings to house British troops. This inflamed tensions further, which were
+#       already at a fever pitch.
+#     links:
+#       - title: "Encylopedia Brittanica: The Intolerable Acts"
+#         url: "https://www.britannica.com/event/Intolerable-Acts"
+#   - date: 1783-09-03
+#     title: Treaty of Paris
+#     description: The Treaty of Paris is signed, officially ending the war
+#     body: |
+#       The Treaty of Paris is signed, officially ending the war. The treaty
+#       establishes the United States as a sovereign nation, and establishes
+#       the boundaries of the new nation.
+#     links:
+#       - title: "Wikipedia: The Treaty of Paris"
+#         url: https://en.wikipedia.org/wiki/Treaty_of_Paris_(1783)
+#       - title: "Library of Congress: The Treaty of Paris"
+#         url: https://www.loc.gov/rr/program/bib/ourdocs/paris.html
+#   - date: "1770-03-05 21:00:00"
+#     title: The Boston Massacre (Incident on King Street)
+#     description: British Soldiers Fire on an unarmed crowd in Boston
+#     body: An accidental weapons discharge in a moment of furious political intensity
+#       leads to the unintended deaths of five civilians at the hands of British
+#       soldiers. The event is later used as propaganda by the Sons of Liberty to
+#       incite anti-British sentiment in the colonies.
+#     links:
+#       - title: "Wikipedia: Boston Massacre"
+#         url: https://en.wikipedia.org/wiki/Boston_Massacre
+#       - title: "Library of Congress: Boston Massacre"
+#         url: https://www.loc.gov/rr/program/bib/ourdocs/massacre.html
+#   - date: 1775-04-18
+#     title: The Regulars are Coming Out (The British Are Coming)
+#     description: British Soldiers Begin Overnight Search for Munitions
+#     body: British soldiers from the 5th Regiment of Foot begin an overnight search
+#       for munitions and Whig sympathizers in the cities of Lexington and Concord,
+#       Massachusetts, west of Boston. Looking for John Hancock and Samuel Adams,
+#       who had already fled, acting on intelligence received in advance of the
+#       British search, Paul Revere and William Dawes take to the countryside on
+#       horseback to quietly warn local militia of the incoming British advance.
+#     links:
+#       - title: "Wikipedia: Battles of Lexington and Concord"
+#         url: https://en.wikipedia.org/wiki/Battles_of_Lexington_and_Concord
+#       - title: "Library of Congress: Lexington and Concord"
+#         url: https://www.loc.gov/rr/program/bib/ourdocs/lexi.html
+#   - date: 1775-04-19
+#     title: Battles of Lexington and Concord
+#     description: The first military engagements of the American Revolution
+#     body: After an overnight search for munitions and Whig sympathizers in Concord,
+#       Massachusetts, British soldiers from the 5th Regiment of Foot engage with
+#       colonial militia at Lexington and Concord. The British retreat to Boston,
+#       suffering staggering casualties along the way.
+#     links:
+#       - title: "Wikipedia: Battles of Lexington and Concord"
+#         url: https://en.wikipedia.org/wiki/Battles_of_Lexington_and_Concord
+#       - title: "Library of Congress: Lexington and Concord"
+#         url: https://www.loc.gov/rr/program/bib/ourdocs/lexi.html
+#   - date: 1776-07-04
+#     title: Declaration of Independence
+#     description: The United States issues its Declaration of Independence
+#     body: "TODO: Body text here"
+#     links:
+#       - title: Wikipedia
+#         url: https://en.wikipedia.org/wiki/United_States_Declaration_of_Independence
+#       - title: National Archives
+#         url: https://www.archives.gov/founding-docs/declaration-transcript
+#       - title: Library of Congress
+#         url: https://www.loc.gov/rr/program/bib/ourdocs/DeclarInd.html
