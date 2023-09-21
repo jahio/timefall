@@ -1,5 +1,6 @@
 <script>
 import YAML from 'yaml';
+import {marked} from 'marked';
 import TimelineEvent from './TimelineEvent.vue';
 import TimelineService from '@/services/TimelineService';
 
@@ -12,7 +13,7 @@ export default {
     return {
       timelineEvents: [],
       timelineTitle: '',
-      timelineIntro: '',
+      timelineIntro: ' ',
       timelineURI: '',
       cachedTimelineURI: '' // So we can compare and see if something changed,
                             // helps prevent infinite loops
@@ -43,7 +44,7 @@ export default {
         console.log(timeline);
         this.timelineEvents = timeline.timeline.events;
         this.timelineTitle = timeline.timeline.title;
-        this.timelineIntro = timeline.timeline.intro;
+        this.timelineIntro = marked.parse(timeline.timeline.intro);
 
         // Sort this.timelineEvents by date:
         this.timelineEvents.sort((a, b) => {
@@ -73,7 +74,7 @@ export default {
   </div>
   <section class="md:container md:mx-auto">
     <h1 class="text-5xl drop-shadow-lg subpixel-antialiased font-semibold">{{ timelineTitle }}</h1>
-    <p class="text-justify subpixel-antialiased font-extralight pt-10">{{ timelineIntro }}</p>
+    <p class="text-justify subpixel-antialiased font-extralight pt-10" v-html="timelineIntro"></p>
     <hr class="drop-shadow-md border border-zinc-200 mt-10 mb-10 ml-16 mr-16" />
     <TimelineEvent ref="timelineEvents" v-for="event in timelineEvents" :key="event.title + event.date" v-bind="event" />
   </section>
