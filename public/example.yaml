@@ -58,7 +58,52 @@ timeline:
     remember, I made this for my own uses. I'm screening out stuff not important
     to the research for my novel, here.
   events:
-    # 1770
+
+  # Originally I had these somewhat organized by years and dates, but I'm throwing that out
+  # the window. I want to see if I can get the software to sort it for me, so I'm going to
+  # intentionally mix up the dates and see what happens.
+
+    - title: "Culper Spy Ring Established"
+      date: "1778-11-15"
+      description: "Washington appoints Benjamin Tallmadge as director of military intelligence"
+      body: |
+        At some point in November 1778, General Washington (711) appoints Benjamin Tallmadge (721), a relatively young
+        Continental Army officer, head of military intelligence. Tallmadge, in turn, establishes the Culper
+        Spy Ring, a network of spies operating in New York City and Long Island. The ring, which included
+        Tallmadge's childhood friend Abraham Woodhull, provided Washington with valuable information about
+        British troop movements and plans, and is historically regarded as an absolutely vital element in
+        the cause for independence; without the Ring's efforts and successes, the likelihood of American
+        indepdence would have been severely diminished.
+
+        **Note**: It is unknown precisely when the Ring switched from using names to the numbers derived by
+        Tallmadge in the Culper Code Book, but it seems to have _maybe_ been sometime around 1779. I'd like
+        to know for sure, but so far I can't seem to find any reasonably good sources for that information
+        online.
+
+      references:
+        - title: "The Culper Spy Ring"
+          citation: "https://www.mountvernon.org/library/digitalhistory/digital-encyclopedia/article/culper-spy-ring/"
+        - title: "Benjamin Tallmadge"
+          citation: "https://www.mountvernon.org/library/digitalhistory/digital-encyclopedia/article/benjamin-tallmadge/"
+        - title: "The Culper Code Book"
+          citation: "https://www.mountvernon.org/george-washington/the-revolutionary-war/spying-and-espionage/the-culper-code-book/"
+
+    - title: "John Paul Jones Captures _HMS Mellish_"
+      date: "1776-11-15"
+      description: "Vital shipment of winter clothing meant for Gen. Burgoyne's Canadian Troops Stolen by 'Pirate'"
+      body: |
+        As captain of the _USS Alfred_, John Paul Jones, often referred to by the British as a 'Pirate', and often
+        considered the father of the United States Navy, managed to affect the capture of the _HMS Mellish_, a
+        British ship carrying vital winter clothing meant for General Burgoyne's Canadian troops. The winter clothing
+        was, of course, diverted to the Continental Army.
+
+        _Note_: The date on this entry is approximate. The exact date appears to have been on or about 'mid-November'.
+      references:
+        - title: "John Paul Jones By Dennis M. Conrad"
+          citation: "Naval History and Heritage Command. Retrieved 2023-09-21. https://www.history.navy.mil/research/library/research-guides/z-files/zb-files/zb-files-j/jones-john-paul/jones-jp-conrad.html"
+        - title: "John Paul Jones: Early Command"
+          citation: "Wikipedia. Retrieved 2023-09-21. https://en.wikipedia.org/wiki/John_Paul_Jones#Early_command"
+
     - title: "Boston Massacre"
       date: "1770-03-05"
       description: "Confrontation between British soldiers and Boston civilians that resulted in five deaths."
