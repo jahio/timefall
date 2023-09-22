@@ -47,15 +47,16 @@ timeline:
     forming a detailed understanding of the context, events, issues, cultures,
     and peoples who shaped the period, the conflict, and ultimately, our world.
 
-    **BE ADVISED**: Much of the below was AI-generated, just to short-cut the
-    process of discovering what to focus on and build the list _of_. All of it
-    should be thoroughly fact-checked, and the online sources, while provided by
-    ChatGPT4 at the time of generation, may have been moved, altered or deleted
-    between when it ingested them into its training database and when you check
-    them. Additionally, it is entirely possible that it has mis-quoted and/or
-    misunderstood the provided book references as well, so treat everything with
-    a grain of salt until you can prove everything here is true. I'll be fact
-    checking this for myself as I go along.
+    **BE ADVISED** This example has many caveats:
+
+    - Some (much?) of the below was AI-generated as a short-cut to myself,
+    and may or may not have yet to be fact-checked. Proceed with caution.
+    - This list is **not exhaustive**. Much more happened than can be distilled
+    in this one list. This is merely for demonstration purposes, even though
+    it may be rather long anyway.
+    - This list may exempt some very important or otherwise noteworthy events;
+    remember, I made this for my own uses. I'm screening out stuff not important
+    to the research for my novel, here.
   events:
     # 1770
     - title: "Boston Massacre"
@@ -132,7 +133,12 @@ timeline:
       date: "1772-06-09"
       description: "Attack on the British customs schooner, HMS Gaspee, by American colonists."
       body: |
-        The Gaspee Affair was a significant pre-Revolutionary incident between the British and American colonists. HMS Gaspee, a British customs schooner, had been successful in enforcing navigation laws, but its methods angered local merchants. When the ship ran aground in Rhode Island waters, a group of colonists led by Abraham Whipple and John Brown boarded it and set it on fire. The incident increased tensions between the American colonies and Britain, especially when it became clear that no one would be held accountable for the act.
+        The Gaspee Affair was a significant pre-Revolutionary incident between the British and American colonists.
+        HMS Gaspee, a British customs schooner, had been successful in enforcing navigation laws, but its methods
+        angered local merchants. When the ship ran aground in Rhode Island waters, a group of colonists led by
+        Abraham Whipple and John Brown boarded it and set it on fire. The incident increased tensions between
+        the American colonies and Britain, especially when it became clear that no one would be held accountable
+        for the act.
       references:
         - title: "An Empire on the Edge: How Britain Came to Fight America"
           citation: "Book by Nick Bunker, Chapter 10"
@@ -143,7 +149,12 @@ timeline:
       date: "1772-11-02"
       description: "Samuel Adams called for a Committee of Correspondence in Boston."
       body: |
-        The Committee of Correspondence was initially formed in Boston under the guidance of Samuel Adams. These committees aimed to maintain communication between patriot leaders in different colonies, sharing news about British actions and discussing possible collective responses. The model quickly spread, and by the next year, many other colonies formed their own Committees of Correspondence. They played a significant role in unifying the colonies and providing a foundation for the organized resistance against Britain.
+        The Committee of Correspondence was initially formed in Boston under the guidance of Samuel Adams.
+        These committees aimed to maintain communication between patriot leaders in different colonies,
+        sharing news about British actions and discussing possible collective responses. The model quickly
+        spread, and by the next year, many other colonies formed their own Committees of Correspondence.
+        They played a significant role in unifying the colonies and providing a foundation for the
+        organized resistance against Britain.
       references:
         - title: "Samuel Adams: A Life"
           citation: "Book by Ira Stoll, Chapter 8"
@@ -154,7 +165,12 @@ timeline:
       date: "1772-06-22"
       description: "British court case which ruled slavery unsupported by the common law in England."
       body: |
-        The Somerset case was a landmark judgment in England. James Somerset, an enslaved African taken to England by his American owner, had escaped but was recaptured and slated for deportation and sale in the colonies. Advocates for Somerset's freedom brought the case before the courts. Lord Chief Justice Mansfield ruled that while colonial laws might permit slavery, no law in England explicitly did. As a result, Somerset was freed. The case didn't abolish slavery in the British Empire but was a significant step toward that end and had profound effects on both sides of the Atlantic.
+        The Somerset case was a landmark judgment in England. James Somerset, an enslaved African taken to
+        England by his American owner, had escaped but was recaptured and slated for deportation and sale in
+        the colonies. Advocates for Somerset's freedom brought the case before the courts. Lord Chief Justice
+        Mansfield ruled that while colonial laws might permit slavery, no law in England explicitly did. As a
+        result, Somerset was freed. The case didn't abolish slavery in the British Empire but was a significant
+        step toward that end and had profound effects on both sides of the Atlantic.
       references:
         - title: "Slavery, Atlantic Trade and the British Economy, 1660-1800"
           citation: "Book by Kenneth Morgan, Chapter 6"
@@ -202,7 +218,12 @@ timeline:
       date: "1774-03-31"
       description: "Series of punitive laws passed by the British Parliament in response to the Boston Tea Party."
       body: |
-        The Intolerable Acts, known as the Coercive Acts in Britain, were a set of laws designed to punish the Massachusetts colonists for their defiance in the Boston Tea Party protest. The series of laws closed the Boston Harbor until the dumped tea was paid for, revoked the Massachusetts Charter, allowed royal officers to be tried in other colonies or England if accused of crimes, and expanded the Quartering Act to allow British troops to lodge in private homes. These acts galvanized colonial opposition and were instrumental in the convening of the First Continental Congress later that year.
+        The Intolerable Acts, known as the Coercive Acts in Britain, were a set of laws designed to punish
+        the Massachusetts colonists for their defiance in the Boston Tea Party protest. The series of laws
+        closed the Boston Harbor until the dumped tea was paid for, revoked the Massachusetts Charter,
+        allowed royal officers to be tried in other colonies or England if accused of crimes, and expanded
+        the Quartering Act to allow British troops to lodge in private homes. These acts galvanized colonial
+        opposition and were instrumental in the convening of the First Continental Congress later that year.
       references:
         - title: "American Insurgents, American Patriots: The Revolution of the People"
           citation: "Book by T.H. Breen, Chapter 6"
@@ -214,7 +235,11 @@ timeline:
       date: "1774-09-05"
       description: "Meeting of delegates from 12 of the Thirteen Colonies in Philadelphia, Pennsylvania."
       body: |
-        In response to the Intolerable Acts, 56 delegates from all colonies except Georgia met in Philadelphia for the First Continental Congress. The congress aimed to outline colonial grievances, develop a response, and establish a unified American position. By the end of their deliberations, they had adopted the Declaration and Resolves which opposed the Coercive Acts and called for their repeal, set up a boycott of British goods, and endorsed the concept of colonial self-governance.
+        In response to the Intolerable Acts, 56 delegates from all colonies except Georgia met in Philadelphia
+        for the First Continental Congress. The congress aimed to outline colonial grievances, develop a response,
+        and establish a unified American position. By the end of their deliberations, they had adopted the
+        Declaration and Resolves which opposed the Coercive Acts and called for their repeal, set up a boycott
+        of British goods, and endorsed the concept of colonial self-governance.
       references:
         - title: "The Birth of the Republic, 1763-89"
           citation: "Book by Edmund S. Morgan, Chapter 5"
@@ -225,7 +250,12 @@ timeline:
       date: "1774-06-22"
       description: "British act that set procedures of governance in the Province of Quebec."
       body: |
-        The Quebec Act was part of a series of efforts by the British Parliament to deal with the aftermath of the French and Indian War. It extended the boundaries of Quebec and granted religious freedom to Catholics in the province. While the act was not punitive in nature, American colonists interpreted it as a threat. They feared the establishment of Catholicism in Quebec, and the extension of its territory southward was seen as encroaching upon the colonies. Many colonists grouped this act with the Coercive Acts as another example of British tyranny.
+        The Quebec Act was part of a series of efforts by the British Parliament to deal with the aftermath
+        of the French and Indian War. It extended the boundaries of Quebec and granted religious freedom
+        to Catholics in the province. While the act was not punitive in nature, American colonists interpreted
+        it as a threat. They feared the establishment of Catholicism in Quebec, and the extension of its
+        territory southward was seen as encroaching upon the colonies. Many colonists grouped this act
+        with the Coercive Acts as another example of British tyranny.
       references:
         - title: "The American Revolution: A History"
           citation: "Book by Gordon S. Wood, Chapter 3"
@@ -236,7 +266,11 @@ timeline:
       date: "1774-09-01"
       description: "A major popular reaction to the British seizure of gunpowder from colonial arsenals."
       body: |
-        Tensions were high after the passage of the Coercive Acts. When the British military, fearing an uprising, moved to seize gunpowder from a magazine in Somerville, Massachusetts, it prompted widespread alarm. Although no battle occurred, this event further inflamed anti-British sentiments. The massive colonial response, with thousands rallying and preparing for conflict, made it clear that the American colonies were on the brink of revolution.
+        Tensions were high after the passage of the Coercive Acts. When the British military, fearing an
+        uprising, moved to seize gunpowder from a magazine in Somerville, Massachusetts, it prompted
+        widespread alarm. Although no battle occurred, this event further inflamed anti-British sentiments.
+        The massive colonial response, with thousands rallying and preparing for conflict, made it clear
+        that the American colonies were on the brink of revolution.
       references:
         - title: "The Minutemen and Their World"
           citation: "Book by Robert A. Gross, Chapter 7"
@@ -485,6 +519,11 @@ timeline:
         Elizabeth Burgin, an otherwise-minor, unknown figure in American History, is credited with cooperative action with otherwise unknown individuals
         (lost to the ravages of time and bad documentation of the period) with assisting in the escape of over 200 American POWs during the Revolutionary
         War.
+      references:
+        - title: "Elizabeth Burgin Helps the Prisoners...Somehow"
+          citation: "Elizabeth Burgin Helps the Prisoners...Somehow. Don N. Hagist. September 11, 2014. Journal of the American Revolution. https://allthingsliberty.com/2014/09/elizabeth-burgin-helps-the-prisoners-somehow/"
+        - title: "To Rev. James Calville, 19 November 1779"
+          citation: "Papers of the Continental Congress, National Archives, Washington, DC. https://legacy.catalog.archives.gov/OpaAPI/media/5916026/content/arcmedia/social-media/gallery/22194.pdf"
       actions:
         - date: 1779-07-17
           description: British Commandant Orders Observation of Burgin's Home, offers 200-Pound Reward
@@ -495,14 +534,17 @@ timeline:
             assisted by friends in the area in escaping to Long Island, where she hid for another five weeks. After an unnamed man took her by
             whale boat (William Scudder) to  Connecticut, she made her way to Philadelphia, then to Elizabeth,
             New Jersey where she waited while her children arrived, having been sent to her (somehow) from New York.
-        - date: 1779-11-19
+        - date: 1780-03-16
           description: Burgin Writes to General Washington
           body: |
-            In a letter dated November 19, 1779, Ms. Burgin writes to George Washington, on the advice of individuals named in the
+            In a letter dated March 16, 1780, Ms. Burgin writes to George Washington, on the advice of individuals named in the
             very same letter, asking for any provisions he is able to himself authorize for her very survival, or on her behalf,
             get Congress to authorize. She states that "Helping our poor prisoners brought me to want, which I don't repent." In the
             letter she recounts her story of fleeing New York, her desire (at the time) to remain in Philadelphia, and provides the names
             of several people with whom Washington could corroborate her story, all of whom could, and would, presumably, vouch for her.
+          references:
+            - title: "To George Washington from Elizabeth Burgin, 16 March 1780"
+              citation: "Founders Online, National Archives (http://founders.archives.gov/documents/Washington/99-01-02-01137) https://web.archive.org/web/20160510165516/http://founders.archives.gov/documents/Washington/99-01-02-01137"
     - title: "Capture of Stony Point"
       date: "1779-07-16"
       description: "American surprise attack on a British-held fortification in New York."
