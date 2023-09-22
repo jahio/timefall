@@ -63,6 +63,36 @@ timeline:
   # the window. I want to see if I can get the software to sort it for me, so I'm going to
   # intentionally mix up the dates and see what happens.
 
+    - title: "Franlkin Arrives in France"
+      date: "1776-12-07"
+      description: "Benjamin Franklin arrives in France to negotiate a treaty of alliance."
+      body: |
+        **NOTE**: AI-generated entry. Not yet fact-checked. **Caution advised.**
+
+        Benjamin Franklin, one of the most prominent American diplomats, arrived in France
+        in December 1776. His mission was to secure a formal alliance with France, which
+        had already been providing covert aid to the American colonies. Franklin's
+        diplomatic efforts were successful, and the Treaty of Alliance was signed in
+        February 1778.
+
+        Worth noting is the fact that Franklin's mission as a diplomatic envoy was, while
+        officially-sanctioned by the Continental Congress, _technically_ considered a
+        clandestine mission.
+
+        The French did not immediately warm to the notion until the Battle of Saratoga.
+        With solid proof that the Americans could win in serious combat, and against a
+        battle-hardened, well-equipped and well trained world power, no less, the French
+        finally realize that the American cause for independence is far more than aspirational,
+        and finally commit to an official alliance in 1778. The trans-Atlantic alliance, which
+        remains in effect to this day, would prove absolutely critical to American victory
+        in the war for independence.
+
+      references:
+        - title: "/AI-GENERATED/ Benjamin Franklin: An American Life"
+          citation: "/AI-GENERATED/ Book by Walter Isaacson, Chapter 17"
+        - title: "/AI-GENERATED/ Benjamin Franklin in France"
+          citation: "/AI-GENERATED/ https://www.mountvernon.org/library/digitalhistory/digital-encyclopedia/article/benjamin-franklin-in-france/"
+
     - title: "Culper Spy Ring Established"
       date: "1778-11-15"
       description: "Washington appoints Benjamin Tallmadge as director of military intelligence"
