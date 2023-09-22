@@ -33,6 +33,31 @@ at some point I'd love to provide a facility for specifying design specifics - c
 the YAML itself, but I haven't even got remotely that far in thinking. The data is the main thing. Walk before run.
 Someday, maybe. Contributions welcome. Particularly if you've an eye for UX, unlike myself.)
 
+## Features I Want (if, by some miracle, I ever find the time...)
+
+I found myself wanting a feature where the person writing the YAML could have a section under an event, call it
+something like "names", to define key people, then list out people's names. Something like:
+
+```yaml
+names:
+  - George Washington
+  - Marquis de La Fayette
+  - Major John André
+  - James Thatcher
+```
+
+Say I put those as an array at the end of an event (in this case, the execution of Maj. John André - all four were present).
+Now I could generate a filtration system whereby the user is given a list, maybe under a tab that says "names" or with a
+search box. Enter a name or select from a list, and boom - all events within the timeline _pertaining to that person_
+now pop up, while the others get screened out. Helps you focus on one person. Useful if you're trying to track down a
+specific event in context of an individual's life (biographical research, for example).
+
+But, I could take that further: why not expand that to _places_ as well? Why stop there? If you can do one,
+why not a pseudo-`JOIN`? Let the user specify "show me where name is this and location is that"? Say every
+time John Adams and Philadelphia are mentioned in the same event, for example.
+
+Twenty four hours per day just isn't enough.
+
 ## Project Setup
 
 ### Clone it, then:
