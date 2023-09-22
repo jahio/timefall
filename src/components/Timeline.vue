@@ -42,10 +42,27 @@ export default {
             this.cachedTimelineURI = '';
         });
         console.log(timeline);
+
+        // For each timeline event, parse the markdown of just the valid string values, then go through and do
+        // the same thing for the actions sub-array too
+        timeline.timeline.events.forEach((event, index) => {
+          event['title'] = marked.parse(event['title']);
+          event['description'] = marked.parse(event['description']);
+          event['body'] = marked.parse(event['body']);
+          if(event['actions']) {
+            event['actions'].forEach((action, index) => {
+              action['description'] = marked.parse(action['description'] || '');
+              action['body'] = marked.parse(action['body'] || '');
+            });
+          }
+        });
+
+        // All that formatting done, set the timeline
         this.timelineEvents = timeline.timeline.events;
         this.timelineTitle = timeline.timeline.title;
         this.timelineIntro = marked.parse(timeline.timeline.intro);
 
+        // TODO: Refactor based on the actions within each event
         // Sort this.timelineEvents by date:
         this.timelineEvents.sort((a, b) => {
           return new Date(a.date) - new Date(b.date);
@@ -69,16 +86,13 @@ export default {
     <input type="text" v-model="timelineURI" placeholder="Paste URL here or copy/paste the sample below for a demo featuring the American Revolution"
       class="text-sm text-slate-500 subpixel-antialiased font-light w-full rounded-lg border border-sky-300 m-2 p-2" />
     <p class="text-sm subpixel-antialiased font-light text-slate-500 pl-4">Sample URL/Demo (copy/paste above):
-      <pre class="text-slate-500 text-xs text-left pt-2 pl-4 pb-12 subpixel-antialiased">https://gist.githubusercontent.com/jahio/5fb101ceef40eb5e97406ba9f325173f/raw/american-revolution-timeline.yaml</pre>
+      <pre class="text-slate-500 text-xs text-left pt-2 pl-4 pb-12 subpixel-antialiased">http://localhost:5173/example.yaml</pre>
     </p>
   </div>
   <section class="md:container md:mx-auto">
     <h1 class="text-5xl drop-shadow-lg subpixel-antialiased font-semibold">{{ timelineTitle }}</h1>
-    <p class="text-justify subpixel-antialiased font-extralight pt-10" v-html="timelineIntro"></p>
+    <div class="text-justify subpixel-antialiased font-extralight pt-10" v-html="timelineIntro"></div>
     <hr class="drop-shadow-md border border-zinc-200 mt-10 mb-10 ml-16 mr-16" />
     <TimelineEvent ref="timelineEvents" v-for="event in timelineEvents" :key="event.title + event.date" v-bind="event" />
   </section>
 </template>
-
-<style scoped>
-</style>

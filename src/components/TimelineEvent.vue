@@ -4,7 +4,7 @@
     title: String,
     description: String,
     body: String,
-    links: Array,
+    references: Array,
     actions: Array
   })
 
@@ -51,31 +51,29 @@
     <!-- Title Div -->
     <article class="col-start-2 col-span-4">
       <hgroup>
-        <h3 class="text-2xl">{{ title }}</h3>
-        <p>{{ description }}</p>
+        <h3 class="text-2xl" v-html="title"></h3>
+        <p class="" v-html="description"></p>
       </hgroup>
-      <p>{{ body }}</p>
-      <div v-for="action in actions">
-        <section class="event-action" style="border-left: 8px solid {{ genColor() }}">
-          <time class="col-span-2 absolute inset-x-0 right-0" datetime="{{ action.date }}">{{ action.date }}</time>
-          <h4>{{ action.description }}</h4>
-          <p>{{ action.body }}</p>
-          <aside>
-            <ul>
-              <li v-for="link in action.links">
-                <a :href="link.url" target="_blank">{{ link.title }}</a>
-              </li>
-            </ul>
-          </aside>
+      <p class="subpixel-antialiased font-extralight pt-10" v-html="body"></p>
+      <div v-for="reference in references">
+        <section class="event-reference">
+          <p>{{ reference.title }}</p>
+          <p>{{ reference.citation }}</p>
         </section>
       </div>
-      <aside>
-        <ul>
-          <li v-for="link in links">
-            <a :href="link.url" target="_blank">{{ link.title }}</a>
-          </li>
-        </ul>
-      </aside>
+      <div v-for="action in actions">
+        <section class="event-action">
+          <time class="col-span-2 absolute inset-x-0 right-0" datetime="{{ action.date }}">{{ action.date }}</time>
+          <h4 v-html="action.description"></h4>
+          <p class="subpixel-antialiased font-extralight pt-10" v-html="action.body"></p>
+          <div v-for="areference in action.references">
+            <section class="action-reference">
+              <p>{{ areference.title }}</p>
+              <p>{{ areference.citation }}</p>
+            </section>
+          </div>
+        </section>
+      </div>
     </article>
   </div>
 </template>
