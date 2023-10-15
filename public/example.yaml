@@ -317,7 +317,7 @@ timeline:
           citation: "https://www.massmoments.org/moment-details/the-powder-alarm.html"
 
     # 1775
-    - title: "The Siege of Boston Begins"
+    - title: "Lexington and Concord"
       date: "1775-04-18"
       description: "Now the war truly begins..."
       body: |
@@ -330,8 +330,6 @@ timeline:
         where the first shots of the war were fired. British troops continued to Concord, where, thanks to warnings
         from Revere and Dawes, additional local militia had already assembled, forcing the British to retreat all the way
         back into the city.
-
-        The Siege of Boston had begun.
       references:
         - title: "Paul Revere's Ride"
           citation: "Book by David Hackett Fischer, Chapter 1"
@@ -370,91 +368,93 @@ timeline:
               citation: "Book by Robert Middlekauff, Chapter 6"
             - title: "The Battles of Lexington and Concord"
               citation: "https://www.britannica.com/event/Battles-of-Lexington-and-Concord"
-    - title: "Battle of Lexington and Concord"
-      date: "1775-04-19"
-      description: "First military engagements of the Revolutionary War between British soldiers and American colonists."
-      body: |
-        The battles of Lexington and Concord marked the start of the
-        Revolutionary War. British troops were dispatched from Boston to
-        confiscate weapons in Concord and arrest revolutionaries. They clashed
-        with local militias, leading to casualties on both sides. These battles
-        spurred colonial support for independence and galvanized resistance
-        against British authority.
-      references:
-        - title: "The American Revolution"
-          citation: "Book by Gordon S. Wood, Chapter 3"
-        - title: "Battle of Lexington and Concord"
-          citation: "https://www.history.com/topics/american-revolution/battles-of-lexington-and-concord"
-    - title: "Fortification of Breed's Hill"
-      date: "1775-06-16"
-      description: "Colonial Forces Pre-Emptively Occupy Breed's Hill"
-      body: |
-        In the early evening hours of June 16, 1775, colonial forces numbering some 2000-odd strong,
-        commanded by Colonel William Prescott, assembled in Cambridge, Massachusetts, for a march to
-        Bunker Hill. They were acting on intelligence they had received that on June 18 - a mere two
-        days later - British forces were ordered to take Breed's Hill and Bunker Hill, as well as all
-        of the surrounding area, and fortify it for long-term occupation. Having this intelligence
-        ahead of time, the strategic move was intended to "beat them to the punch", so to speak, and
-        occupy the area first, thereby forcing the British to either attack a fortified position, or
-        to abandon their plans.
-
-        Colonial forces marched out about 9PM, being met along the way by Gen. Israel Putnam (aka "Old Put"),
-        who augmented their supplies with additional tools and materials for building and enhancing
-        fortifications.
-
-        Their orders were to reach **Bunker Hill**, but having arrived at Breed's Hill, they stopped
-        there and dug in. Their reasons for doing so are not entirely clear or a matter of historical
-        record, but it's generally thought that they stopped there because it was closer to Charlestown,
-        and therefore easier to defend and resupply. It's also thought that they stopped there because
-        it was a better position from which to attack the British ships in the harbor.
-
-        Additional reasons could include the fact of timing: it was midnight when the Army Engineer had
-        started drawing the outline for the fortifications to be dug, thus giving the men only around 4
-        hours before daybreak, when they would be visible to the British Navy occupying the water, who
-        would undoubtedly hit them with artillery (cannons, etc.). If they'd gone on to Bunker Hill
-        instead, they would have lost valuable time in preparing fortifications. Additionally, Breed's is
-        in the center of that small peninsula, which would make for more ground for a land assault team
-        to cover, and possibly create a ranging challenge for the British Navy and limit what kind of
-        attack and support options it may have; Bunker, however, was right by the water, on the total
-        opposite side of the peninsula from Charlestown, making resupply harder, a land assualt easier,
-        and exposing them to every option the Navy would have for attack and support of their assualt
-        forces.
-
-        Whatever their reasons, Prescott's forces dug in and fortified Breed's Hill overnight. By sunrise,
-        indeed the British Navy had taken notice and began to attack with artillery.
-      references:
-        - title: "The Glorious Cause by Robert Middlekauf"
-          citation: "Half a War: Pages 289-298"
-    - title: "Battle of Bunker Hill"
+    - title: "Bunker Hill"
       date: "1775-06-17"
-      description: "Gen. Howe joins troops in combat; British dead lie 'thick as sheep in a fold'"
+      description: "Colonial forces beat Redcoats to the punch, forcing the British to pay dearly for an early victory"
       body: |
-        Fighting literally from dawn to after sunset, the British assault on Bunker and Breed's Hills was a
-        costly one. With forces of over 2200 men and additional artillery support, the British
-        attacked in three assault waves. The first two were repelled successfully, and at significant
-        cost to the British in terms of both casualties and morale, but also very high cost to
-        colonial forces in terms of ammunition.
+        Though the battle of "Bunker Hill" mostly took place on Breed's Hill, this pyrrhic victory for
+        the British was a costly one.
 
-        When the third assault wave charged, rifles ready and bayonets flashing, colonial forces
-        could hear them determined despite the literal _fields of dead_ they had to step over:
+        Having intercepted intelligence that the British intended to occupy and fortify the area around
+        Bunker, Breed's, and Moulton's hills on June 18, Colonial forces moved the evening of June 16
+        to beat them to the punch, and dug in overnight to erect defenses in the area, forcing their
+        enemy to either abandon their plans, or attack a fortified position - which is exactly what
+        the British chose to do. And they paid dearly for it, with 226 dead and 828 wounded.
 
-        > Push on, push on!
+        Colonial forces lost 140 lives that day as well, including Dr. Joseph Warren, a prominent Boston
+        physician and local leader, active in the Sons of Liberty movement who had a critical role in the
+        early days of the revolution.
+      actions:
+        - title: "Fortification of Breed's Hill"
+          date: "1775-06-16"
+          description: "Colonial Forces Pre-Emptively Occupy Breed's Hill"
+          body: |
+            In the early evening hours of June 16, 1775, colonial forces numbering some 2000-odd strong,
+            commanded by Colonel William Prescott, assembled in Cambridge, Massachusetts, for a march to
+            Bunker Hill. They were acting on intelligence they had received that on June 18 - a mere two
+            days later - British forces were ordered to take Breed's Hill and Bunker Hill, as well as all
+            of the surrounding area, and fortify it for long-term occupation. Having this intelligence
+            ahead of time, the strategic move was intended to "beat them to the punch", so to speak, and
+            occupy the area first, thereby forcing the British to either attack a fortified position, or
+            to abandon their plans.
 
-        Having run out of shot to fire at the oncoming enemy, colonial defenders were eventually
-        overrun and forced to retreat, surrender, or die. The British had won a pyrrhic victory:
-        yes, they'd taken Breed's Hill, but at a staggering cost of 226 dead and 828 wounded,
-        meaning nearly a thousand soldiers who would be unable to participate in combat either
-        permanently or for some period of time into the future. Colonial defenders lost 140 lives,
-        and sustained 271 wounded. Among the dead at Breed's was Dr. Joseph Warren of Boston, a
-        prominent local physician, local leader, and activist in the Sons of Liberty movement.
-      references:
-        - title: "The Glorious Cause by Robert Middlekauf"
-          citation: "Half a War: Pages 289-298"
-    - title: "Dr. Joseph Warren is KIA at Bunker Hill"
-      date: "1775-06-17"
-      description: "Dr. Joseph Warren killed in action defending Breed's Hill."
-      body: |
-        TODO
+            Colonial forces marched out about 9PM, being met along the way by Gen. Israel Putnam (aka "Old Put"),
+            who augmented their supplies with additional tools and materials for building and enhancing
+            fortifications.
+
+            Their orders were to reach **Bunker Hill**, but having arrived at Breed's Hill, they stopped
+            there and dug in. Their reasons for doing so are not entirely clear or a matter of historical
+            record, but it's generally thought that they stopped there because it was closer to Charlestown,
+            and therefore easier to defend and resupply. It's also thought that they stopped there because
+            it was a better position from which to attack the British ships in the harbor.
+
+            Additional reasons could include the fact of timing: it was midnight when the Army Engineer had
+            started drawing the outline for the fortifications to be dug, thus giving the men only around 4
+            hours before daybreak, when they would be visible to the British Navy occupying the water, who
+            would undoubtedly hit them with artillery (cannons, etc.). If they'd gone on to Bunker Hill
+            instead, they would have lost valuable time in preparing fortifications. Additionally, Breed's is
+            in the center of that small peninsula, which would make for more ground for a land assault team
+            to cover, and possibly create a ranging challenge for the British Navy and limit what kind of
+            attack and support options it may have; Bunker, however, was right by the water, on the total
+            opposite side of the peninsula from Charlestown, making resupply harder, a land assualt easier,
+            and exposing them to every option the Navy would have for attack and support of their assualt
+            forces.
+
+            Whatever their reasons, Prescott's forces dug in and fortified Breed's Hill overnight. By sunrise,
+            indeed the British Navy had taken notice and began to attack with artillery.
+          references:
+            - title: "The Glorious Cause by Robert Middlekauf"
+              citation: "Half a War: Pages 289-298"
+        - title: "Battle of Bunker Hill"
+          date: "1775-06-17"
+          description: "Gen. Howe joins troops in combat; British dead lie 'thick as sheep in a fold'"
+          body: |
+            Fighting literally from dawn to after sunset, the British assault on Bunker and Breed's Hills was a
+            costly one. With forces of over 2200 men and additional artillery support, the British
+            attacked in three assault waves. The first two were repelled successfully, and at significant
+            cost to the British in terms of both casualties and morale, but also very high cost to
+            colonial forces in terms of ammunition.
+
+            When the third assault wave charged, rifles ready and bayonets flashing, colonial forces
+            could hear them determined despite the literal _fields of dead_ they had to step over:
+
+            > Push on, push on!
+
+            Having run out of shot to fire at the oncoming enemy, colonial defenders were eventually
+            overrun and forced to retreat, surrender, or die. The British had won a pyrrhic victory:
+            yes, they'd taken Breed's Hill, but at a staggering cost of 226 dead and 828 wounded,
+            meaning nearly a thousand soldiers who would be unable to participate in combat either
+            permanently or for some period of time into the future. Colonial defenders lost 140 lives,
+            and sustained 271 wounded. Among the dead at Breed's was Dr. Joseph Warren of Boston, a
+            prominent local physician, local leader, and activist in the Sons of Liberty movement.
+          references:
+            - title: "The Glorious Cause by Robert Middlekauf"
+              citation: "Half a War: Pages 289-298"
+        - title: "Dr. Joseph Warren is KIA at Bunker Hill"
+          date: "1775-06-17"
+          description: "Dr. Joseph Warren killed in action defending Breed's Hill."
+          body: |
+            TODO
 
     # - title: "Battle of Bunker Hill"
     #   date: "1775-06-17"
