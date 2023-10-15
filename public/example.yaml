@@ -167,42 +167,6 @@ timeline:
         - title: "Townshend Acts"
           citation: "https://www.britannica.com/event/Townshend-Acts"
 
-    # 1771
-    - title: "Battle of Alamance"
-      date: "1771-05-16"
-      description: "Conflict between local militia and regulators in North Carolina."
-      body: |
-        The Battle of Alamance was the culmination of growing tensions in North Carolina
-        between colonists, particularly backcountry farmers known as the Regulators, and
-        the colonial British government. The Regulators were protesting what they saw as
-        corrupt practices by local officials and excessive taxation. On May 16, a militia
-        under the command of Governor William Tryon confronted the Regulators. The battle
-        lasted two hours, and the Regulators were ultimately defeated. Though not directly
-        a precursor to the Revolutionary War, it reflected the growing tensions and
-        anti-authoritarian sentiments present in the colonies.
-      references:
-        - title: "The War of the Regulation and the Battle of Alamance, May 16, 1771"
-          citation: "Book by William S. Powell, Chapter 6"
-        - title: "Battle of Alamance"
-          citation: "https://www.ncpedia.org/alamance-battle"
-
-    - title: "Expanding Westward"
-      date: "Throughout 1771"
-      description: "Continued westward expansion and settlement by American colonists."
-      body: |
-        Throughout 1771, as in preceding years, there was a continued push by American
-        colonists to expand and settle in the westward territories. While this might not
-        represent a single event, the ongoing movement and settlement led to multiple
-        skirmishes with Native American tribes and tensions with colonial governments.
-        This westward drive exemplified the independent spirit of the colonists and their
-        desire for land and opportunity, setting the stage for later territorial disputes
-        and emphasizing the distinct identity developing in the American colonies.
-      references:
-        - title: "Crucible of War: The Seven Years' War and the Fate of Empire in British North America, 1754-1766"
-          citation: "Book by Fred Anderson, Chapter 23"
-        - title: "Westward Expansion and the American Revolution"
-          citation: "https://www.history.com/topics/westward-expansion/westward-expansion-and-the-american-revolution"
-
     # 1772
     - title: "Gaspee Affair"
       date: "1772-06-09"
@@ -321,21 +285,21 @@ timeline:
         - title: "First Continental Congress"
           citation: "https://www.history.com/topics/american-revolution/first-continental-congress"
 
-    - title: "Quebec Act"
-      date: "1774-06-22"
-      description: "British act that set procedures of governance in the Province of Quebec."
-      body: |
-        The Quebec Act was part of a series of efforts by the British Parliament to deal with the aftermath
-        of the French and Indian War. It extended the boundaries of Quebec and granted religious freedom
-        to Catholics in the province. While the act was not punitive in nature, American colonists interpreted
-        it as a threat. They feared the establishment of Catholicism in Quebec, and the extension of its
-        territory southward was seen as encroaching upon the colonies. Many colonists grouped this act
-        with the Coercive Acts as another example of British tyranny.
-      references:
-        - title: "The American Revolution: A History"
-          citation: "Book by Gordon S. Wood, Chapter 3"
-        - title: "Quebec Act of 1774"
-          citation: "https://www.britannica.com/event/Quebec-Act"
+    # - title: "Quebec Act"
+    #   date: "1774-06-22"
+    #   description: "British act that set procedures of governance in the Province of Quebec."
+    #   body: |
+    #     The Quebec Act was part of a series of efforts by the British Parliament to deal with the aftermath
+    #     of the French and Indian War. It extended the boundaries of Quebec and granted religious freedom
+    #     to Catholics in the province. While the act was not punitive in nature, American colonists interpreted
+    #     it as a threat. They feared the establishment of Catholicism in Quebec, and the extension of its
+    #     territory southward was seen as encroaching upon the colonies. Many colonists grouped this act
+    #     with the Coercive Acts as another example of British tyranny.
+    #   references:
+    #     - title: "The American Revolution: A History"
+    #       citation: "Book by Gordon S. Wood, Chapter 3"
+    #     - title: "Quebec Act of 1774"
+    #       citation: "https://www.britannica.com/event/Quebec-Act"
 
     - title: "Powder Alarm"
       date: "1774-09-01"
@@ -353,6 +317,59 @@ timeline:
           citation: "https://www.massmoments.org/moment-details/the-powder-alarm.html"
 
     # 1775
+    - title: "The Siege of Boston Begins"
+      date: "1775-04-18"
+      description: "Now the war truly begins..."
+      body: |
+        The war truly began on April 18, 1775, when General Thomas Gage, the British military governor of
+        Massachusetts, ordered British troops to march from Boston to Concord to seize the colonists' military
+        supplies. Paul Revere, William Dawes, and others took to horseback to warn the local population - quietly -
+        that "the regulars were coming out".
+
+        Colonial militiamen began mobilizing to intercept the British troops, meeting them at Lexington,
+        where the first shots of the war were fired. British troops continued to Concord, where, thanks to warnings
+        from Revere and Dawes, additional local militia had already assembled, forcing the British to retreat all the way
+        back into the city.
+
+        The Siege of Boston had begun.
+      references:
+        - title: "Paul Revere's Ride"
+          citation: "Book by David Hackett Fischer, Chapter 1"
+        - title: "The Battles of Lexington and Concord"
+          citation: "https://www.britannica.com/event/Battles-of-Lexington-and-Concord"
+      actions:
+        - date: "1775-04-18"
+          description: "An overnight search for munitions and rebel leaders leads to the first shots of the war."
+          body: |
+            In the very late night hours of April 18, 1775, British troops were ordered to march from Boston to
+            Concord to seize munitions (gunpowder, artilery pieces, shot, etc.) that they considered stolen property
+            belonging to their military (where else do civilians under a military occupation get such things?). Their
+            orders also included the arrest of rebel leaders, including Samuel Adams and John Hancock. Thanks to a very
+            well-organized network of spies and informants, the colonists were well aware of the British plans in advance,
+            allowing both Adams and Hancock to escape capture, as well as giving rebel forces time to both hide their
+            stockpiled munitions and establish procedures for the mobilization of local militia should it become needed.
+        - date: "1775-04-19"
+          description: "The Battles of Lexington and Concord"
+          body: |
+            Thanks to the warnings of Paul Revere and William Dawes, local militia rapidly assembled at Lexington in the very
+            early morning hours of April 19, 1775. The British troops, under the command of Lieutenant Colonel Francis Smith,
+            were ordered to seize the colonial militia's military supplies and arrest John Hancock and Sam Adams. The British
+            arrived at Lexington around 5AM, where they were met by a small group of militiamen, who were ordered immediately
+            to disperse. Naturally, they refused to comply.
+
+            To this day no one knows who fired the first shot; it's generally thought the first, unknown shot was an accident,
+            a misfire due to the exceptionally high stress of the moment. Whatever the cause and whomever pulled the trigger,
+            what happened next _is_ a matter of known, historical fact: British troops, obviously thinking they were under attack,
+            understandably **returned fire**, killing 8 colonial militia and wounding 10 others, affecting a fairly quick colonial
+            retreat at Lexington. The British were then free to move on to Concord.
+
+            At Concord, the British were met by a large group of militiamen and forced to retreat all the way back to
+            Boston, suffering 273 casualties along the way. Colonial militia, by contrast, lost only 95 in total.
+          references:
+            - title: "The Glorious Cause: The American Revolution, 1763-1789"
+              citation: "Book by Robert Middlekauff, Chapter 6"
+            - title: "The Battles of Lexington and Concord"
+              citation: "https://www.britannica.com/event/Battles-of-Lexington-and-Concord"
     - title: "Battle of Lexington and Concord"
       date: "1775-04-19"
       description: "First military engagements of the Revolutionary War between British soldiers and American colonists."
@@ -368,43 +385,97 @@ timeline:
           citation: "Book by Gordon S. Wood, Chapter 3"
         - title: "Battle of Lexington and Concord"
           citation: "https://www.history.com/topics/american-revolution/battles-of-lexington-and-concord"
-
-    - title: "Siege of Boston"
-      # date: "1775-04-19 to 1776-03-17" # Technically this should be regenerated based on the 'actions' subarray when built
-      date: "1775-04-19"
-      description: "Colonial militia forces besieging British troops in Boston."
+    - title: "Fortification of Breed's Hill"
+      date: "1775-06-16"
+      description: "Colonial Forces Pre-Emptively Occupy Breed's Hill"
       body: |
-        After the confrontations at Lexington and Concord, militia forces from
-        various colonies began a siege around Boston to box in the British
-        troops. The siege lasted for almost a year, with both sides facing
-        hardships. The culmination of this siege was the British evacuation in
-        March 1776, marking a significant victory for the American forces.
-      references:
-        - title: "1776"
-          citation: "Book by David McCullough, Chapter 2"
-        - title: "Siege of Boston"
-          citation: "https://www.britannica.com/event/Siege-of-Boston"
+        In the early evening hours of June 16, 1775, colonial forces numbering some 2000-odd strong,
+        commanded by Colonel William Prescott, assembled in Cambridge, Massachusetts, for a march to
+        Bunker Hill. They were acting on intelligence they had received that on June 18 - a mere two
+        days later - British forces were ordered to take Breed's Hill and Bunker Hill, as well as all
+        of the surrounding area, and fortify it for long-term occupation. Having this intelligence
+        ahead of time, the strategic move was intended to "beat them to the punch", so to speak, and
+        occupy the area first, thereby forcing the British to either attack a fortified position, or
+        to abandon their plans.
 
+        Colonial forces marched out about 9PM, being met along the way by Gen. Israel Putnam (aka "Old Put"),
+        who augmented their supplies with additional tools and materials for building and enhancing
+        fortifications.
+
+        Their orders were to reach **Bunker Hill**, but having arrived at Breed's Hill, they stopped
+        there and dug in. Their reasons for doing so are not entirely clear or a matter of historical
+        record, but it's generally thought that they stopped there because it was closer to Charlestown,
+        and therefore easier to defend and resupply. It's also thought that they stopped there because
+        it was a better position from which to attack the British ships in the harbor.
+
+        Additional reasons could include the fact of timing: it was midnight when the Army Engineer had
+        started drawing the outline for the fortifications to be dug, thus giving the men only around 4
+        hours before daybreak, when they would be visible to the British Navy occupying the water, who
+        would undoubtedly hit them with artillery (cannons, etc.). If they'd gone on to Bunker Hill
+        instead, they would have lost valuable time in preparing fortifications. Additionally, Breed's is
+        in the center of that small peninsula, which would make for more ground for a land assault team
+        to cover, and possibly create a ranging challenge for the British Navy and limit what kind of
+        attack and support options it may have; Bunker, however, was right by the water, on the total
+        opposite side of the peninsula from Charlestown, making resupply harder, a land assualt easier,
+        and exposing them to every option the Navy would have for attack and support of their assualt
+        forces.
+
+        Whatever their reasons, Prescott's forces dug in and fortified Breed's Hill overnight. By sunrise,
+        indeed the British Navy had taken notice and began to attack with artillery.
+      references:
+        - title: "The Glorious Cause by Robert Middlekauf"
+          citation: "Half a War: Pages 289-298"
     - title: "Battle of Bunker Hill"
       date: "1775-06-17"
-      description: "Major conflict during the Siege of Boston."
+      description: "Gen. Howe joins troops in combat; British dead lie 'thick as sheep in a fold'"
       body: |
-        While technically a British victory, the Battle of Bunker Hill proved
-        costly for the British in terms of casualties. The colonial militias,
-        despite being outnumbered and eventually driven from their positions,
-        inflicted significant losses on the British, proving their resolve and
-        demonstrating that they could stand up to one of the world's most
-        formidable armies.
-      notes: |
-        * Check on that date; didn't Bunker/Breed's last a few days?
-          Construction of defenses, siege actions, all that?
-        * Note / fact check the role of Dr. Joseph Warren, then include under
-          'actions' sub-array
+        Fighting literally from dawn to after sunset, the British assault on Bunker and Breed's Hills was a
+        costly one. With forces of over 2200 men and additional artillery support, the British
+        attacked in three assault waves. The first two were repelled successfully, and at significant
+        cost to the British in terms of both casualties and morale, but also very high cost to
+        colonial forces in terms of ammunition.
+
+        When the third assault wave charged, rifles ready and bayonets flashing, colonial forces
+        could hear them determined despite the literal _fields of dead_ they had to step over:
+
+        > Push on, push on!
+
+        Having run out of shot to fire at the oncoming enemy, colonial defenders were eventually
+        overrun and forced to retreat, surrender, or die. The British had won a pyrrhic victory:
+        yes, they'd taken Breed's Hill, but at a staggering cost of 226 dead and 828 wounded,
+        meaning nearly a thousand soldiers who would be unable to participate in combat either
+        permanently or for some period of time into the future. Colonial defenders lost 140 lives,
+        and sustained 271 wounded. Among the dead at Breed's was Dr. Joseph Warren of Boston, a
+        prominent local physician, local leader, and activist in the Sons of Liberty movement.
       references:
-        - title: "The Glorious Cause: The American Revolution, 1763-1789"
-          citation: "Book by Robert Middlekauff, Chapter 10"
-        - title: "Battle of Bunker Hill"
-          citation: "https://www.historynet.com/battle-of-bunker-hill"
+        - title: "The Glorious Cause by Robert Middlekauf"
+          citation: "Half a War: Pages 289-298"
+    - title: "Dr. Joseph Warren is KIA at Bunker Hill"
+      date: "1775-06-17"
+      description: "Dr. Joseph Warren killed in action defending Breed's Hill."
+      body: |
+        TODO
+
+    # - title: "Battle of Bunker Hill"
+    #   date: "1775-06-17"
+    #   description: "Major conflict during the Siege of Boston."
+    #   body: |
+    #     While technically a British victory, the Battle of Bunker Hill proved
+    #     costly for the British in terms of casualties. The colonial militias,
+    #     despite being outnumbered and eventually driven from their positions,
+    #     inflicted significant losses on the British, proving their resolve and
+    #     demonstrating that they could stand up to one of the world's most
+    #     formidable armies.
+    #   notes: |
+    #     * Check on that date; didn't Bunker/Breed's last a few days?
+    #       Construction of defenses, siege actions, all that?
+    #     * Note / fact check the role of Dr. Joseph Warren, then include under
+    #       'actions' sub-array
+    #   references:
+    #     - title: "The Glorious Cause: The American Revolution, 1763-1789"
+    #       citation: "Book by Robert Middlekauff, Chapter 10"
+    #     - title: "Battle of Bunker Hill"
+    #       citation: "https://www.historynet.com/battle-of-bunker-hill"
 
     - title: "Invasion of Canada"
       # date: "1775-09-25 to 1776-06-18" # The 'to' piece should be dynamically generated w/ actions subarray when done
