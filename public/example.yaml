@@ -346,6 +346,9 @@ timeline:
             well-organized network of spies and informants, the colonists were well aware of the British plans in advance,
             allowing both Adams and Hancock to escape capture, as well as giving rebel forces time to both hide their
             stockpiled munitions and establish procedures for the mobilization of local militia should it become needed.
+          references:
+            - title: "The Glorious Cause: The American Revolution, 1763-1789"
+              citation: "Book by Robert Middlekauff, Chapter 6"
         - date: "1775-04-19"
           description: "The Battles of Lexington and Concord"
           body: |
@@ -364,8 +367,6 @@ timeline:
             At Concord, the British were met by a large group of militiamen and forced to retreat all the way back to
             Boston, suffering 273 casualties along the way. Colonial militia, by contrast, lost only 95 in total.
           references:
-            - title: "The Glorious Cause: The American Revolution, 1763-1789"
-              citation: "Book by Robert Middlekauff, Chapter 6"
             - title: "The Battles of Lexington and Concord"
               citation: "https://www.britannica.com/event/Battles-of-Lexington-and-Concord"
     - title: "Bunker Hill"
