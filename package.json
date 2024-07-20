@@ -1,0 +1,15 @@
+{
+  "name": "timefall",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "http": "python3 -m http.server 8000 -b 0.0.0.0"
+  },
+  "keywords": [],
+  "author": "J. Austin Hughey",
+  "license": "MIT",
+  "dependencies": {
+
+  }
+}
