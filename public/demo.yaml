@@ -1,31 +1,3 @@
-# Timefall: Data-Driven, Dynamically-Rendered Timeline
-
-1. Given a properly formatted YAML, JSON or TOML file, pop it in the paste box, and;
-1. The front-end fetches it (assuming no CORS issues) and renders a vertically-scrollable, interactive timeline in the browser.
-
-Doesn't matter what order the items appear in the data, so long as they have valid date and time strings according to the format prescribed.
-
-**NOTE:** The entries themselves need a singular date at the "event" level, or each event must have one or more actions, each of which must have
-a date assigned to the action. It can optionally have a time if the time is known (must have valid time zone suffix, only modern day time zones are
-supported). When there's only a date at the event level, that one date will show. When there are multiple actions with dates, it will render the first
-date and the last. For example, given two actions on 18 and 19 April in 1775 (battles of Lexington and Concord), you'd see "April 18-19, 1775".
-
-Status: vaporware
-
-## Useful development tools
-
-1. [yamlfmt](https://github.com/google/yamlfmt) (`brew install yamlfmt`)
-
-## Libraries Used / Docs for Libraries
-
-1. [date-fns](https://date-fns.org/docs/Getting-Started)
-1. [react](https://react.dev)
-
-## Data Format
-
-This readme may deviate from what's actually possible as development progresses; see the project's own public/sample.yaml for an up to date example.
-
-```yaml
 title: "A Timeline Title Here"
 intro: |
   Place a multi-paragraph (if you like)...
@@ -202,5 +174,4 @@ events:
             publisher: Some Publisher
             publication_date: spring 1998
             source_location: "pp. 69-88"
-  # End of Bunker Hill Entry
-```
+            # End of Bunker Hill Entry
