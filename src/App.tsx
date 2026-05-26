@@ -1,10 +1,14 @@
 import { format } from 'date-fns';
 import { useTheme } from './useTheme';
+import { useMediaQuery } from './utilityFunctions';
+import NavSelect from './components/navSelect';
+import NavFlat from './components/navFlat';
 import './App.css'
 
 function App() {
   const today = CurrentDate();
   const { theme, setTheme } = useTheme();
+  const isMobile = useMediaQuery(768); // 768 seems to be the main "is it mobile or not?" breakpoint
 
   return (
     <>
@@ -18,17 +22,17 @@ function App() {
             ...or <a href="#" id="sampleDataLink">click here</a> for a demo. <a href="#" id="docsLink" target="_blank">Click here</a> for documentation.
           </p>
           <button type="button" className="btnFetchData">Fetch Data</button>
+          <button type="button" className="btnThemeToggle" onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}>
+            Toggle Light/Dark Mode
+          </button>
         </div>
-        <button type="button" className="btnThemeToggle" onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}>
-          Toggle Light/Dark Mode
-        </button>
       </header>
 
       <hr className="topLine" />
 
       <nav id="leftNav">
-        <div id="leftNavBackground">
-          <h1>Will be generated from data when fetched.</h1>
+        <div id="NavCore">
+          {isMobile ? <NavSelect items={[]} /> : <NavFlat items={[]} /> }
         </div>
       </nav>
 

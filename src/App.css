@@ -1,0 +1,16 @@
+#appTitle {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+}
+
+#appTitle div {
+  flex: 1 1 300px;
+}
+
+.appTitle h1 {
+  font-size: 325%;
+  font-weight:650;
+  padding: 1rem;
+}
