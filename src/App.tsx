@@ -1,8 +1,10 @@
 import { format } from 'date-fns';
+import { useTheme } from './useTheme';
 import './App.css'
 
 function App() {
   const today = CurrentDate();
+  const { theme, setTheme } = useTheme();
 
   return (
     <>
@@ -17,6 +19,9 @@ function App() {
           </p>
           <button type="button" className="btnFetchData">Fetch Data</button>
         </div>
+        <button type="button" className="btnThemeToggle" onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}>
+          Toggle Light/Dark Mode
+        </button>
       </header>
 
       <hr className="topLine" />
