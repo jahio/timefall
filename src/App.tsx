@@ -1,121 +1,81 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
+import { format } from 'date-fns';
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const today = CurrentDate();
 
   return (
     <>
-      <section id="center">
-        <div className="hero">
-          <img src={heroImg} className="base" width="170" height="179" alt="" />
-          <img src={reactLogo} className="framework" alt="React logo" />
-          <img src={viteLogo} className="vite" alt="Vite logo" />
+      <header id="appTitle">
+        <div className="appTitle">
+          <h1>TIMEFALL</h1>
         </div>
-        <div>
-          <h1>Get started</h1>
+        <div className="dataSourceInput">
+          <input type="text" id="dataSourceURL" name="dataSourceURL" placeholder="Paste URL to YAML or JSON here" />
           <p>
-            Edit <code>src/App.tsx</code> and save to test <code>HMR</code>
+            ...or <a href="#" id="sampleDataLink">click here</a> for a demo. <a href="#" id="docsLink" target="_blank">Click here</a> for documentation.
           </p>
+          <button type="button" className="btnFetchData">Fetch Data</button>
         </div>
-        <button
-          className="counter"
-          onClick={() => setCount((count) => count + 1)}
-        >
-          Count is {count}
-        </button>
-      </section>
+      </header>
 
-      <div className="ticks"></div>
+      <hr className="topLine" />
 
-      <section id="next-steps">
-        <div id="docs">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#documentation-icon"></use>
-          </svg>
-          <h2>Documentation</h2>
-          <p>Your questions, answered</p>
-          <ul>
-            <li>
-              <a href="https://vite.dev/" target="_blank">
-                <img className="logo" src={viteLogo} alt="" />
-                Explore Vite
-              </a>
+      <nav id="leftNav">
+        <div id="leftNavBackground">
+          <h1>Will be generated from data when fetched.</h1>
+        </div>
+      </nav>
+
+      <main id="primaryContent">
+        <section>
+          <div className="tfUnit tfDateHeader">
+            {FormatDate(today)}
+          </div>
+          <h1 className="tfUnit tfEventHeader">
+            Enter a URL in the box above
+          </h1>
+          <p className="tfUnit tfEventDescription">
+            Enter a URL in the box above, (or click the link
+            below it for a demo to be loaded) then click the
+            &quot;Fetch Data&quot; button. If your data is
+            properly formatted, a navigable, chronological
+            list across time will appear on your left and
+            a list of events with descriptions from that
+            data will appear here instead.
+          </p>
+          <p className="tfUnit tfEventDescription">
+            See the below links for additional information.
+          </p>
+          <ul className="tfUnit tfLinks">
+            <li>Documentation</li>
+            <li>Data Examples</li>
+            <li>Load Example Timeline</li>
+            <li>Source Code</li>
+          </ul>
+          <ul className="tfUnit tfCitations">
+            <li className="tfUnit tfCitationItem">
+              TODO: Citations
             </li>
-            <li>
-              <a href="https://react.dev/" target="_blank">
-                <img className="button-icon" src={reactLogo} alt="" />
-                Learn more
-              </a>
+            <li className="tfUnit tfCitationItem">
+              Citations could be difficult due to multiple
+              formatting options (APA, MLA, etc.). Should
+              this be a feature for a v1, or save that for
+              future iterations?
             </li>
           </ul>
-        </div>
-        <div id="social">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#social-icon"></use>
-          </svg>
-          <h2>Connect with us</h2>
-          <p>Join the Vite community</p>
-          <ul>
-            <li>
-              <a href="https://github.com/vitejs/vite" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#github-icon"></use>
-                </svg>
-                GitHub
-              </a>
-            </li>
-            <li>
-              <a href="https://chat.vite.dev/" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#discord-icon"></use>
-                </svg>
-                Discord
-              </a>
-            </li>
-            <li>
-              <a href="https://x.com/vite_js" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#x-icon"></use>
-                </svg>
-                X.com
-              </a>
-            </li>
-            <li>
-              <a href="https://bsky.app/profile/vite.dev" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#bluesky-icon"></use>
-                </svg>
-                Bluesky
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <div className="ticks"></div>
-      <section id="spacer"></section>
+        </section>
+      </main>
     </>
   )
+}
+
+function CurrentDate() {
+  return new Date();
+}
+
+function FormatDate(date: Date) {
+  return format(date, 'dd MMMM yyyy');
 }
 
 export default App
