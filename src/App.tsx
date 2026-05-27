@@ -17,7 +17,7 @@ function App() {
           <h1>TIMEFALL</h1>
         </div>
         <div className="dataSourceInput">
-          <input size="30" type="text" id="dataSourceURL" name="dataSourceURL" placeholder="Paste URL to YAML or JSON here" />
+          <input type="text" id="dataSourceURL" name="dataSourceURL" placeholder="Paste URL to YAML or JSON here"  />
           <p>
             ...or <a href="#" id="sampleDataLink">click here</a> for a demo. <a href="#" id="docsLink" target="_blank">Click here</a> for documentation.
           </p>
@@ -42,7 +42,5 @@ function App() {
     </>
   )
 }
-
-
 
 export default App

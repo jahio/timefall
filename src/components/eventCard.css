@@ -1,0 +1,32 @@
+.tfEventHeader {
+  font-weight: 700;
+  font-family:'Arial Narrow Bold', Helvetica, sans-serif;
+  font-size: 275%;
+  margin-top: -0.33rem;
+  text-transform: uppercase;
+}
+
+.tfDateHeader {
+  margin-bottom: -0.33rem;
+  font-weight: lighter;
+  font-size: 150%;
+  text-transform: uppercase;
+  color: var(--placeholder);
+}
+
+.tfLinks, .tfCitations {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.tfLinks li {
+  flex: 0 0 auto;
+}
+
+.tfCitationItem {
+  flex: 0 0 auto;
+}
