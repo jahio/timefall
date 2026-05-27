@@ -32,9 +32,7 @@ function App() {
 
       <main id="primaryContent">
         <nav id="leftNav">
-          <div id="NavCore">
-            {isMobile ? <NavSelect items={[]} /> : <NavFlat items={[]} /> }
-          </div>
+          {isMobile ? <NavSelect items={[]} /> : <NavFlat items={[]} /> }
         </nav>
 
         <section>

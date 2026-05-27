@@ -1,3 +1,22 @@
 #flatNavList ol li {
   list-style: none;
 }
+
+:root[data-theme='light'] {
+  --frost: #e0e9f0;
+  --frostbrdr: #c6d1db;
+  --frostshadow: #cbcbcb;
+}
+
+:root[data-theme='dark'] {
+  --frost: #25262b;
+  --frostbrdr: #6a6a6a;
+  --frostshadow: #515151;
+}
+
+#NavCore {
+  padding: 2rem;
+  background-color: var(--frost);
+  border: 1px solid var(--frostbrdr);
+  box-shadow: 0 0 15px 5px var(--frostshadow);
+}

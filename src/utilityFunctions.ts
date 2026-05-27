@@ -7,7 +7,6 @@ export function useMediaQuery(maxWidth: Number) {
 
   useEffect(() => {
     const mq = window.matchMedia(`(max-width: ${maxWidth}px)`);
-    // const handler = e => setMatches(e.matches);
     const handler = (e: MediaQueryListEvent) => {
       setMatches(e.matches);
     };
