@@ -3,6 +3,7 @@
   flex-wrap: wrap;
   gap: 1rem;
   align-items: center;
+  padding: 1rem;
 }
 
 #appTitle div {
@@ -12,5 +13,20 @@
 .appTitle h1 {
   font-size: 325%;
   font-weight:650;
+}
+
+#primaryContent {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
   padding: 1rem;
+}
+
+#primaryContent nav{
+  flex: 0 0 auto;
+  max-width: clamp(12rem, 20vw, 24rem);
+  overflow-wrap: break-word;
+}
+#primaryContent section {
+  flex: 1 1 auto;
 }

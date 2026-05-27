@@ -30,13 +30,13 @@ function App() {
 
       <hr className="topLine" />
 
-      <nav id="leftNav">
-        <div id="NavCore">
-          {isMobile ? <NavSelect items={[]} /> : <NavFlat items={[]} /> }
-        </div>
-      </nav>
-
       <main id="primaryContent">
+        <nav id="leftNav">
+          <div id="NavCore">
+            {isMobile ? <NavSelect items={[]} /> : <NavFlat items={[]} /> }
+          </div>
+        </nav>
+
         <section>
           <div className="tfUnit tfDateHeader">
             {FormatDate(today)}
