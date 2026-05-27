@@ -8,7 +8,7 @@ function NavFlat({ items }: { items: unknown[] }) {
           This list will be generated from fetched data.
         </label>
         <ol id="flatNavList">
-          {items.map((item: any) => (
+          {items?.map((item: any) => (
             <li><a href="#">{item.year}</a></li>
           ))}
         </ol>

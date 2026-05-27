@@ -1,11 +1,11 @@
 import { useTheme } from './lib/utilityFunctions';
 import { useRef } from 'react';
 import { useMediaQuery } from './lib/utilityFunctions';
-import yaml from 'js-yaml';
-import axios from 'axios';
+import { getTimefallData, bootstrapDefaultTimefall } from './lib/dataProcessor';
 import NavSelect from './components/navSelect';
 import NavFlat from './components/navFlat';
 import EventCard from './components/eventCard';
+import { type TimefallEvent } from './lib/TimefallEvent';
 import './App.css'
 
 function App() {
@@ -16,6 +16,7 @@ function App() {
   const { theme, setTheme } = useTheme();
   const isMobile = useMediaQuery(768); // 768 seems to be the main "is it mobile or not?" breakpoint
   const inputRef = useRef<HTMLInputElement>(null);
+  const defaultTimefall = bootstrapDefaultTimefall();
 
   return (
     <>
@@ -50,28 +51,13 @@ function App() {
         </nav>
 
         <section>
-          <EventCard evt={null} />
+          {defaultTimefall.events.map((evt: TimefallEvent) => (
+            <EventCard evt={evt} key={`${Math.random()*Math.random()}${Math.random()}`} />
+          ))}
         </section>
       </main>
     </>
   )
-}
-
-async function getTimefallData(url: string) {
-  try {
-    const response = await axios.get(url, {
-      headers: {}
-    });
-    const tfData = yaml.load(response.data);
-    console.log(tfData);
-    return tfData;
-  }
-  catch(error) {
-    console.log(error);
-  }
-  finally {
-
-  }
 }
 
 export default App

@@ -1,46 +1,44 @@
 import { currentDate, formatDate } from '../lib/utilityFunctions';
+import { type TimefallEvent, type Link, type Citation } from '../lib/TimefallEvent';
+import { constructFrom } from 'date-fns';
 import './eventCard.css';
 
-function EventCard({ evt }: { evt: unknown }) {
+function EventCard({ evt }: { evt: TimefallEvent }) {
   const today = currentDate();
-  if(evt != null) { console.log(evt); }
 
   return (
     <>
       <div className="tfDateHeader">
-        {formatDate(today)}
+        {
+          (evt.date != undefined) ? formatDate(constructFrom(today, evt.date)) : formatDate(today)
+        }
       </div>
       <h1 className="tfEventHeader">
-        Enter a URL in the box above
+        {evt.title}
       </h1>
       <p className="tfEventDescription">
-        Enter a URL in the box above, (or click the link
-        below it for a demo to be loaded) then click the
-        &quot;Fetch Data&quot; button. If your data is
-        properly formatted, a navigable, chronological
-        list across time will appear on your left and
-        a list of events with descriptions from that
-        data will appear here instead.
+        {evt.description}
       </p>
       <p className="tfEventDescription">
-        See the below links for additional information.
+        {evt.body}
       </p>
       <ul className="tfLinks">
-        <li>Documentation</li>
-        <li>Data Examples</li>
-        <li>Load Example Timeline</li>
-        <li>Source Code</li>
+        {
+          evt.links?.map((l: Link) => (
+            <li key={Math.random() * Math.random()}><a href={l.url}>{l.title}</a></li>
+          ))
+        }
       </ul>
       <ul className="tfCitations">
-        <li className="tfCitationItem">
-          TODO: Citations
-        </li>
-        <li className="tfCitationItem">
-          Citations could be difficult due to multiple
-          formatting options (APA, MLA, etc.). Should
-          this be a feature for a v1, or save that for
-          future iterations?
-        </li>
+        {
+          evt.citations?.map((c: Citation) => (
+            <li>
+              {c.author}. <em>{c.source_title}.</em><br />
+              {c.publisher}, {c.publication_date}. {c.source_location}.<br />
+              {/* TODO: Differentiate type of source, utilize diff. component upon source type [book, journal article, website, news article, etc.] */}
+            </li>
+          ))
+        }
       </ul>
     </>
   )
