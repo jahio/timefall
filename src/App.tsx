@@ -23,10 +23,10 @@ function App() {
   async function handleRetrieval(url: string) {
     try {
       const data = await getTimefallData(url);
-      const tf = createTimefallEvents(data);
+      const tf = createTimefallEvents(data.events);
       const fullTF: TimefallTimeline = {
-        title: data.title,
-        intro: data.intro,
+        title: data.title as string,
+        intro: data.intro as string,
         events: tf
       }
       setTimelineData(fullTF);

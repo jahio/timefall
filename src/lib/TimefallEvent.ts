@@ -147,6 +147,8 @@ export function createTimefallEvents(raw: unknown): TimefallEvent[] {
 }
 
 export interface TimefallTimeline {
-  events: TimefallEvent[],
-  [key: string]: unknown
+  title?: string;
+  intro?: string;
+  events: TimefallEvent[];
+  [key: string]: unknown;
 }
