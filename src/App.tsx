@@ -1,6 +1,6 @@
-import { useTheme } from './useTheme';
+import { useTheme } from './lib/utilityFunctions';
 import { useRef } from 'react';
-import { useMediaQuery } from './utilityFunctions';
+import { useMediaQuery } from './lib/utilityFunctions';
 import yaml from 'js-yaml';
 import axios from 'axios';
 import NavSelect from './components/navSelect';
@@ -28,7 +28,7 @@ function App() {
           <p>
             ...or <a href="#" onClick={() => {
               if(inputRef.current) inputRef.current.value = DEMO_YAML;
-            } }>click here</a> for a demo. <a href="{REPO_HOME}" target="_blank">Click here</a> for documentation.
+            } }>click here</a> for a demo. <a href={REPO_HOME} target="_blank">Click here</a> for documentation.
           </p>
           <button type="button" onClick={() => {
             const loc = inputRef.current;

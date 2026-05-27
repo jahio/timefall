@@ -1,6 +1,23 @@
-import { useState, useEffect } from 'react';
+import { useEffect, useState } from "react";
+import { format } from 'date-fns';
 
 type Theme = 'light' | 'dark';
+
+export function useMediaQuery(maxWidth: Number) {
+  const [matches, setMatches] = useState(
+    () => window.matchMedia(`(max-width: ${maxWidth}px)`).matches
+  );
+
+  useEffect(() => {
+    const mq = window.matchMedia(`(max-width: ${maxWidth}px)`);
+    const handler = (e: MediaQueryListEvent) => {
+      setMatches(e.matches);
+    };
+    mq.addEventListener('change', handler);
+    return () => mq.removeEventListener('change', handler); // cleanup
+  }, [maxWidth]);
+  return matches;
+}
 
 function getInitialTheme(): Theme {
   const stored = localStorage.getItem('theme') as Theme | null;
@@ -28,4 +45,12 @@ export function useTheme(): { theme: Theme; setTheme: (t: Theme) => void } {
   }, []);
 
   return { theme, setTheme };
+}
+
+export function currentDate() {
+  return new Date();
+}
+
+export function formatDate(date: Date) {
+  return format(date, 'dd MMMM yyyy');
 }

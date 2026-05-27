@@ -1,4 +1,4 @@
-import { currentDate, formatDate } from '../utilityFunctions';
+import { currentDate, formatDate } from '../lib/utilityFunctions';
 import './eventCard.css';
 
 function EventCard({ evt }: { evt: unknown }) {
