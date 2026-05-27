@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { format } from 'date-fns';
 
 export function useMediaQuery(maxWidth: Number) {
   const [matches, setMatches] = useState(
@@ -14,4 +15,12 @@ export function useMediaQuery(maxWidth: Number) {
     return () => mq.removeEventListener('change', handler); // cleanup
   }, [maxWidth]);
   return matches;
+}
+
+export function currentDate() {
+  return new Date();
+}
+
+export function formatDate(date: Date) {
+  return format(date, 'dd MMMM yyyy');
 }
