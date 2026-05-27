@@ -38,4 +38,5 @@
 }
 #primaryContent section {
   flex: 1 1 auto;
+  max-width: clamp(60rem, 80vw, 120rem);
 }

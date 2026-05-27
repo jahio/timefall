@@ -1,11 +1,12 @@
 import { useTheme } from './lib/utilityFunctions';
 import { useRef } from 'react';
+import { useState } from 'react';
 import { useMediaQuery } from './lib/utilityFunctions';
 import { getTimefallData, bootstrapDefaultTimefall } from './lib/dataProcessor';
 import NavSelect from './components/navSelect';
 import NavFlat from './components/navFlat';
-import EventCard from './components/eventCard';
-import { type TimefallEvent } from './lib/TimefallEvent';
+import { TimefallComponent } from './components/timefallComponent';
+import { type TimefallTimeline, createTimefallEvents } from './lib/TimefallEvent';
 import './App.css'
 
 function App() {
@@ -16,7 +17,25 @@ function App() {
   const { theme, setTheme } = useTheme();
   const isMobile = useMediaQuery(768); // 768 seems to be the main "is it mobile or not?" breakpoint
   const inputRef = useRef<HTMLInputElement>(null);
+  const [timelineData, setTimelineData] = useState<TimefallTimeline | null>(null);
   const defaultTimefall = bootstrapDefaultTimefall();
+
+  async function handleRetrieval(url: string) {
+    try {
+      const data = await getTimefallData(url);
+      const tf = createTimefallEvents(data);
+      const fullTF: TimefallTimeline = {
+        title: data.title,
+        intro: data.intro,
+        events: tf
+      }
+      setTimelineData(fullTF);
+    }
+    catch(error) {
+      console.log("Error in handleRetrieval:", error);
+    }
+    finally {}
+  }
 
   return (
     <>
@@ -34,7 +53,7 @@ function App() {
           <button type="button" onClick={() => {
             const loc = inputRef.current;
             if(loc != null && loc.value != null && loc.value != "") {
-              getTimefallData(loc.value);
+              handleRetrieval(loc.value);
             }
           }} className="btnFetchData">Fetch Data</button>
           <button type="button" className="btnThemeToggle" onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}>
@@ -51,9 +70,10 @@ function App() {
         </nav>
 
         <section>
-          {defaultTimefall.events.map((evt: TimefallEvent) => (
-            <EventCard evt={evt} key={`${Math.random()*Math.random()}${Math.random()}`} />
-          ))}
+          {timelineData
+            ? <TimefallComponent title={timelineData.title as string} intro={timelineData.intro as string} events={timelineData.events} />
+            : <TimefallComponent title={defaultTimefall.title as string} intro={defaultTimefall.intro as string} events={defaultTimefall.events} />
+          }
         </section>
       </main>
     </>

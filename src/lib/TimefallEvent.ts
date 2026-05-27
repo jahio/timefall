@@ -145,3 +145,8 @@ export function createTimefallEvents(raw: unknown): TimefallEvent[] {
   if (!Array.isArray(raw)) return [];
   return raw.map(createTimefallEvent);
 }
+
+export interface TimefallTimeline {
+  events: TimefallEvent[],
+  [key: string]: unknown
+}

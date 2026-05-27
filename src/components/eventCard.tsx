@@ -3,7 +3,7 @@ import { type TimefallEvent, type Link, type Citation } from '../lib/TimefallEve
 import { constructFrom } from 'date-fns';
 import './eventCard.css';
 
-function EventCard({ evt }: { evt: TimefallEvent }) {
+export function EventCard({ evt }: { evt: TimefallEvent }) {
   const today = currentDate();
 
   return (
@@ -43,5 +43,3 @@ function EventCard({ evt }: { evt: TimefallEvent }) {
     </>
   )
 }
-
-export default EventCard;
