@@ -15,15 +15,17 @@ Status: vaporware
 ## Useful development tools
 
 1. [yamlfmt](https://github.com/google/yamlfmt) (`brew install yamlfmt`)
+1. [asdf](https://asdf-vm.com/) -- `asdf exec npm run dev` and/or `asdf exec npm install` (or `update`, etc.)
 
 ## Libraries Used / Docs for Libraries
 
 1. [date-fns](https://date-fns.org/docs/Getting-Started)
 1. [react](https://react.dev)
+1. [js-yaml](https://github.com/nodeca/js-yaml)
 
 ## Data Format
 
-This readme may deviate from what's actually possible as development progresses; see the project's own public/sample.yaml for an up to date example.
+This readme may deviate from what's actually possible as development progresses; see the project's own [public/demo.yaml](public/demo.yaml] for an up to date example.
 
 ```yaml
 title: "A Timeline Title Here"
