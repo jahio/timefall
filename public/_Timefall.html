@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" data-vibe="modern">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Timefall</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<!-- YAML parser. Swap for your own when porting; everything else is framework-free. -->
+<script src="https://cdn.jsdelivr.net/npm/js-yaml@4.1.0/dist/js-yaml.min.js"></script>
+<style>
+/* ============================================================
+   TIMEFALL — theme tokens
+   Accent is brand blue #4DA3FF (lighter #6FB6FF for dark mode).
+   ============================================================ */
+:root{ --tf-mono:'IBM Plex Mono', ui-monospace, 'SFMono-Regular', monospace; }
+
+/* type per "vibe" */
+[data-vibe="modern"]   { --tf-head:'Helvetica Neue', Helvetica, Arial, sans-serif; --tf-body:'Helvetica Neue', Helvetica, Arial, sans-serif; }
+[data-vibe="editorial"]{ --tf-head:'Spectral', Georgia, 'Times New Roman', serif; --tf-body:'Spectral', Georgia, serif; }
+[data-vibe="technical"]{ --tf-head:'IBM Plex Mono', ui-monospace, monospace; --tf-body:'IBM Plex Sans', system-ui, sans-serif; }
+
+/* accent (per theme) */
+[data-theme="light"]{ --tf-accent:#4DA3FF; --tf-accent-hover:#2F8DF0; --tf-accent-soft:#4DA3FF1A; --tf-accent-ink:#ffffff; --tf-danger:#C0392B; }
+[data-theme="dark"] { --tf-accent:#6FB6FF; --tf-accent-hover:#8AC3FF; --tf-accent-soft:#6FB6FF24; --tf-accent-ink:#0c1722; --tf-danger:#F4796B; }
+
+/* neutral tones (per theme + vibe) */
+[data-theme="light"][data-vibe="modern"]   { --tf-bg:#f6f6f4; --tf-surface:#ffffff; --tf-surface2:#f0f0ee; --tf-border:#e4e4e0; --tf-fg:#23242a; --tf-muted:#6e6f77; --tf-faint:#a0a1a8; --tf-rail:#d3d3ce; }
+[data-theme="dark"][data-vibe="modern"]    { --tf-bg:#121316; --tf-surface:#1b1c20; --tf-surface2:#232429; --tf-border:#33343b; --tf-fg:#e7e7ec; --tf-muted:#909199; --tf-faint:#5f6068; --tf-rail:#3b3b43; }
+[data-theme="light"][data-vibe="editorial"]{ --tf-bg:#f4f0e7; --tf-surface:#fbf8f1; --tf-surface2:#f1ebdf; --tf-border:#e3dac8; --tf-fg:#2c2620; --tf-muted:#857a68; --tf-faint:#a89c85; --tf-rail:#d8cdb6; }
+[data-theme="dark"][data-vibe="editorial"] { --tf-bg:#15130e; --tf-surface:#1e1b14; --tf-surface2:#27231a; --tf-border:#383228; --tf-fg:#ece4d4; --tf-muted:#9c907c; --tf-faint:#6e6555; --tf-rail:#473f31; }
+[data-theme="light"][data-vibe="technical"]{ --tf-bg:#eef0f2; --tf-surface:#ffffff; --tf-surface2:#f3f5f7; --tf-border:#dde1e5; --tf-fg:#22262b; --tf-muted:#6f7780; --tf-faint:#9aa2ab; --tf-rail:#cdd3d9; }
+[data-theme="dark"][data-vibe="technical"] { --tf-bg:#0f1215; --tf-surface:#171b1f; --tf-surface2:#1e2429; --tf-border:#2b3137; --tf-fg:#dde3e9; --tf-muted:#8a929b; --tf-faint:#5b636c; --tf-rail:#343b42; }
+
+*{ box-sizing:border-box; }
+html,body{ margin:0; padding:0; height:100%; }
+body{ background:var(--tf-bg); color:var(--tf-fg); font-family:var(--tf-body); -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility; }
+@keyframes tf-fade{ from{ opacity:0; transform:translateY(-4px);} to{ opacity:1; transform:translateY(0);} }
+button{ font:inherit; color:inherit; }
+input{ font:inherit; }
+
+.tf-scroll::-webkit-scrollbar{ width:10px; height:10px; }
+.tf-scroll::-webkit-scrollbar-thumb{ background:var(--tf-rail); border-radius:10px; border:3px solid var(--tf-bg); }
+.tf-scroll::-webkit-scrollbar-track{ background:transparent; }
+
+/* ---- shell ---- */
+.tf-app{ height:100dvh; display:flex; flex-direction:column; overflow:hidden; }
+
+.tf-header{ display:flex; align-items:flex-start; gap:16px 22px; flex-wrap:wrap; padding:13px 22px; border-bottom:1px solid var(--tf-border); background:var(--tf-surface); flex:none; z-index:10; }
+.tf-brand{ display:flex; align-items:center; gap:11px; padding-top:5px; }
+.tf-mark{ position:relative; width:18px; height:28px; flex:none; }
+.tf-mark .l{ position:absolute; left:8px; top:0; bottom:0; width:2px; background:var(--tf-rail); }
+.tf-mark .d1{ position:absolute; left:3px; top:2px; width:10px; height:10px; border-radius:50%; border:2px solid var(--tf-accent); background:var(--tf-surface); }
+.tf-mark .d2{ position:absolute; left:5px; top:17px; width:8px; height:8px; border-radius:50%; background:var(--tf-accent); }
+.tf-word{ font-family:var(--tf-head); font-size:23px; font-weight:600; letter-spacing:-0.01em; line-height:1; }
+.tf-word b{ color:var(--tf-accent); font-weight:600; }
+.tf-tag{ font-family:var(--tf-mono); font-size:9.5px; letter-spacing:0.22em; text-transform:uppercase; color:var(--tf-faint); margin-top:3px; }
+
+.tf-spacer{ flex:1 1 0; min-width:0; }
+.tf-controls{ display:flex; align-items:flex-start; gap:20px; flex-wrap:wrap; }
+.tf-toggles{ display:flex; flex-direction:column; gap:7px; padding-top:1px; }
+.tf-seg{ display:flex; align-items:center; gap:3px; background:var(--tf-bg); border:1px solid var(--tf-border); border-radius:7px; padding:3px; }
+.tf-seg button{ border:none; border-radius:5px; padding:5px 10px; cursor:pointer; font-family:var(--tf-mono); font-size:10.5px; letter-spacing:0.06em; text-transform:uppercase; background:transparent; color:var(--tf-muted); font-weight:500; transition:background .15s ease, color .15s ease; }
+.tf-seg button.is-active{ background:var(--tf-accent); color:var(--tf-accent-ink); font-weight:600; }
+.tf-themebtn{ display:flex; align-items:center; justify-content:center; gap:7px; background:var(--tf-bg); border:1px solid var(--tf-border); border-radius:7px; padding:6px 0; cursor:pointer; font-family:var(--tf-mono); font-size:10.5px; letter-spacing:0.12em; text-transform:uppercase; color:var(--tf-muted); }
+.tf-themebtn .g{ font-size:13px; line-height:1; }
+
+.tf-load{ display:flex; flex-direction:column; gap:7px; width:330px; max-width:100%; }
+.tf-load input{ width:100%; background:var(--tf-bg); border:1px solid var(--tf-border); border-radius:7px; padding:9px 11px; font-family:var(--tf-mono); font-size:12px; color:var(--tf-fg); outline:none; }
+.tf-load input:focus{ border-color:var(--tf-accent); }
+.tf-load-row{ display:flex; gap:7px; }
+.tf-btn-primary{ flex:1; background:var(--tf-accent); color:var(--tf-accent-ink); border:none; border-radius:7px; padding:9px 12px; cursor:pointer; font-size:13px; font-weight:600; transition:background .15s ease; }
+.tf-btn-primary:hover{ background:var(--tf-accent-hover); }
+.tf-btn-secondary{ flex:none; background:var(--tf-bg); color:var(--tf-fg); border:1px solid var(--tf-border); border-radius:7px; padding:9px 14px; cursor:pointer; font-size:13px; font-weight:500; }
+.tf-btn-secondary:hover{ border-color:var(--tf-accent); }
+.tf-status{ font-family:var(--tf-mono); font-size:11px; line-height:1.4; color:var(--tf-faint); min-height:0; }
+.tf-status.is-error{ color:var(--tf-danger); }
+
+.tf-menu-btn{ display:none; align-items:center; justify-content:center; width:38px; height:38px; flex:none; background:var(--tf-bg); border:1px solid var(--tf-border); border-radius:8px; cursor:pointer; }
+.tf-menu-btn span,.tf-menu-btn span::before,.tf-menu-btn span::after{ content:''; display:block; width:16px; height:2px; background:var(--tf-fg); position:relative; }
+.tf-menu-btn span::before{ position:absolute; top:-5px; } .tf-menu-btn span::after{ position:absolute; top:5px; }
+
+/* ---- body ---- */
+.tf-body{ flex:1; display:flex; min-height:0; position:relative; }
+.tf-backdrop{ display:none; }
+
+.tf-sidebar{ width:312px; flex:none; border-right:1px solid var(--tf-border); background:var(--tf-surface); display:flex; flex-direction:column; min-height:0; }
+.tf-sidebar__top{ padding:14px 16px; border-bottom:1px solid var(--tf-border); display:flex; flex-direction:column; gap:9px; flex:none; }
+.tf-sidebar__close{ display:none; }
+.tf-search{ width:100%; background:var(--tf-bg); border:1px solid var(--tf-border); border-radius:7px; padding:8px 11px; font-size:13px; color:var(--tf-fg); outline:none; }
+.tf-search:focus{ border-color:var(--tf-accent); }
+.tf-sortbtn{ display:flex; align-items:center; justify-content:space-between; background:var(--tf-bg); border:1px solid var(--tf-border); border-radius:7px; padding:8px 11px; cursor:pointer; font-family:var(--tf-mono); font-size:10.5px; letter-spacing:0.1em; text-transform:uppercase; color:var(--tf-muted); }
+.tf-sortbtn .a{ font-size:13px; color:var(--tf-accent); }
+
+.tf-tree{ flex:1; overflow:auto; padding:8px 8px 48px; }
+.tf-empty{ padding:26px 14px; text-align:center; font-size:13px; line-height:1.5; color:var(--tf-faint); }
+
+.tf-trow{ display:flex; align-items:center; gap:8px; padding:7px 9px; border-radius:6px; cursor:pointer; user-select:none; }
+.tf-trow:hover{ background:var(--tf-accent-soft); }
+.tf-trow.is-active{ background:var(--tf-accent-soft); }
+.tf-chev{ width:7px; height:7px; flex:none; border-right:2px solid currentColor; border-bottom:2px solid currentColor; transform:rotate(-45deg); transition:transform .18s ease; color:var(--tf-faint); margin-right:1px; }
+.tf-trow--year .tf-tlabel{ flex:1; font-family:var(--tf-head); font-size:17px; font-weight:600; color:var(--tf-fg); }
+.tf-trow--month .tf-tlabel{ flex:1; font-size:13px; color:var(--tf-fg); }
+.tf-trow.is-active .tf-tlabel{ color:var(--tf-accent); font-weight:600; }
+.tf-tcount{ font-family:var(--tf-mono); font-size:10.5px; color:var(--tf-faint); }
+.tf-tdot{ width:5px; height:5px; border-radius:50%; flex:none; background:var(--tf-rail); }
+.tf-trow.is-active .tf-tdot{ background:var(--tf-accent); }
+
+.tf-tmonths{ display:none; margin:1px 0 4px 10px; padding-left:11px; border-left:1px solid var(--tf-border); }
+.tf-tyear.is-open > .tf-tmonths{ display:block; }
+.tf-tyear.is-open > .tf-trow .tf-chev{ transform:rotate(45deg); }
+
+.tf-tevents{ display:none; margin:1px 0 6px 9px; padding-left:11px; border-left:1px solid var(--tf-border); }
+.tf-tmonth.is-open > .tf-tevents{ display:block; }
+.tf-tmonth.is-open > .tf-trow .tf-chev{ transform:rotate(45deg); }
+
+.tf-tevent{ align-items:flex-start; gap:9px; padding:6px 9px; }
+.tf-tday{ font-family:var(--tf-mono); font-size:11px; font-weight:600; color:var(--tf-accent); flex:none; padding-top:1px; min-width:30px; }
+.tf-tetitle{ flex:1; font-size:12.5px; line-height:1.35; color:var(--tf-muted); }
+.tf-tevent.is-active .tf-tetitle{ color:var(--tf-fg); font-weight:600; }
+
+/* ---- main ---- */
+.tf-main{ flex:1; min-width:0; overflow:auto; position:relative; background:var(--tf-bg); }
+.tf-main-inner{ max-width:880px; margin:0 auto; padding:44px 56px 220px; }
+
+.tf-intro{ padding-bottom:28px; margin-bottom:16px; border-bottom:1px solid var(--tf-border); }
+.tf-meta{ font-family:var(--tf-mono); font-size:11px; letter-spacing:0.18em; text-transform:uppercase; color:var(--tf-accent); margin-bottom:12px; }
+h1.tf-title{ font-family:var(--tf-head); font-size:40px; line-height:1.08; font-weight:700; letter-spacing:-0.015em; margin:0 0 16px; text-wrap:balance; }
+.tf-introbody{ font-size:16.5px; line-height:1.62; color:var(--tf-muted); max-width:62ch; }
+.tf-introbody p{ margin:0 0 0.8em; } .tf-introbody p:last-child{ margin:0; }
+
+/* event card with date rail */
+.tf-event{ position:relative; display:grid; grid-template-columns:130px 1fr; grid-template-areas:"date card"; padding-bottom:30px; }
+.tf-line{ position:absolute; left:130px; top:8px; bottom:0; width:2px; background:var(--tf-rail); }
+.tf-tick{ position:absolute; left:132px; top:16px; width:26px; height:2px; background:var(--tf-rail); }
+.tf-node{ position:absolute; left:125px; top:11px; width:11px; height:11px; border-radius:50%; border:2px solid var(--tf-accent); background:var(--tf-surface); z-index:2; transition:background .2s ease, box-shadow .2s ease; }
+.tf-event.is-active .tf-node{ background:var(--tf-accent); box-shadow:0 0 0 5px var(--tf-accent-soft); }
+.tf-rail-date{ grid-area:date; text-align:right; padding:1px 24px 0 0; font-family:var(--tf-mono); font-size:12px; font-weight:500; line-height:1.45; color:var(--tf-accent); }
+.tf-card{ grid-area:card; margin-left:28px; background:var(--tf-surface); border:1px solid var(--tf-border); border-radius:6px; padding:20px 24px; transition:border-color .2s ease; }
+.tf-event.is-active .tf-card{ border-color:color-mix(in srgb, var(--tf-accent) 45%, var(--tf-border)); }
+.tf-evt-title{ font-family:var(--tf-head); font-size:25px; line-height:1.18; font-weight:600; letter-spacing:-0.01em; margin:0 0 8px; text-wrap:balance; }
+.tf-evt-desc{ font-size:16px; line-height:1.5; margin:0; color:var(--tf-muted); }
+
+.tf-more-btn{ display:inline-flex; align-items:center; gap:9px; margin-top:15px; background:transparent; border:none; padding:4px 0; cursor:pointer; font-family:var(--tf-mono); font-size:11px; letter-spacing:0.12em; text-transform:uppercase; color:var(--tf-accent); }
+.tf-more-btn .tf-chev{ color:var(--tf-accent); }
+.tf-event.is-open .tf-more-btn .tf-chev{ transform:rotate(45deg); }
+.tf-more-hide{ display:none; }
+.tf-event.is-open .tf-more-show{ display:none; }
+.tf-event.is-open .tf-more-hide{ display:inline; }
+
+.tf-more{ display:none; margin-top:16px; padding-top:18px; border-top:1px solid var(--tf-border); }
+.tf-event.is-open .tf-more{ display:block; animation:tf-fade .22s ease; }
+
+.tf-body-rich{ font-size:16px; line-height:1.66; color:var(--tf-fg); }
+.tf-body-rich p{ margin:0 0 0.85em; } .tf-body-rich p:last-child{ margin:0; }
+.tf-body-rich a, .tf-link{ color:var(--tf-accent); text-decoration:none; border-bottom:1px solid color-mix(in srgb, var(--tf-accent) 35%, transparent); }
+.tf-body-rich a:hover, .tf-link:hover{ border-bottom-color:var(--tf-accent); }
+
+.tf-block{ margin-top:18px; }
+.tf-block__label{ font-family:var(--tf-mono); font-size:10px; letter-spacing:0.16em; text-transform:uppercase; color:var(--tf-faint); margin-bottom:8px; }
+.tf-links{ display:flex; flex-direction:column; gap:5px; align-items:flex-start; }
+.tf-link{ font-size:14.5px; }
+.tf-sources{ display:flex; flex-direction:column; gap:8px; }
+.tf-cite{ font-size:13.5px; line-height:1.5; color:var(--tf-muted); padding-left:18px; text-indent:-18px; }
+
+.tf-actions{ margin-top:22px; }
+.tf-actions__head{ display:flex; align-items:center; gap:9px; margin-bottom:11px; }
+.tf-actions__head .lbl{ font-family:var(--tf-mono); font-size:10px; letter-spacing:0.16em; text-transform:uppercase; color:var(--tf-faint); }
+.tf-actions__head .ln{ flex:1; height:1px; background:var(--tf-border); }
+.tf-actions__head .n{ font-family:var(--tf-mono); font-size:10px; color:var(--tf-faint); }
+.tf-action-list{ display:flex; flex-direction:column; gap:8px; }
+.tf-action{ background:var(--tf-surface2); border:1px solid var(--tf-border); border-radius:6px; overflow:hidden; }
+.tf-action__head{ display:flex; gap:11px; align-items:flex-start; cursor:pointer; padding:12px 15px; }
+.tf-action__head .tf-chev{ margin-top:4px; }
+.tf-action.is-open .tf-action__head .tf-chev{ transform:rotate(45deg); }
+.tf-action__date{ font-family:var(--tf-mono); font-size:11px; font-weight:500; color:var(--tf-accent); letter-spacing:0.02em; margin-bottom:3px; }
+.tf-action__title{ font-family:var(--tf-head); font-size:16px; font-weight:600; line-height:1.25; }
+.tf-action__desc{ font-size:13.5px; line-height:1.45; color:var(--tf-muted); margin-top:4px; }
+.tf-action__body{ display:none; padding:14px 16px 16px 41px; border-top:1px solid var(--tf-border); }
+.tf-action.is-open .tf-action__body{ display:block; animation:tf-fade .2s ease; }
+.tf-action__body .tf-body-rich{ font-size:14.5px; line-height:1.62; }
+
+.tf-mainempty{ height:100%; display:flex; align-items:center; justify-content:center; padding:40px; }
+.tf-mainempty__in{ max-width:430px; text-align:center; }
+.tf-mainempty__mark{ position:relative; width:26px; height:62px; margin:0 auto 24px; }
+.tf-mainempty__mark .l{ position:absolute; left:12px; top:0; bottom:0; width:2px; background:var(--tf-rail); }
+.tf-mainempty__mark .d{ position:absolute; left:5px; width:12px; height:12px; border-radius:50%; border:2px solid var(--tf-rail); background:var(--tf-surface); }
+.tf-mainempty__mark .d.a{ left:6px; width:10px; height:10px; border:none; background:var(--tf-accent); }
+.tf-mainempty h2{ font-family:var(--tf-head); font-size:25px; font-weight:600; margin:0 0 12px; }
+.tf-mainempty p{ font-size:15px; line-height:1.6; color:var(--tf-muted); margin:0 0 22px; }
+.tf-mainempty button{ background:var(--tf-accent); color:var(--tf-accent-ink); border:none; border-radius:7px; padding:11px 22px; cursor:pointer; font-size:14px; font-weight:600; }
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+@media (min-width:981px){ .tf-backdrop{ display:none !important; } }
+
+@media (max-width:980px){
+  .tf-menu-btn{ display:inline-flex; }
+  .tf-brand{ order:1; } .tf-menu-btn{ order:0; align-self:center; }
+  .tf-controls{ width:100%; order:2; }
+  .tf-spacer{ display:none; }
+  .tf-sidebar{ position:fixed; z-index:60; top:0; left:0; bottom:0; width:300px; max-width:84vw; transform:translateX(-100%); transition:transform .26s ease; box-shadow:0 0 44px rgba(0,0,0,.28); }
+  .tf-sidebar.is-open{ transform:translateX(0); }
+  .tf-sidebar__close{ display:inline-flex; align-items:center; justify-content:center; width:30px; height:30px; align-self:flex-end; margin:-2px -4px 2px 0; background:transparent; border:1px solid var(--tf-border); border-radius:7px; cursor:pointer; font-size:16px; color:var(--tf-muted); }
+  .tf-backdrop{ display:block; position:fixed; inset:0; background:rgba(0,0,0,.42); z-index:55; opacity:0; pointer-events:none; transition:opacity .26s ease; }
+  .tf-backdrop.is-visible{ opacity:1; pointer-events:auto; }
+}
+
+@media (max-width:640px){
+  .tf-header{ padding:11px 15px; gap:12px 16px; }
+  .tf-load{ width:100%; }
+  .tf-main-inner{ padding:26px 17px 150px; }
+  .tf-intro{ padding-bottom:22px; }
+  h1.tf-title{ font-size:29px; }
+  .tf-introbody{ font-size:15px; }
+  .tf-event{ grid-template-columns:1fr; grid-template-areas:"date" "card"; padding-left:26px; }
+  .tf-rail-date{ text-align:left; padding:0 0 7px 0; }
+  .tf-card{ margin-left:0; padding:16px 17px; }
+  .tf-line{ left:7px; top:6px; }
+  .tf-node{ left:3px; top:5px; }
+  .tf-tick{ display:none; }
+  .tf-evt-title{ font-size:21px; }
+  .tf-evt-desc{ font-size:15px; }
+  .tf-action__body{ padding-left:16px; }
+}
+</style>
+</head>
+<body>
+<div class="tf-app">
+
+  <header class="tf-header">
+    <button class="tf-menu-btn" data-action="menu-open" aria-label="Open navigation"><span></span></button>
+    <div class="tf-brand">
+      <div class="tf-mark"><div class="l"></div><div class="d1"></div><div class="d2"></div></div>
+      <div>
+        <div class="tf-word">Time<b>fall</b></div>
+        <div class="tf-tag">Living Timeline</div>
+      </div>
+    </div>
+    <div class="tf-spacer"></div>
+    <div class="tf-controls">
+      <div class="tf-toggles">
+        <div class="tf-seg" id="tf-vibe">
+          <button data-action="set-vibe" data-vibe-opt="editorial">Editorial</button>
+          <button data-action="set-vibe" data-vibe-opt="technical">Technical</button>
+          <button data-action="set-vibe" data-vibe-opt="modern">Modern</button>
+        </div>
+        <button class="tf-themebtn" data-action="toggle-theme" id="tf-theme"></button>
+      </div>
+      <div class="tf-load">
+        <input id="tf-url" type="text" spellcheck="false" placeholder="https://example.com/timeline.yaml">
+        <div class="tf-load-row">
+          <button class="tf-btn-primary" data-action="load-url">Load Timeline</button>
+          <button class="tf-btn-secondary" data-action="load-example">Load Example</button>
+        </div>
+        <div class="tf-status" id="tf-status"></div>
+      </div>
+    </div>
+  </header>
+
+  <div class="tf-body">
+    <div class="tf-backdrop" data-action="menu-close"></div>
+
+    <aside class="tf-sidebar" id="tf-sidebar">
+      <div class="tf-sidebar__top">
+        <button class="tf-sidebar__close" data-action="menu-close" aria-label="Close navigation">&times;</button>
+        <input class="tf-search" id="tf-search" type="text" spellcheck="false" placeholder="Search events…">
+        <button class="tf-sortbtn" data-action="toggle-sort" id="tf-sort"></button>
+      </div>
+      <nav class="tf-tree tf-scroll" id="tf-tree"></nav>
+    </aside>
+
+    <main class="tf-main tf-scroll" id="tf-main"></main>
+  </div>
+</div>
+
+<script>
+(function(){
+"use strict";
+
+const sample_url = 'https://raw.githubusercontent.com/jahio/timefall/refs/heads/main/public/demo.yaml';
+let EXAMPLE_YAML;
+fetch(sample_url)
+  .then(response => response.text())
+  .then(text => { EXAMPLE_YAML = text; console.log("Loaded:\n"); console.log(EXAMPLE_YAML); });
+
+/* ---------------- state ---------------- */
+var MONTHS = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+var state = {
+  data:null, urlValue:'', search:'', sortAsc:true, theme:'light', vibe:'modern',
+  expandedEvents:{}, expandedActions:{}, expandedYears:{}, expandedMonths:{}, activeId:null
+};
+var els = {};
+var viewIndex = {};   // domId -> {yy, mm}
+var rafPending = false;
+
+/* ---------------- helpers ---------------- */
+function esc(s){ return String(s==null?'':s).replace(/[&<>"]/g, function(c){ return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]; }); }
+function isReal(t){ var s = String(t==null?'':t).trim(); return !!s && s !== '...'; }
+function mdToHtml(text){
+  if(!isReal(text)) return '';
+  var s = String(text).trim();
+  function inline(x){ return esc(x).replace(/\*\*([^*]+)\*\*/g,'<strong>$1</strong>').replace(/(^|[^_])_([^_]+)_/g,'$1<em>$2</em>'); }
+  return s.split(/\n\s*\n/).map(function(p){ return p.trim().replace(/\n/g,' '); }).filter(Boolean)
+          .map(function(p){ return '<p>'+inline(p)+'</p>'; }).join('');
+}
+function parseDate(s){ var m = /(\d{4})-(\d{1,2})-(\d{1,2})/.exec(String(s||'')); if(!m) return null; return { y:+m[1], mo:+m[2], d:+m[3] }; }
+function dateKey(p){ return p ? p.y*10000 + p.mo*100 + p.d : 0; }
+function formatRange(min,max){
+  if(!min) return 'Undated';
+  if(!max || (min.y===max.y && min.mo===max.mo && min.d===max.d)) return MONTHS[min.mo-1]+' '+min.d+', '+min.y;
+  if(min.y===max.y && min.mo===max.mo) return MONTHS[min.mo-1]+' '+min.d+'\u2013'+max.d+', '+min.y;
+  if(min.y===max.y) return MONTHS[min.mo-1]+' '+min.d+' \u2013 '+MONTHS[max.mo-1]+' '+max.d+', '+min.y;
+  return MONTHS[min.mo-1]+' '+min.d+', '+min.y+' \u2013 '+MONTHS[max.mo-1]+' '+max.d+', '+max.y;
+}
+function dayLabel(min,max){
+  if(!min) return '\u2014';
+  if(!max || (min.mo===max.mo && min.d===max.d)) return ''+min.d;
+  if(min.mo===max.mo) return min.d+'\u2013'+max.d;
+  return min.d+'/'+min.mo+'\u2013'+max.d+'/'+max.mo;
+}
+function formatActionDate(a){
+  var p = parseDate(a.date);
+  var label = p ? MONTHS[p.mo-1]+' '+p.d+', '+p.y : (a.date || 'Undated');
+  if(a.time){
+    var tm = /(\d{1,2}):(\d{2})(?::\d{2})?\s*([A-Za-z]{2,5})?/.exec(String(a.time));
+    if(tm){ var h=+tm[1], mm=tm[2], tz=tm[3]||''; var ap = h>=12?'PM':'AM'; var h12 = h%12; if(h12===0) h12=12; label += '  \u00b7  '+h12+':'+mm+' '+ap+(tz?' '+tz:''); }
+  }
+  return label;
+}
+function formatCitation(c){
+  if(!c || typeof c !== 'object') return '';
+  var parts = [], meta = [];
+  if(c.author) parts.push(String(c.author).replace(/\.?$/,'.'));
+  if(c.source_title) parts.push('\u201C'+c.source_title+'.\u201D');
+  if(c.source_type) meta.push(c.source_type);
+  if(c.source_version) meta.push('v'+c.source_version);
+  if(c.source_number) meta.push('no. '+c.source_number);
+  if(c.contributors && c.contributors.length) meta.push('with '+c.contributors.map(function(x){ return x && x.name; }).filter(Boolean).join(', '));
+  if(c.publisher) meta.push(c.publisher);
+  if(c.publication_date) meta.push(c.publication_date);
+  if(c.source_location) meta.push(c.source_location);
+  var out = parts.join(' ');
+  if(meta.length) out += (out?' ':'') + meta.join(', ') + '.';
+  return out.trim();
+}
+
+/* ---------------- model ---------------- */
+function buildModel(){
+  if(!state.data) return null;
+  var events = Array.isArray(state.data.events) ? state.data.events : [];
+  var q = state.search.trim().toLowerCase();
+
+  var list = events.map(function(ev,i){
+    var ds = [];
+    if(ev.date){ var pd = parseDate(ev.date); if(pd) ds.push(pd); }
+    (ev.actions||[]).forEach(function(a){ var p = parseDate(a.date); if(p) ds.push(p); });
+    ds.sort(function(a,b){ return dateKey(a)-dateKey(b); });
+    var min = ds[0]||null, max = ds[ds.length-1]||null;
+    return { ev:ev, i:i, min:min, max:max, sortKey: dateKey(min) };
+  });
+
+  if(q){
+    list = list.filter(function(o){
+      var ev = o.ev;
+      var hay = [ev.title, ev.description, ev.body]
+        .concat((ev.actions||[]).map(function(a){ return (a.title||'')+' '+(a.description||'')+' '+(a.body||''); }))
+        .join(' ').toLowerCase();
+      return hay.indexOf(q) !== -1;
+    });
+  }
+
+  list.sort(function(a,b){ return state.sortAsc ? a.sortKey-b.sortKey : b.sortKey-a.sortKey; });
+
+  viewIndex = {};
+  var viewEvents = list.map(function(o){
+    var ev = o.ev, key = 'e'+o.i, domId = 'tf-evt-'+o.i;
+    var links = (ev.links||[]).filter(function(l){ return l && l.url; }).map(function(l){ return { url:l.url, label:l.title||l.url }; });
+    var sources = (ev.citations||[]).map(formatCitation).filter(Boolean);
+    var actions = (ev.actions||[]).map(function(a,ai){
+      var p = parseDate(a.date);
+      var alinks = (a.links||[]).filter(function(l){ return l && l.url; }).map(function(l){ return { url:l.url, label:l.title||l.url }; });
+      var asrc = (a.citations||[]).map(formatCitation).filter(Boolean);
+      return {
+        key:key+'-a'+ai, dateLabel:formatActionDate(a), title:a.title||'Untitled action',
+        description:a.description||'', hasDesc:isReal(a.description),
+        bodyHtml:mdToHtml(a.body), hasBody:isReal(a.body),
+        links:alinks, sources:asrc, sortKey:dateKey(p)
+      };
+    }).sort(function(x,y){ return x.sortKey-y.sortKey; });
+
+    var hasBody = isReal(ev.body);
+    var hasMore = hasBody || links.length>0 || sources.length>0 || actions.length>0;
+    viewIndex[domId] = { yy:o.min?o.min.y:null, mm:o.min?o.min.mo:null };
+    return {
+      key:key, domId:domId,
+      yy:o.min?o.min.y:null, mm:o.min?o.min.mo:null,
+      dateLabel:formatRange(o.min,o.max), dayLabel:dayLabel(o.min,o.max),
+      title:ev.title||'Untitled event', description:ev.description||'',
+      bodyHtml:mdToHtml(ev.body), hasBody:hasBody,
+      links:links, sources:sources, actions:actions,
+      hasMore:hasMore, actionCount:actions.length
+    };
+  });
+
+  // tree
+  var ymap = {};
+  var yorder = [];
+  viewEvents.forEach(function(v){
+    if(v.yy==null) return;
+    if(!ymap[v.yy]){ ymap[v.yy] = { year:v.yy, count:0, firstId:v.domId, months:{}, morder:[] }; yorder.push(v.yy); }
+    var Y = ymap[v.yy]; Y.count++;
+    if(!Y.months[v.mm]){ Y.months[v.mm] = { mo:v.mm, count:0, firstId:v.domId, events:[] }; Y.morder.push(v.mm); }
+    Y.months[v.mm].count++;
+    Y.months[v.mm].events.push(v);
+  });
+  var tree = yorder.map(function(y){ return ymap[y]; });
+  tree.sort(function(a,b){ return state.sortAsc ? a.year-b.year : b.year-a.year; });
+  tree.forEach(function(Y){
+    Y.morderSorted = Y.morder.slice().sort(function(a,b){ return state.sortAsc ? a-b : b-a; });
+  });
+
+  // meta
+  var years = viewEvents.map(function(v){ return v.yy; }).filter(function(y){ return y!=null; });
+  var minY = years.length?Math.min.apply(null,years):null, maxY = years.length?Math.max.apply(null,years):null;
+  var span = minY==null?'':(minY===maxY?''+minY:minY+'\u2013'+maxY);
+  var n = viewEvents.length;
+  var meta = n+(n===1?' Event':' Events')+(span?'  \u00b7  '+span:'');
+
+  return { viewEvents:viewEvents, tree:tree, title:state.data.title||'Untitled Timeline', introHtml:mdToHtml(state.data.intro), meta:meta };
+}
+
+/* ---------------- rendering ---------------- */
+function renderTree(model){
+  if(!model || !model.tree.length){
+    els.tree.innerHTML = '<div class="tf-empty">'+(state.data?'No events match your search.':'Load a timeline to see its index here.')+'</div>';
+    return;
+  }
+  var html = model.tree.map(function(Y){
+    var yOpen = state.expandedYears[Y.year] !== false;
+    var months = Y.morderSorted.map(function(mo){
+      var M = Y.months[mo];
+      var mk = Y.year+'-'+M.mo;
+      var mOpen = state.expandedMonths[mk] === true;
+      var evRows = M.events.map(function(v){
+        return '<div class="tf-trow tf-tevent" data-action="jump" data-jump="'+v.domId+'">'+
+                 '<span class="tf-tday">'+esc(v.dayLabel)+'</span>'+
+                 '<span class="tf-tetitle">'+esc(v.title)+'</span>'+
+               '</div>';
+      }).join('');
+      return '<div class="tf-tmonth'+(mOpen?' is-open':'')+'" data-mk="'+mk+'">'+
+               '<div class="tf-trow tf-trow--month" data-action="toggle-month" data-mk="'+mk+'" data-jumpfirst="'+M.firstId+'">'+
+                 '<span class="tf-chev"></span><span class="tf-tdot"></span>'+
+                 '<span class="tf-tlabel">'+MONTHS[M.mo-1]+'</span>'+
+                 '<span class="tf-tcount">'+M.count+'</span>'+
+               '</div>'+
+               '<div class="tf-tevents">'+evRows+'</div>'+
+             '</div>';
+    }).join('');
+    return '<div class="tf-tyear'+(yOpen?' is-open':'')+'" data-year="'+Y.year+'">'+
+             '<div class="tf-trow tf-trow--year" data-action="toggle-year" data-year="'+Y.year+'" data-jumpfirst="'+Y.firstId+'">'+
+               '<span class="tf-chev"></span>'+
+               '<span class="tf-tlabel">'+Y.year+'</span>'+
+               '<span class="tf-tcount">'+Y.count+'</span>'+
+             '</div>'+months+
+           '</div>';
+  }).join('');
+  els.tree.innerHTML = html;
+  paintActiveTree();
+}
+
+function renderEvent(v){
+  var blocks = '';
+  if(v.hasBody) blocks += '<div class="tf-body-rich">'+v.bodyHtml+'</div>';
+  if(v.links.length){
+    blocks += '<div class="tf-block"><div class="tf-block__label">Links</div><div class="tf-links">'+
+      v.links.map(function(l){ return '<a class="tf-link" href="'+esc(l.url)+'" target="_blank" rel="noopener">'+esc(l.label)+'</a>'; }).join('')+'</div></div>';
+  }
+  if(v.sources.length){
+    blocks += '<div class="tf-block"><div class="tf-block__label">Sources</div><div class="tf-sources">'+
+      v.sources.map(function(c){ return '<div class="tf-cite">'+esc(c)+'</div>'; }).join('')+'</div></div>';
+  }
+  if(v.actions.length){
+    var acts = v.actions.map(function(a){
+      var ab = '';
+      if(a.hasBody) ab += '<div class="tf-body-rich">'+a.bodyHtml+'</div>';
+      if(a.links.length) ab += '<div class="tf-block"><div class="tf-block__label">Links</div><div class="tf-links">'+
+        a.links.map(function(l){ return '<a class="tf-link" href="'+esc(l.url)+'" target="_blank" rel="noopener">'+esc(l.label)+'</a>'; }).join('')+'</div></div>';
+      if(a.sources.length) ab += '<div class="tf-block"><div class="tf-block__label">Sources</div><div class="tf-sources">'+
+        a.sources.map(function(c){ return '<div class="tf-cite">'+esc(c)+'</div>'; }).join('')+'</div></div>';
+      var open = state.expandedActions[a.key] ? ' is-open' : '';
+      return '<div class="tf-action'+open+'">'+
+               '<div class="tf-action__head" data-action="toggle-action" data-key="'+a.key+'">'+
+                 '<span class="tf-chev"></span>'+
+                 '<div class="tf-action__main">'+
+                   '<div class="tf-action__date">'+esc(a.dateLabel)+'</div>'+
+                   '<div class="tf-action__title">'+esc(a.title)+'</div>'+
+                   (a.hasDesc?'<div class="tf-action__desc">'+esc(a.description)+'</div>':'')+
+                 '</div>'+
+               '</div>'+
+               '<div class="tf-action__body">'+ab+'</div>'+
+             '</div>';
+    }).join('');
+    blocks += '<div class="tf-actions">'+
+                '<div class="tf-actions__head"><span class="lbl">Actions</span><span class="ln"></span><span class="n">'+v.actionCount+'</span></div>'+
+                '<div class="tf-action-list">'+acts+'</div>'+
+              '</div>';
+  }
+
+  var moreBtn = '';
+  if(v.hasMore){
+    moreBtn = '<button class="tf-more-btn" data-action="toggle-event" data-key="'+v.key+'">'+
+                '<span class="tf-chev"></span>'+
+                '<span class="tf-more-show">More info'+(v.actionCount?' \u00b7 '+v.actionCount+(v.actionCount===1?' action':' actions'):'')+'</span>'+
+                '<span class="tf-more-hide">Hide details</span>'+
+              '</button>'+
+              '<div class="tf-more">'+blocks+'</div>';
+  }
+
+  var open = state.expandedEvents[v.key] ? ' is-open' : '';
+  return '<article class="tf-event'+open+'" id="'+v.domId+'" data-evt>'+
+           '<div class="tf-line"></div><div class="tf-tick"></div><div class="tf-node"></div>'+
+           '<div class="tf-rail-date">'+esc(v.dateLabel)+'</div>'+
+           '<div class="tf-card">'+
+             '<h2 class="tf-evt-title">'+esc(v.title)+'</h2>'+
+             '<p class="tf-evt-desc">'+esc(v.description)+'</p>'+
+             moreBtn+
+           '</div>'+
+         '</article>';
+}
+
+function renderMain(model){
+  if(!model){
+    els.main.innerHTML =
+      '<div class="tf-mainempty"><div class="tf-mainempty__in">'+
+        '<div class="tf-mainempty__mark"><div class="l"></div>'+
+          '<div class="d" style="top:2px"></div><div class="d a" style="top:26px"></div><div class="d" style="top:48px"></div></div>'+
+        '<h2>Load a timeline to begin</h2>'+
+        '<p>Paste a YAML timeline URL in the top-right corner, or explore the bundled example to see how Timefall renders events and their actions.</p>'+
+        '<button data-action="load-example">Load Example</button>'+
+      '</div></div>';
+    return;
+  }
+  var html = '<div class="tf-main-inner">'+
+    '<div class="tf-intro">'+
+      '<div class="tf-meta">'+esc(model.meta)+'</div>'+
+      '<h1 class="tf-title">'+esc(model.title)+'</h1>'+
+      (model.introHtml?'<div class="tf-introbody">'+model.introHtml+'</div>':'')+
+    '</div>'+
+    model.viewEvents.map(renderEvent).join('')+
+  '</div>';
+  els.main.innerHTML = html;
+  paintActiveMain();
+}
+
+function renderAll(){
+  var model = buildModel();
+  renderTree(model);
+  renderMain(model);
+}
+
+/* ---------------- active highlight ---------------- */
+function paintActiveMain(){
+  var prev = els.main.querySelector('.tf-event.is-active');
+  if(prev) prev.classList.remove('is-active');
+  if(state.activeId){ var ev = document.getElementById(state.activeId); if(ev) ev.classList.add('is-active'); }
+}
+function paintActiveTree(){
+  els.tree.querySelectorAll('.tf-trow.is-active').forEach(function(e){ e.classList.remove('is-active'); });
+  if(!state.activeId) return;
+  var evRow = els.tree.querySelector('.tf-tevent[data-jump="'+state.activeId+'"]');
+  if(evRow){
+    evRow.classList.add('is-active');
+    var m = evRow.closest('.tf-tmonth'); if(m){ var mr = m.querySelector(':scope > .tf-trow'); if(mr) mr.classList.add('is-active'); }
+    var y = evRow.closest('.tf-tyear'); if(y){ var yr = y.querySelector(':scope > .tf-trow'); if(yr) yr.classList.add('is-active'); }
+  }
+}
+function setActive(id){
+  if(state.activeId === id) return;
+  state.activeId = id;
+  paintActiveMain();
+  paintActiveTree();
+}
+
+/* ---------------- chrome ---------------- */
+function applyChrome(){
+  document.documentElement.setAttribute('data-theme', state.theme);
+  document.documentElement.setAttribute('data-vibe', state.vibe);
+  Array.prototype.forEach.call(els.vibe.querySelectorAll('button'), function(b){
+    b.classList.toggle('is-active', b.getAttribute('data-vibe-opt') === state.vibe);
+  });
+  els.theme.innerHTML = state.theme==='light'
+    ? '<span class="g">\u263e</span>Dark'
+    : '<span class="g">\u2600</span>Light';
+  els.sort.innerHTML = '<span>'+(state.sortAsc?'Oldest first':'Newest first')+'</span><span class="a">'+(state.sortAsc?'\u2191':'\u2193')+'</span>';
+}
+function setStatus(msg, isError){
+  els.status.textContent = msg || '';
+  els.status.classList.toggle('is-error', !!isError);
+}
+
+/* ---------------- data loading ---------------- */
+function ensureYaml(cb, tries){
+  tries = tries || 0;
+  if(window.jsyaml) return cb();
+  if(tries > 60){ setStatus('Could not load the YAML parser.', true); return; }
+  setTimeout(function(){ ensureYaml(cb, tries+1); }, 100);
+}
+function applyData(data){
+  if(!data || typeof data !== 'object'){ setStatus('No timeline data found in file.', true); return; }
+  state.data = data;
+  state.expandedEvents = {}; state.expandedActions = {}; state.expandedYears = {}; state.expandedMonths = {};
+  state.activeId = null;
+  setStatus('');
+  renderAll();
+  els.main.scrollTop = 0;
+  var first = els.main.querySelector('[data-evt]');
+  if(first){ state.activeId = first.id; paintActiveMain(); paintActiveTree(); }
+}
+function loadExample(){
+  setStatus('');
+  ensureYaml(function(){
+    try { applyData(window.jsyaml.load(EXAMPLE_YAML)); }
+    catch(e){ setStatus('Example parse error: '+e.message, true); }
+  });
+}
+function loadFromUrl(){
+  var url = state.urlValue.trim();
+  if(!url){ setStatus('Enter a timeline URL first.', true); return; }
+  setStatus('Loading timeline\u2026', false);
+  fetch(url).then(function(r){ if(!r.ok) throw new Error('HTTP '+r.status); return r.text(); })
+    .then(function(text){ ensureYaml(function(){
+      try { applyData(window.jsyaml.load(text)); }
+      catch(e){ setStatus('Parse error: '+e.message, true); }
+    }); })
+    .catch(function(e){ setStatus('Could not load: '+e.message, true); });
+}
+
+/* ---------------- navigation ---------------- */
+function jumpTo(domId){
+  var el = document.getElementById(domId);
+  if(!el) return;
+  var top = el.getBoundingClientRect().top - els.main.getBoundingClientRect().top + els.main.scrollTop - 22;
+  els.main.scrollTop = top;          /* instant jump (per spec) */
+  setActive(domId);
+  closeDrawer();
+}
+function openDrawer(){ els.sidebar.classList.add('is-open'); els.backdrop.classList.add('is-visible'); }
+function closeDrawer(){ els.sidebar.classList.remove('is-open'); els.backdrop.classList.remove('is-visible'); }
+
+function onMainScroll(){
+  if(rafPending) return;
+  rafPending = true;
+  requestAnimationFrame(function(){
+    rafPending = false;
+    var ctop = els.main.getBoundingClientRect().top;
+    var best = null, bestDist = Infinity;
+    els.main.querySelectorAll('[data-evt]').forEach(function(el){
+      var d = Math.abs(el.getBoundingClientRect().top - ctop - 60);
+      if(d < bestDist){ bestDist = d; best = el; }
+    });
+    if(best) setActive(best.id);
+  });
+}
+
+/* ---------------- events ---------------- */
+function onClick(e){
+  var t = e.target.closest('[data-action]');
+  if(!t) return;
+  var action = t.getAttribute('data-action');
+
+  if(action === 'load-url'){ loadFromUrl(); }
+  else if(action === 'load-example'){ loadExample(); }
+  else if(action === 'toggle-sort'){ state.sortAsc = !state.sortAsc; applyChrome(); renderAll(); paintActiveMain(); paintActiveTree(); }
+  else if(action === 'toggle-theme'){ state.theme = state.theme==='light'?'dark':'light'; applyChrome(); }
+  else if(action === 'set-vibe'){ state.vibe = t.getAttribute('data-vibe-opt'); applyChrome(); }
+  else if(action === 'menu-open'){ openDrawer(); }
+  else if(action === 'menu-close'){ closeDrawer(); }
+  else if(action === 'toggle-event'){
+    var ek = t.getAttribute('data-key');
+    var art = t.closest('.tf-event');
+    var nowOpen = !state.expandedEvents[ek];
+    state.expandedEvents[ek] = nowOpen;
+    art.classList.toggle('is-open', nowOpen);
+  }
+  else if(action === 'toggle-action'){
+    var ak = t.getAttribute('data-key');
+    var card = t.closest('.tf-action');
+    var ao = !state.expandedActions[ak];
+    state.expandedActions[ak] = ao;
+    card.classList.toggle('is-open', ao);
+  }
+  else if(action === 'toggle-year'){
+    var y = t.getAttribute('data-year');
+    var yEl = t.closest('.tf-tyear');
+    var yOpen = !(state.expandedYears[y] !== false); // currently open? then close
+    state.expandedYears[y] = yOpen;
+    yEl.classList.toggle('is-open', yOpen);
+    if(yOpen) jumpTo(t.getAttribute('data-jumpfirst'));
+  }
+  else if(action === 'toggle-month'){
+    var mk = t.getAttribute('data-mk');
+    var mEl = t.closest('.tf-tmonth');
+    var mOpen = !(state.expandedMonths[mk] === true);
+    state.expandedMonths[mk] = mOpen;
+    mEl.classList.toggle('is-open', mOpen);
+    if(mOpen) jumpTo(t.getAttribute('data-jumpfirst'));
+  }
+  else if(action === 'jump'){
+    jumpTo(t.getAttribute('data-jump'));
+  }
+}
+
+/* ---------------- init ---------------- */
+function init(){
+  els.tree = document.getElementById('tf-tree');
+  els.main = document.getElementById('tf-main');
+  els.sidebar = document.getElementById('tf-sidebar');
+  els.backdrop = document.querySelector('.tf-backdrop');
+  els.vibe = document.getElementById('tf-vibe');
+  els.theme = document.getElementById('tf-theme');
+  els.sort = document.getElementById('tf-sort');
+  els.status = document.getElementById('tf-status');
+  els.url = document.getElementById('tf-url');
+  els.search = document.getElementById('tf-search');
+
+  applyChrome();
+  document.addEventListener('click', onClick);
+  els.main.addEventListener('scroll', onMainScroll, { passive:true });
+  els.url.addEventListener('input', function(e){ state.urlValue = e.target.value; });
+  els.url.addEventListener('keydown', function(e){ if(e.key === 'Enter') loadFromUrl(); });
+  els.search.addEventListener('input', function(e){ state.search = e.target.value; renderAll(); paintActiveMain(); paintActiveTree(); });
+
+  loadExample();
+}
+
+if(document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
+else init();
+})();
+</script>
+</body>
+</html>
