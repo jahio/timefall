@@ -1,0 +1,1411 @@
+title: "John Adams: (1735-1826) (AI-Generated, Fact Check)"
+intro: |
+  John Adams (1735–1826) was a farmer's son from Braintree, Massachusetts, who became a
+  lawyer, a revolutionary, a diplomat, the first Vice President of the United States, and its
+  second President. He was, by his own admission, "obnoxious, suspected, and unpopular" — vain,
+  thin-skinned, and incapable of the easy charm of a Franklin or a Washington — and yet almost
+  no one did more to argue the American colonies into independence or to secure the young
+  republic's survival in its most dangerous decade.
+
+  This timeline traces his whole arc: the defense of British soldiers he believed entitled to a
+  fair trial; the friendships and losses that shaped him, from Joseph Warren's martyrdom at
+  Bunker Hill to the death of his beloved Abigail; his diplomacy in France and the Dutch
+  Republic; his bruising vice presidency under Washington and his single, embattled term as
+  President; the Alien and Sedition Acts that stained his record and the peace with France he
+  counted his proudest act; his long estrangement from Thomas Jefferson and their extraordinary
+  reconciliation; and the son, John Quincy Adams, who followed him into the presidency. It ends
+  where Adams's story became legend: on July 4, 1826, the fiftieth anniversary of the
+  Declaration of Independence, when he and Jefferson died within hours of each other.
+
+  The dates below use the modern (New Style) calendar. Where an exact day or hour is uncertain,
+  it is noted as an approximation.
+events:
+  - title: "Birth and Education"
+    description: "The making of a New England lawyer, 1735–1758"
+    body: |
+      John Adams was born into the third generation of a modest but respected Massachusetts
+      farming family. His father, John Adams Sr., was a farmer, a cordwainer (shoemaker), a
+      deacon, and a town selectman who expected his eldest son to enter the ministry. The boy
+      preferred the fields and the outdoors, but a series of demanding schoolmasters and his own
+      late-blooming ambition carried him to Harvard and then, against his father's hopes, into
+      the law rather than the pulpit.
+    links:
+      - title: "John Adams — Miller Center, University of Virginia"
+        url: "https://millercenter.org/president/adams"
+      - title: "Adams Papers — Massachusetts Historical Society"
+        url: "https://www.masshist.org/adams"
+    citations:
+      - author: David McCullough
+        source_title: "John Adams"
+        source_type: Book
+        source_version: First Edition
+        source_number:
+        contributors:
+        publisher: Simon & Schuster
+        publication_date: 2001
+        source_location: "Chapter 1"
+      - author: John Ferling
+        source_title: "John Adams: A Life"
+        source_type: Book
+        source_version:
+        source_number:
+        contributors:
+        publisher: Oxford University Press
+        publication_date: 1992
+        source_location:
+    actions:
+      - title: "John Adams is Born in Braintree"
+        date: "1735-10-30"
+        description: "Born on the family farm in Braintree (present-day Quincy), Massachusetts"
+        body: |
+          John Adams was born on October 30, 1735, in a saltbox farmhouse in the north precinct
+          of Braintree, the parish that would later be set off as the town of Quincy. He was the
+          eldest of three sons of John Adams Sr. and Susanna Boylston Adams. By his own account
+          he was a restless, self-doubting boy, more interested in hunting and sailing toy boats
+          than in Latin grammar, until his father made plain that education was the price of any
+          future beyond the plough.
+        links:
+          - title: "Adams National Historical Park — National Park Service"
+            url: "https://www.nps.gov/adam/index.htm"
+        citations:
+          - author: David McCullough
+            source_title: "John Adams"
+            source_type: Book
+            source_version:
+            source_number:
+            contributors:
+            publisher: Simon & Schuster
+            publication_date: 2001
+            source_location: "Chapter 1"
+      - title: "Enters Harvard College"
+        date: "1751-01-01"
+        time: # exact matriculation day not recorded; year is certain
+        description: "Adams begins his studies at Harvard at about age fifteen"
+        body: |
+          Adams entered Harvard College around 1751, at roughly fifteen years of age. There he
+          discovered a love of books and, crucially, of argument. Though his family assumed he
+          would become a Congregational minister, Adams found himself drawn instead to
+          rhetoric, mathematics, and the study of human character. By graduation he had resolved
+          that the ministry's doctrinal quarrels were not for him.
+        links:
+          - title: "Harvard University History"
+            url: "https://www.harvard.edu/about/history/"
+        citations:
+          - author: Page Smith
+            source_title: "John Adams, Volume I"
+            source_type: Book
+            source_version:
+            source_number: Vol. 1
+            contributors:
+            publisher: Doubleday
+            publication_date: 1962
+            source_location:
+      - title: "Graduates from Harvard"
+        date: "1755-07-16"
+        time: # commencement season; precise date approximate
+        description: "Adams takes his A.B. degree and turns to schoolteaching and, soon, the law"
+        body: |
+          Adams graduated from Harvard in 1755. To support himself while he decided on a
+          profession, he took a post teaching Latin school in Worcester, a job he found
+          tedious. There, boarding with the lawyer James Putnam, he began reading law in the
+          evenings and concluded that it — not the ministry — was his path. He worried
+          constantly about idleness and ambition, filling his diary with vows of self-discipline
+          that he rarely kept.
+        links:
+          - title: "Founders Online — National Archives"
+            url: "https://founders.archives.gov/"
+        citations:
+          - author: David McCullough
+            source_title: "John Adams"
+            source_type: Book
+            source_version:
+            source_number:
+            contributors:
+            publisher: Simon & Schuster
+            publication_date: 2001
+            source_location: "Chapter 1"
+      - title: "Admitted to the Bar"
+        date: "1758-11-06"
+        time: # month is certain; day approximate
+        description: "Adams is sworn as an attorney and begins practice in Braintree and Boston"
+        body: |
+          In November 1758, after reading law under James Putnam and being examined by the
+          leading attorneys of Boston, Adams was admitted to practice. He built his practice
+          slowly, riding the circuit courts of Massachusetts and gradually earning a reputation
+          for painstaking preparation and legal learning rather than courtroom flash. Within a
+          decade he would be among the most respected lawyers in the colony.
+        links:
+          - title: "John Adams — Miller Center"
+            url: "https://millercenter.org/president/adams/life-before-the-presidency"
+        citations:
+          - author: John Ferling
+            source_title: "John Adams: A Life"
+            source_type: Book
+            source_version:
+            source_number:
+            contributors:
+            publisher: Oxford University Press
+            publication_date: 1992
+            source_location:
+
+  - title: "Marriage and Family"
+    description: "Abigail Smith and the birth of a future president, 1764–1767"
+    body: |
+      Adams's marriage to Abigail Smith was the central partnership of his life. She was
+      intelligent, formidably well-read despite having no formal schooling, and unafraid to
+      argue with him. Across decades of separation forced by his public service, their
+      correspondence became one of the great records of the Revolutionary era — a running
+      conversation about politics, farming, money, child-rearing, and the rights of women, whom
+      Abigail famously urged him to "remember."
+    links:
+      - title: "Abigail Adams — National First Ladies' Library"
+        url: "https://www.firstladies.org/biographies/firstladies.aspx?biography=2"
+      - title: "Adams Family Papers — Massachusetts Historical Society"
+        url: "https://www.masshist.org/digitaladams/"
+    citations:
+      - author: Joseph J. Ellis
+        source_title: "First Family: Abigail and John Adams"
+        source_type: Book
+        source_version:
+        source_number:
+        contributors:
+        publisher: Alfred A. Knopf
+        publication_date: 2010
+        source_location:
+    actions:
+      - title: "Marries Abigail Smith"
+        date: "1764-10-25"
+        description: "John Adams weds Abigail Smith of Weymouth"
+        body: |
+          On October 25, 1764, John Adams married Abigail Smith, daughter of a Weymouth
+          minister. He was twenty-eight; she was nineteen. It was a love match and an
+          intellectual one. Over the years Abigail managed the family farm, finances, and
+          children through long stretches when John was in Philadelphia or across the Atlantic,
+          becoming in effect his most trusted political adviser as well as his wife.
+        links:
+          - title: "Adams Family Papers"
+            url: "https://www.masshist.org/digitaladams/"
+        citations:
+          - author: Joseph J. Ellis
+            source_title: "First Family: Abigail and John Adams"
+            source_type: Book
+            source_version:
+            source_number:
+            contributors:
+            publisher: Alfred A. Knopf
+            publication_date: 2010
+            source_location:
+      - title: "Birth of John Quincy Adams"
+        date: "1767-07-11"
+        description: "The Adamses' first son, a future sixth president, is born"
+        body: |
+          John Quincy Adams was born on July 11, 1767, the eldest son of John and Abigail. As a
+          boy he accompanied his father on diplomatic missions to Europe, witnessed the Battle of
+          Bunker Hill from a hilltop with his mother, and grew into one of the most accomplished
+          public men of his generation — diplomat, senator, secretary of state, sixth President
+          of the United States, and, in his final chapter, an antislavery congressman. He was
+          the great vindication of his father's belief in disciplined education.
+        links:
+          - title: "John Quincy Adams — Miller Center"
+            url: "https://millercenter.org/president/jqadams"
+        citations:
+          - author: David McCullough
+            source_title: "John Adams"
+            source_type: Book
+            source_version:
+            source_number:
+            contributors:
+            publisher: Simon & Schuster
+            publication_date: 2001
+            source_location:
+
+  - title: "The Boston Massacre Trials"
+    description: "Adams defends the accused British soldiers, 1770"
+    body: |
+      When British soldiers fired into a Boston crowd on the night of March 5, 1770, killing five
+      colonists, popular fury demanded convictions. Adams — already known as a critic of British
+      policy — nonetheless agreed to defend the soldiers, believing that the right to counsel and
+      a fair trial were the very principles the colonists claimed to be fighting for. It was a
+      professionally and personally risky choice. He later called it "one of the best pieces of
+      service I ever rendered my country." The soldiers were tried in two separate proceedings:
+      first their commanding officer, Captain Thomas Preston, and then the enlisted men.
+    links:
+      - title: "Boston Massacre Trials — Famous Trials"
+        url: "https://famous-trials.com/bostonmassacre"
+      - title: "The Boston Massacre — Boston National Historical Park (NPS)"
+        url: "https://www.nps.gov/bost/learn/historyculture/boston-massacre.htm"
+    citations:
+      - author: David McCullough
+        source_title: "John Adams"
+        source_type: Book
+        source_version:
+        source_number:
+        contributors:
+        publisher: Simon & Schuster
+        publication_date: 2001
+        source_location: "Chapter 2"
+      - author: Hiller B. Zobel
+        source_title: "The Boston Massacre"
+        source_type: Book
+        source_version:
+        source_number:
+        contributors:
+        publisher: W. W. Norton
+        publication_date: 1970
+        source_location:
+    actions:
+      - title: "The Boston Massacre"
+        date: "1770-03-05"
+        time: "21:00:00 EST" # evening; time approximate, adjusted to modern zone
+        description: "British troops fire on a Boston crowd, killing five; the propaganda war begins"
+        body: |
+          On the evening of March 5, 1770, a jeering crowd harassed a lone British sentry outside
+          the Custom House on King Street. A relief squad under Captain Thomas Preston came to his
+          aid, and in the confusion of shouting, snowballs, and clubs, the soldiers fired.
+          Five colonists died, among them Crispus Attucks. Paul Revere's engraving quickly turned
+          the chaotic street brawl into a symbol of British tyranny. Into this superheated
+          atmosphere stepped John Adams, agreeing to defend the accused.
+        links:
+          - title: "Paul Revere's Engraving — Massachusetts Historical Society"
+            url: "https://www.masshist.org/database/224"
+        citations:
+          - author: Hiller B. Zobel
+            source_title: "The Boston Massacre"
+            source_type: Book
+            source_version:
+            source_number:
+            contributors:
+            publisher: W. W. Norton
+            publication_date: 1970
+            source_location:
+      - title: "Rex v. Preston — Trial of Captain Thomas Preston"
+        date: "1770-10-24"
+        description: "Preston is tried first; the jury cannot find that he ordered his men to fire"
+        body: |
+          Captain Preston was tried separately and first, in late October 1770. The central
+          question was whether he had given the order to fire. Adams and his co-counsel argued
+          that the evidence was contradictory and could not prove he had. The jury agreed, and
+          Preston was acquitted at the end of October. The verdict set the stage for the harder
+          case: that of the soldiers themselves, who had unquestionably pulled the triggers.
+        links:
+          - title: "Rex v. Preston — Famous Trials"
+            url: "https://famous-trials.com/bostonmassacre/218-preston"
+        citations:
+          - author: L. Kinvin Wroth
+            source_title: "Legal Papers of John Adams"
+            source_type: Edited Collection
+            source_version:
+            source_number: Vol. 3
+            contributors:
+              - name: Hiller B. Zobel
+            publisher: Harvard University Press (Belknap)
+            publication_date: 1965
+            source_location:
+      - title: "Rex v. Wemms — Trial of the Soldiers"
+        date: "1770-11-27"
+        description: "The enlisted men are tried; six acquitted, two convicted of manslaughter"
+        body: |
+          The trial of the eight enlisted soldiers began in late November 1770. Here Adams made
+          his most famous argument, warning the jury that "facts are stubborn things" and that
+          passions and wishes could not alter the evidence. He contended the men had acted in
+          self-defense against a threatening mob. In early December the jury acquitted six of the
+          soldiers; two — Hugh Montgomery and Matthew Kilroy — were convicted of the lesser charge
+          of manslaughter and, pleading benefit of clergy, were branded on the thumb rather than
+          hanged. Adams had secured, in the teeth of public opinion, something close to justice.
+        links:
+          - title: "Rex v. Wemms — Famous Trials"
+            url: "https://famous-trials.com/bostonmassacre/219-soldiers"
+        citations:
+          - author: David McCullough
+            source_title: "John Adams"
+            source_type: Book
+            source_version:
+            source_number:
+            contributors:
+            publisher: Simon & Schuster
+            publication_date: 2001
+            source_location: "Chapter 2"
+
+  - title: "The Road to Revolution"
+    description: "Joseph Warren, the Continental Congresses, and the nomination of Washington, 1774–1775"
+    body: |
+      In the years after the Massacre, Adams moved from cautious reformer to committed
+      revolutionary. He drew close to the radical Boston circle — his cousin Samuel Adams, John
+      Hancock, and especially Dr. Joseph Warren, a charismatic physician and orator whose energy
+      Adams deeply admired. When Massachusetts sent delegates to the Continental Congress, Adams
+      went to Philadelphia and became one of the boldest voices for resistance and, before long,
+      for independence. It was Adams who nominated George Washington to command the new
+      Continental Army — a stroke of political genius that bound the southern colonies to a
+      war that had begun in New England.
+    links:
+      - title: "First Continental Congress — U.S. House History"
+        url: "https://history.house.gov/Institution/Origins-Development/Continental-Congress/"
+      - title: "Joseph Warren — Massachusetts Historical Society"
+        url: "https://www.masshist.org/"
+    citations:
+      - author: David McCullough
+        source_title: "John Adams"
+        source_type: Book
+        source_version:
+        source_number:
+        contributors:
+        publisher: Simon & Schuster
+        publication_date: 2001
+        source_location: "Chapters 2–3"
+    actions:
+      - title: "Friendship with Dr. Joseph Warren"
+        date: "1772-01-01"
+        time: # the friendship deepened over years; a representative date
+        description: "Adams befriends Joseph Warren, a leader of the Boston resistance"
+        body: |
+          Through the early 1770s Adams became closely associated with Dr. Joseph Warren, the
+          young Boston physician who was fast becoming one of the most dynamic leaders of the
+          patriot cause. Warren drafted the Suffolk Resolves, organized resistance, and
+          eventually accepted a commission as a major general. To Adams and to many others,
+          Warren embodied the selfless ardor the Revolution demanded — which is precisely why his
+          death would strike so hard.
+        links:
+          - title: "Suffolk Resolves — National Archives"
+            url: "https://founders.archives.gov/"
+        citations:
+          - author: John Ferling
+            source_title: "John Adams: A Life"
+            source_type: Book
+            source_version:
+            source_number:
+            contributors:
+            publisher: Oxford University Press
+            publication_date: 1992
+            source_location:
+      - title: "First Continental Congress Convenes"
+        date: "1774-09-05"
+        description: "Adams joins the Massachusetts delegation in Philadelphia"
+        body: |
+          The First Continental Congress opened in Philadelphia on September 5, 1774, in response
+          to Britain's Coercive (Intolerable) Acts, which had closed the port of Boston. Adams
+          arrived a relative unknown among the colonies' leading men, took careful measure of
+          them in his diary, and helped push Congress toward a coordinated boycott of British
+          goods. He returned home convinced that far more than boycotts would be required.
+        links:
+          - title: "First Continental Congress"
+            url: "https://history.house.gov/Institution/Origins-Development/Continental-Congress/"
+        citations:
+          - author: David McCullough
+            source_title: "John Adams"
+            source_type: Book
+            source_version:
+            source_number:
+            contributors:
+            publisher: Simon & Schuster
+            publication_date: 2001
+            source_location: "Chapter 3"
+      - title: "Second Continental Congress Convenes"
+        date: "1775-05-10"
+        description: "With war already begun at Lexington and Concord, Congress reconvenes"
+        body: |
+          The Second Continental Congress met on May 10, 1775, three weeks after the fighting at
+          Lexington and Concord. The delegates now faced the reality of an army in the field
+          outside Boston and no clear authority commanding it. Adams argued forcefully that
+          Congress must adopt the New England militia as a genuinely Continental Army — and that
+          it must be led by a man who could unite all thirteen colonies.
+        links:
+          - title: "Second Continental Congress — National Archives"
+            url: "https://www.archives.gov/"
+        citations:
+          - author: David McCullough
+            source_title: "John Adams"
+            source_type: Book
+            source_version:
+            source_number:
+            contributors:
+            publisher: Simon & Schuster
+            publication_date: 2001
+            source_location: "Chapter 3"
+      - title: "Adams Nominates Washington as Commander in Chief"
+        date: "1775-06-14"
+        description: "Adams rises in Congress to nominate George Washington to command the army"
+        body: |
+          On June 14, 1775, Adams rose in Congress and, in a carefully calculated move, nominated
+          George Washington of Virginia to command the newly created Continental Army. Choosing a
+          Virginian to lead a war that had so far been fought by New Englanders was a masterstroke
+          of continental unity. Washington, seated in the room in his blue militia uniform,
+          withdrew in modesty; Congress confirmed the appointment the next day, June 15. It was
+          arguably the single most consequential decision Adams ever helped bring about.
+        links:
+          - title: "Washington Takes Command — Mount Vernon"
+            url: "https://www.mountvernon.org/george-washington/the-revolutionary-war/"
+        citations:
+          - author: David McCullough
+            source_title: "John Adams"
+            source_type: Book
+            source_version:
+            source_number:
+            contributors:
+            publisher: Simon & Schuster
+            publication_date: 2001
+            source_location: "Chapter 3"
+      - title: "Battle of Bunker Hill and the Death of Joseph Warren"
+        date: "1775-06-17"
+        description: "A costly British victory; Adams's friend Joseph Warren is killed"
+        body: |
+          At the Battle of Bunker Hill (fought largely on Breed's Hill) on June 17, 1775, colonial
+          militia inflicted staggering casualties on the attacking British before running out of
+          powder and withdrawing. Among the American dead was Dr. Joseph Warren, who had declined
+          to exercise the command his new general's commission gave him and instead fought and
+          died as an ordinary volunteer in the redoubt. His death shocked the colonies and made
+          him an instant martyr. For Adams, the loss of so gifted and selfless a friend sharpened
+          both his grief and his resolve, a personal wound bound up with the cause itself.
+        links:
+          - title: "Battle of Bunker Hill — Boston National Historical Park (NPS)"
+            url: "https://www.nps.gov/bost/learn/historyculture/bhm.htm"
+        citations:
+          - author: Nathaniel Philbrick
+            source_title: "Bunker Hill: A City, a Siege, a Revolution"
+            source_type: Book
+            source_version:
+            source_number:
+            contributors:
+            publisher: Viking
+            publication_date: 2013
+            source_location:
+
+  - title: "Declaring Independence"
+    description: "Adams as the 'Atlas of Independence,' 1776"
+    body: |
+      Thomas Jefferson later called Adams "the Colossus" of the debate for independence — the man
+      who, more than any other, argued the wavering Congress into the final leap. Adams served on
+      the committee that produced the Declaration, deferring the drafting to the younger Jefferson
+      but leading the fight for its adoption on the floor. He also drove the practical work of
+      making a nation: sitting on the Board of War, drafting model treaty guidelines, and thinking
+      hard about what republican government should look like.
+    links:
+      - title: "Declaration of Independence — National Archives"
+        url: "https://www.archives.gov/founding-docs/declaration"
+    citations:
+      - author: David McCullough
+        source_title: "John Adams"
+        source_type: Book
+        source_version:
+        source_number:
+        contributors:
+        publisher: Simon & Schuster
+        publication_date: 2001
+        source_location: "Chapter 3"
+    actions:
+      - title: "The Committee of Five is Appointed"
+        date: "1776-06-11"
+        description: "Adams, Jefferson, Franklin, Sherman, and Livingston are chosen to draft a declaration"
+        body: |
+          On June 11, 1776, Congress appointed a committee of five — John Adams, Thomas Jefferson,
+          Benjamin Franklin, Roger Sherman, and Robert R. Livingston — to prepare a declaration of
+          independence. Adams pressed Jefferson to write the draft, later explaining that
+          Jefferson could write ten times better than he could and that Adams himself was too
+          "obnoxious, suspected, and unpopular" to be its face. It was a shrewd act of political
+          self-awareness.
+        links:
+          - title: "Drafting the Declaration — National Archives"
+            url: "https://www.archives.gov/founding-docs/declaration-history"
+        citations:
+          - author: Pauline Maier
+            source_title: "American Scripture: Making the Declaration of Independence"
+            source_type: Book
+            source_version:
+            source_number:
+            contributors:
+            publisher: Alfred A. Knopf
+            publication_date: 1997
+            source_location:
+      - title: "Congress Votes for Independence"
+        date: "1776-07-02"
+        description: "The Lee Resolution passes; the colonies declare themselves free states"
+        body: |
+          On July 2, 1776, Congress adopted Richard Henry Lee's resolution declaring the colonies
+          "free and independent States." Adams believed this was the truly historic day. In a
+          jubilant letter to Abigail he predicted that the "Second Day of July 1776" would be
+          celebrated by later generations with pomp, parades, illuminations, and fireworks. He was
+          right about the celebration and off by two days about the date, for it was the adoption
+          of Jefferson's declaration on July 4 that fixed itself in national memory.
+        links:
+          - title: "John Adams to Abigail Adams, July 3, 1776 — MHS"
+            url: "https://www.masshist.org/digitaladams/"
+        citations:
+          - author: David McCullough
+            source_title: "John Adams"
+            source_type: Book
+            source_version:
+            source_number:
+            contributors:
+            publisher: Simon & Schuster
+            publication_date: 2001
+            source_location: "Chapter 3"
+      - title: "The Declaration of Independence is Adopted"
+        date: "1776-07-04"
+        description: "Congress approves the final text of the Declaration"
+        body: |
+          On July 4, 1776, Congress approved the final wording of the Declaration of Independence.
+          Adams had led its defense on the floor through two days of debate and amendment. Though
+          he thought the second of July the more important date, it was the fourth that the
+          nation would come to commemorate — and, half a century later, the day on which both
+          Adams and Jefferson would die.
+        links:
+          - title: "The Declaration of Independence — National Archives"
+            url: "https://www.archives.gov/founding-docs/declaration-transcript"
+        citations:
+          - author: Pauline Maier
+            source_title: "American Scripture: Making the Declaration of Independence"
+            source_type: Book
+            source_version:
+            source_number:
+            contributors:
+            publisher: Alfred A. Knopf
+            publication_date: 1997
+            source_location:
+
+  - title: "Diplomacy in France and the Rift with Franklin"
+    description: "Adams sails for Europe and clashes with Benjamin Franklin, 1777–1779"
+    body: |
+      In 1777 Congress sent Adams to France to join the commission negotiating the vital alliance
+      and to help manage American affairs abroad. He arrived to find the alliance essentially
+      already secured and the commission a tangle of jealousies. Adams's blunt, industrious,
+      moralistic style grated against the worldly, popular, famously easygoing Benjamin Franklin,
+      whose salon celebrity Adams distrusted. Congress ultimately resolved the friction by
+      dissolving the joint commission and naming Franklin sole minister to France — leaving Adams,
+      for a time, without a clear post.
+    links:
+      - title: "American Commissioners in France — Founders Online"
+        url: "https://founders.archives.gov/"
+    citations:
+      - author: David McCullough
+        source_title: "John Adams"
+        source_type: Book
+        source_version:
+        source_number:
+        contributors:
+        publisher: Simon & Schuster
+        publication_date: 2001
+        source_location: "Chapters 4–5"
+    actions:
+      - title: "Appointed Commissioner to France"
+        date: "1777-11-28"
+        description: "Congress names Adams to replace Silas Deane on the French commission"
+        body: |
+          In late November 1777, Congress appointed Adams a joint commissioner to France,
+          replacing the recalled Silas Deane and joining Benjamin Franklin and Arthur Lee. Adams
+          accepted despite the dangers of a winter Atlantic crossing in wartime, and despite the
+          wrench of leaving Abigail and most of the children behind.
+        links:
+          - title: "Founders Online — National Archives"
+            url: "https://founders.archives.gov/"
+        citations:
+          - author: John Ferling
+            source_title: "John Adams: A Life"
+            source_type: Book
+            source_version:
+            source_number:
+            contributors:
+            publisher: Oxford University Press
+            publication_date: 1992
+            source_location:
+      - title: "Sails for France Aboard the Frigate Boston"
+        date: "1778-02-13"
+        description: "Adams and ten-year-old John Quincy cross a stormy, dangerous Atlantic"
+        body: |
+          On February 13, 1778, Adams embarked on the frigate Boston with his ten-year-old son
+          John Quincy. The voyage was harrowing — winter gales, a pursuing British warship, and a
+          lightning strike that killed a crewman. Adams reached France in the spring to discover
+          that Franklin had already concluded the Treaty of Alliance, and that his own role was
+          far murkier than he had expected.
+        links:
+          - title: "John Adams's Diary — Massachusetts Historical Society"
+            url: "https://www.masshist.org/digitaladams/"
+        citations:
+          - author: David McCullough
+            source_title: "John Adams"
+            source_type: Book
+            source_version:
+            source_number:
+            contributors:
+            publisher: Simon & Schuster
+            publication_date: 2001
+            source_location: "Chapter 4"
+      - title: "Joint Commission Dissolved; Franklin Named Sole Minister"
+        date: "1778-09-14"
+        description: "Congress ends the unwieldy commission, sidelining Adams in France"
+        body: |
+          In September 1778 Congress resolved the dysfunction of the three-man commission by
+          naming Franklin sole minister plenipotentiary to France. Word reached Europe in early
+          1779. Adams, left without instructions or office and resentful of what he saw as
+          Franklin's indolence and vanity, decided there was nothing to do but return home. The
+          episode planted a lasting mutual distrust between the two men, though Adams never denied
+          Franklin's genius.
+        links:
+          - title: "Founders Online — National Archives"
+            url: "https://founders.archives.gov/"
+        citations:
+          - author: David McCullough
+            source_title: "John Adams"
+            source_type: Book
+            source_version:
+            source_number:
+            contributors:
+            publisher: Simon & Schuster
+            publication_date: 2001
+            source_location: "Chapter 5"
+      - title: "Returns Home to Massachusetts"
+        date: "1779-08-02"
+        description: "Adams arrives back in Braintree, briefly, before a new mission"
+        body: |
+          Adams landed back in Massachusetts in the summer of 1779, expecting to resume his law
+          practice and his farm. His homecoming was brief. Within months his state and Congress
+          would call on him again — first to help write the Massachusetts Constitution, and then
+          to return to Europe on an even more important errand.
+        links:
+          - title: "Adams Papers — Massachusetts Historical Society"
+            url: "https://www.masshist.org/adams"
+        citations:
+          - author: John Ferling
+            source_title: "John Adams: A Life"
+            source_type: Book
+            source_version:
+            source_number:
+            contributors:
+            publisher: Oxford University Press
+            publication_date: 1992
+            source_location:
+
+  - title: "The Massachusetts Constitution"
+    description: "Adams drafts the oldest functioning written constitution in the world, 1779–1780"
+    body: |
+      Between his two European missions, Adams performed one of the most enduring works of his
+      life: he was the principal author of the Massachusetts Constitution of 1780. Its structure —
+      a separation of powers among executive, legislature, and judiciary, and a declaration of
+      rights — influenced the framing of the United States Constitution seven years later. It
+      remains the oldest written constitution still in effect anywhere in the world.
+    links:
+      - title: "Massachusetts Constitution — Commonwealth of Massachusetts"
+        url: "https://malegislature.gov/laws/constitution"
+    citations:
+      - author: David McCullough
+        source_title: "John Adams"
+        source_type: Book
+        source_version:
+        source_number:
+        contributors:
+        publisher: Simon & Schuster
+        publication_date: 2001
+        source_location: "Chapter 5"
+    actions:
+      - title: "Drafts the Massachusetts Constitution"
+        date: "1779-09-01"
+        description: "As the delegated draftsman, Adams writes the frame of government and a declaration of rights"
+        body: |
+          Chosen by the Massachusetts constitutional convention as its drafting committee's
+          effective author, Adams spent the autumn of 1779 writing a frame of government built on
+          the separation of powers and anchored by a declaration of rights. Ratified in 1780, the
+          document embodied his conviction that liberty required carefully balanced institutions,
+          not merely good intentions. He regarded it as one of his proudest achievements.
+        links:
+          - title: "The Massachusetts Constitution of 1780 — MHS"
+            url: "https://www.masshist.org/"
+        citations:
+          - author: John Ferling
+            source_title: "John Adams: A Life"
+            source_type: Book
+            source_version:
+            source_number:
+            contributors:
+            publisher: Oxford University Press
+            publication_date: 1992
+            source_location:
+
+  - title: "Mission to the Dutch Republic"
+    description: "Adams wins recognition and desperately needed loans from the Netherlands, 1780–1782"
+    body: |
+      Sent back to Europe in 1779 with a commission to negotiate peace and commerce with Britain,
+      Adams found that assignment premature and turned his energy to the Netherlands. Working
+      almost alone, without formal standing at first, he lobbied Dutch bankers and officials for
+      recognition of the United States and for loans to keep the war and the fragile American
+      economy afloat. It was slow, grinding, isolating work — and it succeeded, becoming perhaps
+      his greatest diplomatic triumph.
+    links:
+      - title: "John Adams in the Netherlands — Founders Online"
+        url: "https://founders.archives.gov/"
+    citations:
+      - author: David McCullough
+        source_title: "John Adams"
+        source_type: Book
+        source_version:
+        source_number:
+        contributors:
+        publisher: Simon & Schuster
+        publication_date: 2001
+        source_location: "Chapter 6"
+    actions:
+      - title: "Sails Again for Europe"
+        date: "1779-11-15"
+        description: "Adams departs with a commission to negotiate with Britain, John Quincy again in tow"
+        body: |
+          In November 1779 Adams sailed once more for Europe, this time commissioned to negotiate
+          eventual peace and commercial treaties with Great Britain. With Britain unwilling to
+          talk and the French foreign minister Vergennes resentful of Adams's independence, Adams
+          soon shifted his focus to the Dutch, where he believed real help could be found.
+        links:
+          - title: "Founders Online — National Archives"
+            url: "https://founders.archives.gov/"
+        citations:
+          - author: John Ferling
+            source_title: "John Adams: A Life"
+            source_type: Book
+            source_version:
+            source_number:
+            contributors:
+            publisher: Oxford University Press
+            publication_date: 1992
+            source_location:
+      - title: "The Dutch Republic Recognizes the United States"
+        date: "1782-04-19"
+        description: "The Netherlands recognizes American independence; Adams becomes minister"
+        body: |
+          On April 19, 1782 — seven years to the day after Lexington and Concord — the Dutch
+          Republic formally recognized the independence of the United States, and Adams was
+          received as minister. He had, largely single-handed, made the Netherlands the second
+          European power to acknowledge the new nation. He proudly called the house he acquired in
+          The Hague the first American-owned embassy on foreign soil.
+        links:
+          - title: "Dutch-American Relations — Founders Online"
+            url: "https://founders.archives.gov/"
+        citations:
+          - author: David McCullough
+            source_title: "John Adams"
+            source_type: Book
+            source_version:
+            source_number:
+            contributors:
+            publisher: Simon & Schuster
+            publication_date: 2001
+            source_location: "Chapter 6"
+      - title: "Secures Dutch Loans"
+        date: "1782-06-11"
+        description: "Adams negotiates the first of several crucial loans from Amsterdam bankers"
+        body: |
+          Alongside recognition, Adams negotiated the first of a series of loans from Amsterdam
+          banking houses in the summer of 1782. These funds were a lifeline for the effectively
+          bankrupt United States, financing the final stage of the war and the early operations of
+          the government. Adams considered the achievement — recognition, loans, and a treaty of
+          commerce — the hardest-won and most valuable service of his diplomatic career.
+        links:
+          - title: "Founders Online — National Archives"
+            url: "https://founders.archives.gov/"
+        citations:
+          - author: John Ferling
+            source_title: "John Adams: A Life"
+            source_type: Book
+            source_version:
+            source_number:
+            contributors:
+            publisher: Oxford University Press
+            publication_date: 1992
+            source_location:
+
+  - title: "Peace and the Court of St. James's"
+    description: "The Treaty of Paris and Adams as first American minister to Britain, 1783–1788"
+    body: |
+      Adams rejoined Franklin and John Jay in Paris to negotiate the peace that ended the
+      Revolutionary War, insisting successfully on generous boundaries and American fishing
+      rights off Newfoundland. With independence won, Congress sent him to London as the first
+      United States minister to the very Court he had helped rebel against — an assignment of
+      exquisite awkwardness that he handled with dignity, if without warmth from his hosts.
+    links:
+      - title: "Treaty of Paris (1783) — National Archives"
+        url: "https://www.archives.gov/milestone-documents/treaty-of-paris"
+    citations:
+      - author: David McCullough
+        source_title: "John Adams"
+        source_type: Book
+        source_version:
+        source_number:
+        contributors:
+        publisher: Simon & Schuster
+        publication_date: 2001
+        source_location: "Chapters 6–7"
+    actions:
+      - title: "The Treaty of Paris is Signed"
+        date: "1783-09-03"
+        description: "Adams, Franklin, and Jay conclude the treaty ending the Revolutionary War"
+        body: |
+          On September 3, 1783, the American commissioners — Adams, Franklin, and John Jay —
+          signed the Treaty of Paris with Great Britain, formally ending the Revolutionary War and
+          recognizing the independence of the United States. Adams had fought hard for favorable
+          terms, especially the fishing rights vital to New England's economy. The old friction
+          with Franklin persisted, but the three men had together secured a remarkably good peace.
+        links:
+          - title: "Treaty of Paris — National Archives"
+            url: "https://www.archives.gov/milestone-documents/treaty-of-paris"
+        citations:
+          - author: David McCullough
+            source_title: "John Adams"
+            source_type: Book
+            source_version:
+            source_number:
+            contributors:
+            publisher: Simon & Schuster
+            publication_date: 2001
+            source_location: "Chapter 6"
+      - title: "Presented to King George III"
+        date: "1785-06-01"
+        description: "Adams becomes the first U.S. minister to Great Britain"
+        body: |
+          On June 1, 1785, Adams was presented to King George III as the first minister of the
+          United States to the Court of St. James's — the American rebel now formally received by
+          the monarch he had defied. The meeting was courteous and, by both accounts, genuinely
+          moving. But Adams found his mission largely fruitless: Britain was in no hurry to make
+          commercial concessions to its former colonies, and he grew frustrated and homesick.
+        links:
+          - title: "John Adams as Minister to Britain — Founders Online"
+            url: "https://founders.archives.gov/"
+        citations:
+          - author: David McCullough
+            source_title: "John Adams"
+            source_type: Book
+            source_version:
+            source_number:
+            contributors:
+            publisher: Simon & Schuster
+            publication_date: 2001
+            source_location: "Chapter 7"
+      - title: "Returns Home to the United States"
+        date: "1788-06-17"
+        description: "Adams comes home as the new federal Constitution is being ratified"
+        body: |
+          Adams and Abigail returned to Massachusetts in the summer of 1788, just as the new
+          federal Constitution was winning ratification. He came home a figure of national
+          stature — one of the acknowledged founders — and immediately became a candidate for
+          high office under the government now taking shape.
+        links:
+          - title: "Adams Papers — Massachusetts Historical Society"
+            url: "https://www.masshist.org/adams"
+        citations:
+          - author: John Ferling
+            source_title: "John Adams: A Life"
+            source_type: Book
+            source_version:
+            source_number:
+            contributors:
+            publisher: Oxford University Press
+            publication_date: 1992
+            source_location:
+
+  - title: "Vice Presidency under Washington"
+    description: "Eight years in the 'most insignificant office,' 1789–1797"
+    body: |
+      In the first federal elections, Adams finished second to Washington in the electoral
+      college and thus became the first Vice President of the United States. He presided over the
+      Senate, cast a record number of tie-breaking votes, and generally supported the
+      administration's Federalist program — but he found the office maddeningly powerless,
+      calling it, in a much-quoted letter to Abigail, the most insignificant office ever
+      contrived. He served two full terms alongside Washington.
+    links:
+      - title: "John Adams, Vice President — U.S. Senate"
+        url: "https://www.senate.gov/about/officers-staff/vice-president/VP_John_Adams.htm"
+    citations:
+      - author: David McCullough
+        source_title: "John Adams"
+        source_type: Book
+        source_version:
+        source_number:
+        contributors:
+        publisher: Simon & Schuster
+        publication_date: 2001
+        source_location: "Chapter 8"
+    actions:
+      - title: "Inaugurated as First Vice President"
+        date: "1789-04-21"
+        description: "Adams takes office as Vice President under President Washington"
+        body: |
+          Adams took up the vice presidency on April 21, 1789, days before Washington's own
+          inauguration. As presiding officer of the Senate he threw himself into the work,
+          including a famously prickly debate over what titles to give the President that earned
+          him ridicule and the nickname "His Rotundity." He cast numerous tie-breaking votes —
+          more than any Vice President for well over a century — but chafed at his exclusion from
+          real executive power.
+        links:
+          - title: "President of the Senate — U.S. Senate"
+            url: "https://www.senate.gov/about/officers-staff/vice-president/vice-president.htm"
+        citations:
+          - author: David McCullough
+            source_title: "John Adams"
+            source_type: Book
+            source_version:
+            source_number:
+            contributors:
+            publisher: Simon & Schuster
+            publication_date: 2001
+            source_location: "Chapter 8"
+      - title: "Re-elected Vice President"
+        date: "1792-12-05"
+        description: "Adams wins a second term as Washington's deputy"
+        body: |
+          Adams was re-elected Vice President in 1792, serving a second term as party divisions
+          hardened into the first American political parties — Federalists behind Hamilton and
+          Adams, Democratic-Republicans behind Jefferson and Madison. The rivalry with his old
+          friend Jefferson, once philosophical and warm, began to acquire a partisan edge that
+          would eventually rupture their friendship altogether.
+        links:
+          - title: "The First Party System — Miller Center"
+            url: "https://millercenter.org/president/washington"
+        citations:
+          - author: Joseph J. Ellis
+            source_title: "Founding Brothers: The Revolutionary Generation"
+            source_type: Book
+            source_version:
+            source_number:
+            contributors:
+            publisher: Alfred A. Knopf
+            publication_date: 2000
+            source_location:
+
+  - title: "The Presidency"
+    description: "One embattled term: the XYZ Affair, the Navy, the Alien and Sedition Acts, and peace with France, 1797–1801"
+    body: |
+      Adams was elected the second President of the United States in 1796, narrowly defeating
+      Jefferson, who under the rules of the time became Vice President. His single term was
+      dominated by the undeclared naval Quasi-War with France, provoked by French attacks on
+      American shipping and inflamed by the XYZ Affair. Adams rebuilt the navy and prepared for
+      war — but ultimately, at great political cost to himself, chose to make peace. The same
+      years produced the Alien and Sedition Acts, the darkest stain on his record, and the
+      removal of the seat of government to the unfinished new capital on the Potomac.
+    links:
+      - title: "John Adams as President — Miller Center"
+        url: "https://millercenter.org/president/adams"
+    citations:
+      - author: David McCullough
+        source_title: "John Adams"
+        source_type: Book
+        source_version:
+        source_number:
+        contributors:
+        publisher: Simon & Schuster
+        publication_date: 2001
+        source_location: "Chapters 9–10"
+    actions:
+      - title: "Inaugurated as Second President"
+        date: "1797-03-04"
+        description: "Adams succeeds Washington in the first peaceful transfer of presidential power"
+        body: |
+          Adams was inaugurated on March 4, 1797, succeeding Washington in what was the young
+          republic's first transfer of the presidency. He inherited Washington's cabinet — a
+          decision he came to regret, as several members were more loyal to Alexander Hamilton
+          than to their new chief. Relations with Revolutionary France were deteriorating fast,
+          and the crisis would consume his term.
+        links:
+          - title: "Adams's Inauguration — Miller Center"
+            url: "https://millercenter.org/president/adams"
+        citations:
+          - author: David McCullough
+            source_title: "John Adams"
+            source_type: Book
+            source_version:
+            source_number:
+            contributors:
+            publisher: Simon & Schuster
+            publication_date: 2001
+            source_location: "Chapter 9"
+      - title: "The XYZ Affair"
+        date: "1798-04-03"
+        description: "French demands for bribes, revealed to Congress, ignite anti-French fury"
+        body: |
+          Adams sent commissioners to Paris to ease tensions, but French agents — later identified
+          in published dispatches only as X, Y, and Z — demanded bribes and a loan before
+          negotiations could even begin. When Adams released the dispatches to Congress in the
+          spring of 1798, the insult produced a wave of national outrage, captured in the popular
+          slogan "millions for defense, but not one cent for tribute." Public feeling swung
+          sharply behind the previously unpopular Adams — and toward war.
+        links:
+          - title: "The XYZ Affair — Office of the Historian, U.S. State Department"
+            url: "https://history.state.gov/milestones/1784-1800/xyz"
+        citations:
+          - author: David McCullough
+            source_title: "John Adams"
+            source_type: Book
+            source_version:
+            source_number:
+            contributors:
+            publisher: Simon & Schuster
+            publication_date: 2001
+            source_location: "Chapter 9"
+      - title: "Birth of the U.S. Navy: The Department of the Navy is Established"
+        date: "1798-04-30"
+        description: "Amid attacks on American ships and seamen, Congress creates a permanent naval establishment"
+        body: |
+          The Continental Navy had been disbanded after the Revolution, leaving American merchant
+          ships defenseless. As French privateers seized hundreds of American vessels and the
+          rights of American sailors were trampled — impressment and the seizure of neutral crews
+          being the era's great maritime grievances — Congress and Adams moved to rebuild sea
+          power. On April 30, 1798, Congress established a separate Department of the Navy, and
+          the frigates authorized under the earlier Naval Act (including the USS Constitution) put
+          to sea. Adams's determination to build and use this force during the Quasi-War earned
+          him lasting recognition as a father of the modern United States Navy.
+        links:
+          - title: "Establishment of the Department of the Navy — Naval History and Heritage Command"
+            url: "https://www.history.navy.mil/"
+        citations:
+          - author: David McCullough
+            source_title: "John Adams"
+            source_type: Book
+            source_version:
+            source_number:
+            contributors:
+            publisher: Simon & Schuster
+            publication_date: 2001
+            source_location: "Chapter 9"
+      - title: "The Alien and Sedition Acts"
+        date: "1798-07-14"
+        description: "Adams signs laws curbing immigrants and criminalizing criticism of the government"
+        body: |
+          In the summer of 1798, with war fever high, the Federalist Congress passed and Adams
+          signed four laws known collectively as the Alien and Sedition Acts. They lengthened the
+          residency required for citizenship, empowered the President to deport or detain
+          non-citizens, and — most notoriously — made it a crime to publish "false, scandalous,
+          and malicious" writing against the government. The Sedition Act was used to prosecute
+          Republican newspaper editors, and it provoked the Virginia and Kentucky Resolutions in
+          protest. Though Adams never pushed for the laws and let much of them lapse, signing them
+          remains the gravest blemish on his presidency.
+        links:
+          - title: "Alien and Sedition Acts — National Archives"
+            url: "https://www.archives.gov/milestone-documents/alien-and-sedition-acts"
+        citations:
+          - author: David McCullough
+            source_title: "John Adams"
+            source_type: Book
+            source_version:
+            source_number:
+            contributors:
+            publisher: Simon & Schuster
+            publication_date: 2001
+            source_location: "Chapter 9"
+      - title: "Peace with France: The Convention of 1800"
+        date: "1800-09-30"
+        description: "Adams ends the Quasi-War, splitting his own party but averting a full war"
+        body: |
+          Against the wishes of the Hamiltonian wing of his own Federalist party, which wanted a
+          declared war, Adams sent a new peace mission to France. The result was the Convention of
+          1800 (the Treaty of Mortefontaine), signed on September 30, 1800, which ended the
+          Quasi-War and dissolved the entangling 1778 alliance. The decision shattered Federalist
+          unity and helped cost Adams re-election, but he regarded it as the finest and most
+          selfless act of his public life — the achievement he wanted remembered on his
+          gravestone: peace with France in the year 1800.
+        links:
+          - title: "Convention of 1800 — Office of the Historian, U.S. State Department"
+            url: "https://history.state.gov/milestones/1784-1800/xyz"
+        citations:
+          - author: David McCullough
+            source_title: "John Adams"
+            source_type: Book
+            source_version:
+            source_number:
+            contributors:
+            publisher: Simon & Schuster
+            publication_date: 2001
+            source_location: "Chapter 10"
+      - title: "Adams Moves into the Unfinished President's House"
+        date: "1800-11-01"
+        description: "Adams becomes the first President to live in the new capital on the Potomac"
+        body: |
+          On November 1, 1800, Adams became the first President to occupy the still-unfinished
+          President's House (the White House) in the raw new capital city of Washington. The
+          building was cold and damp, its plaster still wet, the surrounding city little more than
+          mud and stumps. In a letter to Abigail, Adams offered a blessing on the house — that
+          none but honest and wise men might ever rule beneath its roof — words later carved into
+          the mantel of the State Dining Room by Franklin Roosevelt.
+        links:
+          - title: "Adams Moves to Washington — White House Historical Association"
+            url: "https://www.whitehousehistory.org/"
+        citations:
+          - author: David McCullough
+            source_title: "John Adams"
+            source_type: Book
+            source_version:
+            source_number:
+            contributors:
+            publisher: Simon & Schuster
+            publication_date: 2001
+            source_location: "Chapter 10"
+      - title: "Defeat in the Election of 1800"
+        date: "1801-03-04"
+        description: "Adams loses to Jefferson and quietly leaves Washington before the inauguration"
+        body: |
+          The bitter election of 1800 sent Adams down to defeat at the hands of Thomas Jefferson,
+          his old friend and now his political enemy. Wounded by the loss and grieving the recent
+          death of his son Charles, Adams left Washington in the early morning hours before
+          Jefferson's inauguration on March 4, 1801, rather than attend it. In his final days in
+          office he made a series of "midnight" judicial appointments — one of which produced the
+          landmark case Marbury v. Madison — and then retired for good to his farm in Quincy.
+        links:
+          - title: "The Election of 1800 — Miller Center"
+            url: "https://millercenter.org/president/adams/campaigns-and-elections"
+        citations:
+          - author: Joseph J. Ellis
+            source_title: "Founding Brothers: The Revolutionary Generation"
+            source_type: Book
+            source_version:
+            source_number:
+            contributors:
+            publisher: Alfred A. Knopf
+            publication_date: 2000
+            source_location:
+
+  - title: "Retirement, Estrangement, and Reconciliation"
+    description: "The farm at Quincy, the broken friendship with Jefferson, and its healing, 1801–1818"
+    body: |
+      Out of office at sixty-five, Adams returned to his farm, which he called Peacefield, and to
+      Abigail. He read voraciously, wrote a sprawling autobiography, tended his fields, and
+      brooded over his reputation. For years he and Jefferson did not speak, their friendship a
+      casualty of the party wars. Then, through the patient mediation of their mutual friend
+      Benjamin Rush, the two old revolutionaries resumed a correspondence that became one of the
+      treasures of American letters — a decade-long exchange on politics, philosophy, religion,
+      aging, and the meaning of the Revolution they had made together.
+    links:
+      - title: "The Adams-Jefferson Letters — Founders Online"
+        url: "https://founders.archives.gov/"
+    citations:
+      - author: Joseph J. Ellis
+        source_title: "Passionate Sage: The Character and Legacy of John Adams"
+        source_type: Book
+        source_version:
+        source_number:
+        contributors:
+        publisher: W. W. Norton
+        publication_date: 1993
+        source_location:
+    actions:
+      - title: "Retires to Peacefield in Quincy"
+        date: "1801-03-18"
+        description: "Adams settles into farming, reading, and writing in retirement"
+        body: |
+          Adams reached his Quincy farm in March 1801 and, apart from his correspondence, largely
+          withdrew from public life. He threw himself into agriculture, family, and reflection,
+          and eventually into a long, digressive defense of his career and views. The years of
+          quiet reading and writing softened, though never entirely dissolved, his lifelong
+          sensitivity to slights and his hunger for recognition.
+        links:
+          - title: "Peacefield — Adams National Historical Park (NPS)"
+            url: "https://www.nps.gov/adam/index.htm"
+        citations:
+          - author: Joseph J. Ellis
+            source_title: "Passionate Sage: The Character and Legacy of John Adams"
+            source_type: Book
+            source_version:
+            source_number:
+            contributors:
+            publisher: W. W. Norton
+            publication_date: 1993
+            source_location:
+      - title: "Reconciliation with Jefferson Begins"
+        date: "1812-01-01"
+        description: "Adams writes to Jefferson, reopening a friendship broken for a decade"
+        body: |
+          On New Year's Day 1812, prompted by the persistent Benjamin Rush, Adams sent Thomas
+          Jefferson a brief, friendly note — famously mentioning "two pieces of homespun" he was
+          sending along (in fact a two-volume set of lectures). Jefferson replied warmly, and the
+          floodgates opened. Over the next fourteen years the two men exchanged more than 150
+          letters, ranging across every subject that had ever engaged them, and repairing one of
+          the most important friendships in American history.
+        links:
+          - title: "Adams to Jefferson, January 1, 1812 — Founders Online"
+            url: "https://founders.archives.gov/"
+        citations:
+          - author: Joseph J. Ellis
+            source_title: "Founding Brothers: The Revolutionary Generation"
+            source_type: Book
+            source_version:
+            source_number:
+            contributors:
+            publisher: Alfred A. Knopf
+            publication_date: 2000
+            source_location:
+      - title: "Death of Abigail Adams"
+        date: "1818-10-28"
+        description: "Adams loses his wife and partner of fifty-four years to typhoid fever"
+        body: |
+          On October 28, 1818, Abigail Adams died of typhoid fever after fifty-four years of
+          marriage. Her loss was the deepest sorrow of John's long life. Jefferson, learning of
+          it, wrote his old friend a letter of consolation that moved Adams profoundly and drew
+          the two men closer still. Abigail's letters would later secure her own place as one of
+          the most compelling voices of the founding era.
+        links:
+          - title: "Abigail Adams — Massachusetts Historical Society"
+            url: "https://www.masshist.org/adams"
+        citations:
+          - author: Joseph J. Ellis
+            source_title: "First Family: Abigail and John Adams"
+            source_type: Book
+            source_version:
+            source_number:
+            contributors:
+            publisher: Alfred A. Knopf
+            publication_date: 2010
+            source_location:
+
+  - title: "Final Years and Death"
+    description: "A son in the White House and the famous coincidence of the Fourth of July, 1825–1826"
+    body: |
+      Adams lived long enough to see his son John Quincy Adams elected President — a satisfaction
+      granted to no other founder. And then, in an ending that seemed almost scripted by
+      providence, he died on July 4, 1826, the fiftieth anniversary of the Declaration of
+      Independence, within hours of Thomas Jefferson. The coincidence stunned the nation and
+      sealed both men's places in American mythology.
+    links:
+      - title: "John Adams — Miller Center"
+        url: "https://millercenter.org/president/adams/death-of-the-president"
+    citations:
+      - author: David McCullough
+        source_title: "John Adams"
+        source_type: Book
+        source_version:
+        source_number:
+        contributors:
+        publisher: Simon & Schuster
+        publication_date: 2001
+        source_location: "Chapter 11"
+    actions:
+      - title: "John Quincy Adams Becomes President"
+        date: "1825-03-04"
+        description: "Adams sees his son inaugurated as the sixth President of the United States"
+        body: |
+          After a contested election decided in the House of Representatives, John Quincy Adams
+          was inaugurated as the sixth President on March 4, 1825. The elder Adams, nearing ninety
+          and frail, took immense pride in the achievement — the only time in American history
+          that a President's son would follow him into the office during the father's lifetime.
+        links:
+          - title: "John Quincy Adams — Miller Center"
+            url: "https://millercenter.org/president/jqadams"
+        citations:
+          - author: David McCullough
+            source_title: "John Adams"
+            source_type: Book
+            source_version:
+            source_number:
+            contributors:
+            publisher: Simon & Schuster
+            publication_date: 2001
+            source_location: "Chapter 11"
+      - title: "Death of John Adams"
+        date: "1826-07-04"
+        time: "18:20:00 EDT" # late afternoon; time approximate
+        description: "Adams dies on the fiftieth anniversary of independence, hours after Jefferson"
+        body: |
+          John Adams died at Peacefield on the afternoon of July 4, 1826 — the fiftieth
+          anniversary of the Declaration of Independence he had done so much to bring about. His
+          reported last words were "Thomas Jefferson survives," not knowing that Jefferson had
+          died at Monticello a few hours earlier that same day. The double death on so symbolic a
+          date was received across the country as a sign of divine favor on the American
+          experiment, and it fixed the two rivals forever together in national memory.
+        links:
+          - title: "The Deaths of Adams and Jefferson — Monticello"
+            url: "https://www.monticello.org/"
+        citations:
+          - author: David McCullough
+            source_title: "John Adams"
+            source_type: Book
+            source_version:
+            source_number:
+            contributors:
+            publisher: Simon & Schuster
+            publication_date: 2001
+            source_location: "Chapter 11"
+
+  - title: "Legacy After His Death"
+    description: "The long afterlife of John Adams's ideas, family, and reputation"
+    body: |
+      Adams's influence outlived him in three great channels: the constitutional ideas he helped
+      pioneer, the extraordinary family and body of papers he left behind, and the slow rise and
+      fall and rise again of his historical reputation. Overshadowed for generations by Jefferson,
+      Washington, and Franklin, he was rediscovered in the late twentieth and early
+      twenty-first centuries as one of the most humanly compelling and intellectually serious of
+      the founders.
+    links:
+      - title: "Adams National Historical Park — National Park Service"
+        url: "https://www.nps.gov/adam/index.htm"
+    citations:
+      - author: Joseph J. Ellis
+        source_title: "Passionate Sage: The Character and Legacy of John Adams"
+        source_type: Book
+        source_version:
+        source_number:
+        contributors:
+        publisher: W. W. Norton
+        publication_date: 1993
+        source_location:
+    actions:
+      - title: "John Quincy Adams's Antislavery Crusade in Congress"
+        date: "1831-12-05"
+        description: "The former president returns to public life as an antislavery congressman"
+        body: |
+          In a remarkable second act unmatched in American politics, John Quincy Adams — having
+          lost the presidency in 1828 — was elected to the House of Representatives, where he
+          served for seventeen years. He became the fiercest congressional opponent of the "gag
+          rule" that suppressed antislavery petitions, and in 1841 argued successfully before the
+          Supreme Court for the freedom of the enslaved Africans of the ship Amistad. The elder
+          Adams did not live to see it, but his son carried the family's moral seriousness into
+          the fight against slavery.
+        links:
+          - title: "John Quincy Adams and the Amistad — National Archives"
+            url: "https://www.archives.gov/"
+        citations:
+          - author: Fred Kaplan
+            source_title: "John Quincy Adams: American Visionary"
+            source_type: Book
+            source_version:
+            source_number:
+            contributors:
+            publisher: Harper
+            publication_date: 2014
+            source_location:
+      - title: "The Adams Papers Are Opened to Scholars"
+        date: "1956-01-01"
+        time: # the microfilm and edition project unfolded over years; a representative date
+        description: "The family's vast archive is made available, transforming study of the founding"
+        body: |
+          The Adams family preserved an enormous archive of letters, diaries, and papers spanning
+          generations. In the mid-twentieth century the Massachusetts Historical Society began the
+          monumental Adams Papers editing project, opening the collection to scholars and the
+          public. The letters of John and Abigail in particular — candid, affectionate, and
+          politically astute — became foundational sources for understanding the Revolution and
+          helped drive a major revival of interest in Adams himself.
+        links:
+          - title: "The Adams Papers — Massachusetts Historical Society"
+            url: "https://www.masshist.org/adams"
+        citations:
+          - author: Massachusetts Historical Society
+            source_title: "The Adams Papers Editorial Project"
+            source_type: Archive
+            source_version:
+            source_number:
+            contributors:
+            publisher: Harvard University Press (Belknap)
+            publication_date: 1961
+            source_location:
+      - title: "A Revival of Reputation"
+        date: "2001-05-22"
+        description: "McCullough's biography returns Adams to the center of the American story"
+        body: |
+          Long ranked below the more glamorous founders, Adams was returned to public affection by
+          a wave of scholarship and popular history around the turn of the twenty-first century,
+          most visibly David McCullough's best-selling 2001 biography and the acclaimed HBO
+          miniseries it inspired. Adams — prickly, principled, deeply human — came to be seen not
+          as a lesser founder but as one of the most honest and prescient of them, the man who
+          argued for independence, insisted on the rule of law even for his enemies, built a navy,
+          and chose an unpopular peace over a popular war.
+        links:
+          - title: "John Adams — Miller Center, University of Virginia"
+            url: "https://millercenter.org/president/adams/impact-and-legacy"
+        citations:
+          - author: David McCullough
+            source_title: "John Adams"
+            source_type: Book
+            source_version:
+            source_number:
+            contributors:
+            publisher: Simon & Schuster
+            publication_date: 2001
+            source_location:
