@@ -1,22 +1,22 @@
-import { useTheme } from './lib/utilityFunctions';
-import { useRef } from 'react';
+// import { useTheme } from './lib/utilityFunctions';
+// import { useRef } from 'react';
 import { useState } from 'react';
 import { useMediaQuery } from './lib/utilityFunctions';
 import { getTimefallData, bootstrapDefaultTimefall } from './lib/dataProcessor';
-import NavSelect from './components/navSelect';
-import NavFlat from './components/navFlat';
+import { Header } from './components/header';
 import { TimefallComponent } from './components/timefallComponent';
-import { type TimefallTimeline, createTimefallEvents } from './lib/TimefallEvent';
+import { type TimefallTimeline, type TimefallEvent, createTimefallEvents } from './lib/TimefallEvent';
+import { TimefallSideNav } from './components/timefallSideNav';
 import './App.css'
 
 function App() {
   // Change this prior to final release, of course...
   // const DEMO_LOCATION = `${window.location.href}/demo.yaml`;
-  const REPO_HOME = 'https://github.com/jahio/timefall';
-  const DEMO_YAML = 'https://raw.githubusercontent.com/jahio/timefall/refs/heads/main/public/demo.yaml';
-  const { theme, setTheme } = useTheme();
+  // const REPO_HOME = 'https://github.com/jahio/timefall';
+  // const DEMO_YAML = 'https://raw.githubusercontent.com/jahio/timefall/refs/heads/main/public/demo.yaml';
+  // const { theme, setTheme } = useTheme();
   const isMobile = useMediaQuery(768); // 768 seems to be the main "is it mobile or not?" breakpoint
-  const inputRef = useRef<HTMLInputElement>(null);
+  // const inputRef = useRef<HTMLInputElement>(null);
   const [timelineData, setTimelineData] = useState<TimefallTimeline | null>(null);
   const defaultTimefall = bootstrapDefaultTimefall();
 
@@ -39,7 +39,18 @@ function App() {
 
   return (
     <>
-      <header id="appTitle">
+      <header className="tf-header" id="tf-header">
+        <Header />
+      </header>
+
+      <main id="tf-body" className="tf-body">
+        <div className="tf-backdrop" data-action="menu-close"></div>
+
+        <TimefallSideNav events={[]} />
+
+      </main>
+
+      {/* <header id="appTitle">
         <div className="appTitle">
           <h1>TIMEFALL</h1>
         </div>
@@ -62,12 +73,12 @@ function App() {
         </div>
       </header>
 
-      <hr className="topLine" />
+      <hr className="topLine" /> */}
 
       <main id="primaryContent">
-        <nav id="leftNav">
+        {/* <nav id="leftNav">
           {isMobile ? <NavSelect items={[]} /> : <NavFlat items={[]} /> }
-        </nav>
+        </nav> */}
 
         <section>
           {timelineData
